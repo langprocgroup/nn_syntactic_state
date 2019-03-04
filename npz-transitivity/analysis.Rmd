@@ -1,0 +1,195 @@
+---
+title: "rnnpsycholing NP/Z transitivity"
+output:
+  pdf_document: default
+  html_notebook: default
+---
+
+We are looking for a main effect of ambiguity at the main verb.
+
+Why is this interesting?
+It indicates the NP/Z ambiguity is modulated by information about verb transitivity.
+
+```{r}
+rm(list = ls())
+library(tidyverse)
+library(lme4)
+library(lmerTest)
+library(plotrix)
+
+REGION_ORDER = c("Start", "Embedded Verb", "Blocker", "Comma", "NP/Z", "Extension", "Verb", "Rest", "End")
+REGION_EXEMPLARS = c("When the dog", "struggled/scratched", "his owner", ",", "the vet", "with his new assistant", "took off", "the muzzle", ". <eos>")
+NUM_REGIONS = length(REGION_ORDER)
+
+REGION_ORDER_NOBLOCKER = c("Start", "Embedded Verb", "Comma", "NP/Z", "Extension", "Verb", "Rest", "End")
+REGION_EXEMPLARS_NOBLOCKER = c("When the dog", "struggled/scratched", ",", "the vet", "with his new assistant", "took off", "the muzzle", ". <eos>")
+NUM_REGIONS_NOBLOCKER = length(REGION_ORDER_NOBLOCKER)
+
+REGION_ORDER_NOCOMMA = c("Start", "Embedded Verb", "Blocker", "NP/Z", "Extension", "Verb", "Rest", "End")
+REGION_EXEMPLARS_NOCOMMA = c("When the dog", "struggled/scratched", "his owner", "the vet", "with his new assistant", "took off", "the muzzle", ". <eos>")
+NUM_REGIONS_NOCOMMA = length(REGION_ORDER_NOCOMMA)
+
+rename_LSTM = function(d) {
+  d %>% mutate(LSTM=if_else(LSTM == "gulordava", "GRNN", 
+                    if_else(LSTM == "google", "JRNN",
+                    if_else(LSTM == "rnng", "RNNG", LSTM))))
+}
+
+
+add_numeric_predictors <- function(d) {
+  d %>%
+    mutate(transitivity.numeric=if_else(transitivity=="transitive",1,-1),
+           length.numeric=if_else(length == "short", -1, 1),
+           comma.numeric=if_else(comma == "comma", 1, -1),
+           blocker.numeric=if_else(blocker == "blocker", 1, -1))
+           
+}
+
+d = read_csv("tests/combined_results_with_rnng_and_tinylstm.csv") %>%
+  #select(-X1) %>%
+  separate(condition, sep="_", into=c("transitivity", "length", "comma", "blocker")) %>%
+  mutate(region=if_else(region == "Intransitive Verb", "Embedded Verb", region)) %>%
+  mutate(region=if_else(region == "Transitive Verb", "Embedded Verb", region)) %>%
+  mutate(region=factor(region, levels=REGION_ORDER)) %>%
+  rename(LSTM=model) %>%
+  mutate(unk=unk=="True",
+         final=final=="True")
+
+
+d_agg = d %>% 
+  rename_LSTM() %>% 
+  group_by(sent_index, region, transitivity, length, comma, blocker, LSTM) %>%  # get sum surprisal per region
+    summarise(surprisal=mean(surprisal),
+              unk=any(unk)) %>%
+    ungroup() %>% 
+  mutate(blocker=factor(blocker, levels=c("noblocker", "blocker")),
+         transitivity=factor(transitivity, levels=c("transitive", "intransitive"))) %>%
+  filter(!unk) 
+
+
+dc = d_agg %>% filter(region == "Verb") %>% add_numeric_predictors() # critical region
+
+```
+
+## Overall visualization
+
+```{r}
+
+d_by_region = d_agg %>% 
+  group_by(LSTM, region, sent_index) %>%
+    mutate(item_mean=mean(surprisal)) %>%
+    ungroup() %>%
+  group_by(LSTM, region, transitivity, length, comma, blocker) %>%
+    summarise(m=mean(surprisal),
+              s=std.error(surprisal-item_mean),
+              upper=m + 1.96*s,
+              lower=m - 1.96*s) %>%
+    ungroup() 
+
+d_by_region %>%
+  filter(length == "long", blocker == "noblocker") %>%
+  mutate(region=factor(region, levels=REGION_ORDER_NOBLOCKER),
+         region=as.numeric(region)) %>% 
+  mutate(comma=if_else(comma == "nocomma", "no comma", "comma"),
+         comma=factor(comma, levels=c("no comma", "comma"))) %>%
+  ggplot(aes(x=region, y=m, ymax=upper, ymin=lower, color=transitivity, linetype=comma)) +
+    geom_line() +
+    geom_errorbar(linetype="solid", width=.1) +
+    scale_x_continuous(breaks=seq(1, NUM_REGIONS_NOBLOCKER), labels=REGION_EXEMPLARS_NOBLOCKER) +
+    theme_bw() +
+    theme(axis.text.x = element_text(angle=15, hjust=1)) +
+    xlab("") +
+    ylab("Mean surprisal in region") +
+    labs(color="", linetype="") +
+    facet_grid(LSTM~., scale="free_y") +
+    theme(legend.position="top")
+
+ggsave("npz_transitivity.pdf", width=6, height=5)
+  
+```
+
+## Plot the size of the garden path effect
+
+```{r}
+d_effect = d_agg %>%
+  filter(region == "Verb") %>%
+  filter(length == "long", blocker == "noblocker") %>%
+  spread(comma, surprisal) %>%
+  mutate(effect=nocomma-comma) %>%
+  group_by(sent_index, LSTM) %>%
+    mutate(item_mean=mean(effect)) %>%
+    ungroup() %>%
+  group_by(transitivity, LSTM) %>%
+    summarise(m=mean(effect),
+              s=std.error(effect - item_mean),
+              upper=m+1.96*s,
+              lower=m-1.96*s) %>%
+    ungroup()
+
+d_effect %>%
+  ggplot(aes(x=transitivity, y=m, ymin=lower, ymax=upper, fill=transitivity)) +
+    geom_bar(stat="identity", position="dodge") +
+    geom_errorbar(width=.5) +
+    facet_wrap(~LSTM) +
+    ylab("Garden path effect (bits)") +
+    xlab("Embedded verb transitivity") +
+    theme_bw() +
+    theme(legend.position="none")
+
+ggsave("npz_effect.pdf", width=4, height=4)
+
+```
+
+
+
+## Is there an NP/Z garden path?
+
+```{r}
+
+mj.l = lmer(surprisal ~ comma.numeric + (1|sent_index), 
+          data=filter(dc, LSTM == "JRNN", length == "long", blocker == "noblocker"))
+mg.l = lmer(surprisal ~ comma.numeric + (1|sent_index), 
+          data=filter(dc,  LSTM == "GRNN", length == "long", blocker == "noblocker"))
+mr.l = lmer(surprisal ~ comma.numeric + (1|sent_index), 
+          data=filter(dc, LSTM == "RNNG", length == "long", blocker == "noblocker"))
+mt.l = lmer(surprisal ~ comma.numeric + (1|sent_index), 
+          data=filter(dc, LSTM == "tinylstm", length == "long", blocker == "noblocker"))
+
+
+summary(mj.l)
+summary(mg.l)
+summary(mr.l)
+summary(mt.l)
+
+
+```
+
+
+## Is there an interaction of length and ambiguity?
+
+Positive interaction = digging in effect, negative interaction = anti-digging in
+
+```{r}
+
+mji.l = lmer(surprisal ~ comma.numeric * transitivity.numeric + (comma.numeric + transitivity.numeric|sent_index), 
+          data=filter(dc, LSTM == "JRNN", length == "long", blocker == "noblocker"))
+mgi.l = lmer(surprisal ~ comma.numeric * transitivity.numeric + (comma.numeric + transitivity.numeric|sent_index), 
+          data=filter(dc,  LSTM == "GRNN", length == "long", blocker == "noblocker"))
+mri.l = lmer(surprisal ~ comma.numeric * transitivity.numeric + (comma.numeric + transitivity.numeric|sent_index), 
+          data=filter(dc, LSTM == "RNNG", length == "long", blocker == "noblocker"))
+mti.l = lmer(surprisal ~ comma.numeric * transitivity.numeric + (comma.numeric + transitivity.numeric|sent_index), 
+          data=filter(dc, LSTM == "tinylstm", length == "long", blocker == "noblocker"))
+
+
+summary(mji.l)
+summary(mgi.l)
+summary(mri.l)
+summary(mti.l)
+
+
+
+```
+
+Nothing in JRNN, but anti-digging-in in GRNN.
+
+

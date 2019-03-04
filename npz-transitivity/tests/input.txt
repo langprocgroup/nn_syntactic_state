@@ -1,0 +1,186 @@
+While the boy scratched the dog yawned . <eos>
+If the clerk forgets the customer complains . <eos>
+As the doctor lectured the student listened . <eos>
+While the girls raced the kids watched . <eos>
+When the worker moved the boxes fell . <eos>
+As the author wrote the book grew . <eos>
+As the people watched the show stopped . <eos>
+Whenever the children leave the dog sleeps . <eos>
+When the aunt visits the cousins talk . <eos>
+When the maid packs the bag breaks . <eos>
+If the locksmith turns the knob sticks . <eos>
+Because the kids tripped the student yelled . <eos>
+When the trappers meet the coyote hunts . <eos>
+As the lawyers studied the case languished . <eos>
+While the divers searched the river rose . <eos>
+As the actors rehearsed the play improved . <eos>
+If the heir refuses the money doubles . <eos>
+When the people notice the actor departs . <eos>
+When the magician tries to juggle the torches tumble . <eos>
+When the band left the hotel closed . <eos>
+When the Martians invaded the town disappeared . <eos>
+While the guests ate the cake collapsed . <eos>
+When the men hunt the birds scatter . <eos>
+Wherever the officers lead the troops follow . <eos>
+If the cheerleaders practice the cheers improve . <eos>
+When the chauffeur parks the car stalls . <eos>
+As the driver shifted the gears broke . <eos>
+Whenever the children ride the horse bucks . <eos>
+Because the students observed the instructor paused . <eos>
+Whenever the crew films the bear leaves . <eos>
+When the boys struck the dog leapt . <eos>
+While the boy scratched the dog sleeping peacefully yawned . <eos>
+If the clerk forgets the customer waiting below complains . <eos>
+As the doctor lectured the student taking notes listened . <eos>
+While the girls raced the kids attending camp watched . <eos>
+When the worker moved the boxes lacking tape fell . <eos>
+As the author wrote the book describing Babylon grew . <eos>
+As the people watched the show documenting crimes stopped . <eos>
+Whenever the children leave the dog barking loudly sleeps . <eos>
+When the aunt visits the cousins attending prep school talk . <eos>
+When the maid packs the bag containing socks breaks . <eos>
+If the locksmith turns the knob needing grease sticks . <eos>
+Because the kids tripped the student delivering papers yelled . <eos>
+When the trappers meet the coyote prowling mischievously hunts . <eos>
+As the lawyers studied the case involving fraud languished . <eos>
+While the divers searched the river roaring incessantly rose . <eos>
+As the actors rehearsed the play starring Brando improved . <eos>
+If the heir refuses the money earning interest doubles . <eos>
+When the people notice the actor playing Clinton departs . <eos>
+When the magician tries to juggle the torches burning kerosene tumble . <eos>
+When the band left the hotel advertising entertainment closed . <eos>
+When the Martians invaded the town mining uranium disappeared . <eos>
+While the guests ate the cake containing walnuts collapsed . <eos>
+When the men hunt the birds singing mating songs scatter . <eos>
+Wherever the officers lead the troops learning wilderness skills follow . <eos>
+If the cheerleaders practice the cheers involving jumps improve . <eos>
+When the chauffeur parks the car leaking oil stalls . <eos>
+As the driver shifted the gears lacking lubrication broke . <eos>
+Whenever the children ride the horse taking medication bucks . <eos>
+Because the students observed the instructor demonstrating balance paused . <eos>
+Whenever the crew films the bear catching salmon leaves . <eos>
+When the boys struck the dog guarding the house leapt . <eos>
+While the boy scratched the dog sleeping peacefully by the doorway yawned . <eos>
+If the clerk forgets the customer waiting below by the counter complains . <eos>
+As the doctor lectured the student taking notes in his notebook listened . <eos>
+While the girls raced the kids attending camp for the summer watched . <eos>
+When the worker moved the boxes lacking tape on their seams fell . <eos>
+As the author wrote the book describing Babylon in ancient times grew . <eos>
+As the people watched the show documenting crimes of famous mobsters stopped . <eos>
+Whenever the children leave the dog barking loudly to get attention sleeps . <eos>
+When the aunt visits the cousins attending prep school in the country talk . <eos>
+When the maid packs the bag containing socks and other items breaks . <eos>
+If the locksmith turns the knob needing grease and other attention sticks . <eos>
+Because the kids tripped the student delivering papers to the teacher yelled . <eos>
+When the trappers meet the coyote prowling mischievously in the field hunts . <eos>
+As the lawyers studied the case involving fraud against crash victims languished . <eos>
+While the divers searched the river roaring incessantly and very loudly rose . <eos>
+As the actors rehearsed the play starring Brando and other stars improved . <eos>
+If the heir refuses the money earning interest in the bank doubles . <eos>
+When the people notice the actor playing Clinton in the movie departs . <eos>
+When the magician tries to juggle the torches burning kerosene and other chemicals tumble . <eos>
+When the band left the hotel advertising entertainment for the guests closed . <eos>
+When the Martians invaded the town mining uranium to build reactors disappeared . <eos>
+While the guests ate the cake containing walnuts and various fruit collapsed . <eos>
+When the men hunt the birds singing mating songs in the forest scatter . <eos>
+Wherever the officers lead the troops learning wilderness skills for the war follow . <eos>
+If the cheerleaders practice the cheers involving jumps and other moves improve . <eos>
+When the chauffeur parks the car leaking oil and other fluids stalls . <eos>
+As the driver shifted the gears lacking lubrication and proper care broke . <eos>
+Whenever the children ride the horse taking medication for its temper bucks . <eos>
+Because the students observed the instructor demonstrating balance in the classroom paused . <eos>
+Whenever the crew films the bear catching salmon in the stream leaves . <eos>
+When the boys struck the dog guarding the house from possible trespassers leapt . <eos>
+While the boy scratched himself the dog yawned . <eos>
+If the clerk forgets something the customer complains . <eos>
+As the doctor lectured the nurse the student listened . <eos>
+While the girls raced the boys the kids watched . <eos>
+When the worker moved the pails the boxes fell . <eos>
+As the author wrote the essay the book grew . <eos>
+As the people watched the screen the show stopped . <eos>
+Whenever the children leave the house the dog sleeps . <eos>
+When the aunt visits family the cousins talk . <eos>
+When the maid packs for vacation the bag breaks . <eos>
+If the locksmith turns the key the knob sticks . <eos>
+Because the kids tripped the principal the student yelled . <eos>
+When the trappers meet the wolf the coyote hunts . <eos>
+As the lawyers studied the trial the case languished . <eos>
+While the divers searched the ship the river rose . <eos>
+As the actors rehearsed the critical scene the play improved . <eos>
+If the heir refuses the fortune the money doubles . <eos>
+When the people notice his nametag the actor departs . <eos>
+When the magician tries to juggle five objects the torches tumble . <eos>
+When the band left the town the hotel closed . <eos>
+When the Martians invaded Earth the town disappeared . <eos>
+While the guests ate the pie the cake collapsed . <eos>
+When the men hunt the deer the birds scatter . <eos>
+Wherever the officers lead the dogs the troops follow . <eos>
+If the cheerleaders practice their parts the cheers improve . <eos>
+When the chauffeur parks behind the hotel the car stalls . <eos>
+As the driver shifted out of second the gears broke . <eos>
+Whenever the children ride the donkey the horse bucks . <eos>
+Because the students observed the newcomer the instructor paused . <eos>
+Whenever the crew films the river the bear leaves . <eos>
+When the boys struck the door the dog leapt . <eos>
+While the boy scratched himself the dog sleeping peacefully yawned . <eos>
+If the clerk forgets something the customer waiting below complains . <eos>
+As the doctor lectured the nurse the student taking notes listened . <eos>
+While the girls raced the boys the kids attending camp watched . <eos>
+When the worker moved the pails the boxes lacking tape fell . <eos>
+As the author wrote the essay the book describing Babylon grew . <eos>
+As the people watched the screen the show documenting crimes stopped . <eos>
+Whenever the children leave the house the dog barking loudly sleeps . <eos>
+When the aunt visits family the cousins attending prep school talk . <eos>
+When the maid packs for vacation the bag containing socks breaks . <eos>
+If the locksmith turns the key the knob needing grease sticks . <eos>
+Because the kids tripped the principal the student delivering papers yelled . <eos>
+When the trappers meet the wolf the coyote prowling mischievously hunts . <eos>
+As the lawyers studied the trial the case involving fraud languished . <eos>
+While the divers searched the ship the river roaring incessantly rose . <eos>
+As the actors rehearsed the critical scene the play starring Brando improved . <eos>
+If the heir refuses the fortune the money earning interest doubles . <eos>
+When the people notice his nametag the actor playing Clinton departs . <eos>
+When the magician tries to juggle five objects the torches burning kerosene tumble . <eos>
+When the band left the town the hotel advertising entertainment closed . <eos>
+When the Martians invaded Earth the town mining uranium disappeared . <eos>
+While the guests ate the pie the cake containing walnuts collapsed . <eos>
+When the men hunt the deer the birds singing mating songs scatter . <eos>
+Wherever the officers lead the dogs the troops learning wilderness skills follow . <eos>
+If the cheerleaders practice their parts the cheers involving jumps improve . <eos>
+When the chauffeur parks behind the hotel the car leaking oil stalls . <eos>
+As the driver shifted out of second the gears lacking lubrication broke . <eos>
+Whenever the children ride the donkey the horse taking medication bucks . <eos>
+Because the students observed the newcomer the instructor demonstrating balance paused . <eos>
+Whenever the crew films the river the bear catching salmon leaves . <eos>
+When the boys struck the door the dog guarding the house leapt . <eos>
+While the boy scratched himself the dog sleeping peacefully by the doorway yawned . <eos>
+If the clerk forgets something the customer waiting below by the counter complains . <eos>
+As the doctor lectured the nurse the student taking notes in his notebook listened . <eos>
+While the girls raced the boys the kids attending camp for the summer watched . <eos>
+When the worker moved the pails the boxes lacking tape on their seams fell . <eos>
+As the author wrote the essay the book describing Babylon in ancient times grew . <eos>
+As the people watched the screen the show documenting crimes of famous mobsters stopped . <eos>
+Whenever the children leave the house the dog barking loudly to get attention sleeps . <eos>
+When the aunt visits family the cousins attending prep school in the country talk . <eos>
+When the maid packs for vacation the bag containing socks and other items breaks . <eos>
+If the locksmith turns the key the knob needing grease and other attention sticks . <eos>
+Because the kids tripped the principal the student delivering papers to the teacher yelled . <eos>
+When the trappers meet the wolf the coyote prowling mischievously in the field hunts . <eos>
+As the lawyers studied the trial the case involving fraud against crash victims languished . <eos>
+While the divers searched the ship the river roaring incessantly and very loudly rose . <eos>
+As the actors rehearsed the critical scene the play starring Brando and other stars improved . <eos>
+If the heir refuses the fortune the money earning interest in the bank doubles . <eos>
+When the people notice his nametag the actor playing Clinton in the movie departs . <eos>
+When the magician tries to juggle five objects the torches burning kerosene and other chemicals tumble . <eos>
+When the band left the town the hotel advertising entertainment for the guests closed . <eos>
+When the Martians invaded Earth the town mining uranium to build reactors disappeared . <eos>
+While the guests ate the pie the cake containing walnuts and various fruit collapsed . <eos>
+When the men hunt the deer the birds singing mating songs in the forest scatter . <eos>
+Wherever the officers lead the dogs the troops learning wilderness skills for the war follow . <eos>
+If the cheerleaders practice their parts the cheers involving jumps and other moves improve . <eos>
+When the chauffeur parks behind the hotel the car leaking oil and other fluids stalls . <eos>
+As the driver shifted out of second the gears lacking lubrication and proper care broke . <eos>
+Whenever the children ride the donkey the horse taking medication for its temper bucks . <eos>
+Because the students observed the newcomer the instructor demonstrating balance in the classroom paused . <eos>
+Whenever the crew films the river the bear catching salmon in the stream leaves . <eos>
+When the boys struck the door the dog guarding the house from possible trespassers leapt . <eos>

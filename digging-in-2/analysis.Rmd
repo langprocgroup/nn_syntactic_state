@@ -1,0 +1,271 @@
+---
+title: "rnnpsycholing Garden Pathing Digging in II"
+output:
+  pdf_document: default
+  html_notebook: default
+---
+
+We are looking for a 2x2 interaction of ambiguity and length at the critical final verb.
+
+As the author wrote (the essay) the book (describing Babylon (in ancient times)) grew
+
+Now we are controlling for the distance between the main verb and the subordinator by adding postmodifiers to the subject.
+
+Why is this interesting?
+It indicates digging-in effects: the longer the parser has been committed into a particular parse, the more surprised it is when that parse turns out to be wrong.
+
+```{r}
+rm(list = ls())
+library(tidyverse)
+library(lme4)
+library(lmerTest)
+library(plotrix)
+
+REGION_ORDER = c("Start", "Filler", "Filler II", "Embedded Verb", "Object", "Comma", "NP/Z", "Extension", "Extension II", "Verb", "End")
+REGION_EXEMPLARS = c("As the author", "studying cities", "in ancient times", "wrote", "the essay", ",", "the book", "describing Babylon", "in ancient times", "grew", ". <eos>")
+NUM_REGIONS = length(REGION_ORDER)
+
+rename_LSTM = function(d) {
+  d %>% mutate(LSTM=if_else(LSTM == "gulordava", "GRNN", 
+                    if_else(LSTM == "google", "JRNN",
+                    if_else(LSTM == "rnng", "RNNG", LSTM))))
+}
+
+
+add_numeric_predictors <- function(d) {
+  d %>%
+    mutate(ambiguity.numeric=if_else(blocker=="noblocker",-1,1)) %>%
+    mutate(length.numeric=if_else(length == "short", 0, if_else(length == "long", 1, 2))) %>%
+    mutate(length.short.long = if_else(length == "short", -1, 1)) %>%
+    mutate(comma.numeric=if_else(comma == "nocomma", -1, 1))
+}
+
+d = read_csv("tests/combined_results_with_rnng_and_tinylstm.csv") %>%
+  #select(-X1) %>%
+  separate(condition, sep="_", into=c("blocker", "length", "comma")) %>%
+  mutate(region=factor(region, levels=REGION_ORDER)) %>%
+  rename(LSTM=model) %>%
+  mutate(unk=unk=="True",
+         final=final=="True") %>%
+  rename_LSTM() %>%
+  mutate(surprisal=if_else(LSTM %in% c("RNNG", "tinylstm"), surprisal/log(2), surprisal))
+
+
+d_agg = d %>% 
+  rename_LSTM() %>% 
+  group_by(sent_index, region, blocker, length, comma, LSTM) %>%  # get sum surprisal per region
+    summarise(surprisal=mean(surprisal),
+              unk=any(unk)) %>%
+    ungroup() %>% 
+  filter(!unk) %>%
+  mutate(length=factor(length, levels=c("short", "long", "verylong")),
+         comma=factor(comma, levels=c("nocomma", "comma")),
+         blocker=factor(blocker, levels=c("blocker", "noblocker")))
+
+dc = d_agg %>% filter(region == "Verb") %>% add_numeric_predictors() # critical region
+
+```
+
+## Overall visualization
+
+```{r}
+
+d_by_region = d_agg %>% 
+  group_by(LSTM, region, sent_index) %>%
+    mutate(item_mean=mean(surprisal)) %>%
+    ungroup() %>%
+  group_by(LSTM, region, comma, blocker, length) %>%
+    summarise(m=mean(surprisal),
+              s=std.error(surprisal-item_mean),
+              upper=m + 1.96*s,
+              lower=m - 1.96*s) %>%
+    ungroup() 
+
+d_by_region %>%
+  mutate(region=as.numeric(region)) %>% 
+  filter(region>3) %>%
+  filter(length == "verylong") %>%
+  mutate(blocker=factor(blocker, levels=c("noblocker", "blocker"))) %>%
+  mutate(blocker=if_else(blocker == "blocker", "object", "no object")) %>%
+  mutate(comma=if_else(comma == "nocomma", "no comma", "comma"),
+         comma=factor(comma, levels=c("no comma", "comma"))) %>%
+  ggplot(aes(x=region, y=m, ymax=upper, ymin=lower, linetype=comma, color=blocker)) +
+    geom_line() +
+    geom_errorbar(linetype="solid", width=.1) +
+    scale_x_continuous(breaks=seq(1, NUM_REGIONS), labels=REGION_EXEMPLARS) +
+    theme(axis.text.x = element_text(angle=15, hjust=1)) +
+    xlab("") +
+    ylab("Sum surprisal in region") +
+    labs(linetype="", color="") +
+    facet_grid(LSTM~., scale="free_y") +
+    theme(legend.position="top")
+
+ggsave("digging_in.pdf", width=6, height=4)
+  
+```
+
+## Plot the size of the garden path effect by length
+
+```{r}
+d_effect = d_agg %>%
+  filter(region == "Verb", blocker == "noblocker", length != "long") %>%
+  mutate(length=as.character(length)) %>%
+  mutate(length=if_else(length == "verylong", "long", length)) %>% # rename for purpose of plot
+  mutate(length=factor(length, levels=c("short", "long"))) %>%
+  spread(comma, surprisal) %>%
+  mutate(effect=nocomma-comma) %>%
+  group_by(sent_index, LSTM) %>%
+    mutate(item_mean=mean(effect)) %>%
+    ungroup() %>%
+  group_by(length, blocker, LSTM) %>%
+    summarise(m=mean(effect),
+              s=std.error(effect - item_mean),
+              upper=m+1.96*s,
+              lower=m-1.96*s) %>%
+    ungroup()
+
+d_effect %>%
+  ggplot(aes(x=length, y=m, ymin=lower, ymax=upper, fill=length)) +
+    geom_bar(stat="identity", position="dodge") +
+    geom_errorbar(width=.5) +
+    facet_wrap(~LSTM) +
+    ylab("Garden path effect (bits)") +
+    xlab("Length of ambiguous region") +
+    theme_bw() +
+    theme(legend.position = "none")
+
+ggsave("digging_in_effect.pdf", width=4, height=4)
+
+```
+
+
+## Do it just for verylong
+
+```{r}
+d_effect = d_agg %>%
+  filter(region == "Verb", length == "verylong") %>%
+  spread(comma, surprisal) %>%
+  mutate(effect=nocomma-comma) %>%
+  group_by(sent_index, LSTM) %>%
+    mutate(item_mean=mean(effect)) %>%
+    ungroup() %>%
+  group_by(blocker, LSTM) %>%
+    summarise(m=mean(effect),
+              s=std.error(effect - item_mean),
+              upper=m+1.96*s,
+              lower=m-1.96*s) %>%
+    ungroup()
+
+d_effect %>%
+  mutate(blocker=if_else(blocker == "blocker", "object", "no object"),
+         blocker=factor(blocker, levels=c("no object", "object"))) %>%
+  ggplot(aes(x=blocker, y=m, ymin=lower, ymax=upper, fill=blocker)) +
+    geom_bar(stat="identity", position="dodge") +
+    geom_errorbar(width=.5) +
+    facet_wrap(~LSTM) +
+    ylab("Garden path effect (bits)") +
+    xlab("Presence of object") +
+    labs(fill="")
+
+ggsave("digging_in_effect_2.pdf")
+
+```
+
+
+
+
+# Preregistered regressions 
+
+## Is there an NP/Z ambiguity in the strongest case?
+
+The strongest evidence for an NP/Z garden path effect is in the verylong condition, where the ambiguity happens outside of an n-gram window.
+
+
+
+Yes, there is a garden path effect of 2.90 bit in JRNN (p<0.001) and 1.12 bit in GRNN (p<0.001). 
+Small, but present. Interestingly this is a huge hit for humans but a small hit for the RNNs. As also found in van Schijndel & Linzen (2018).
+
+
+And the short condition:
+
+```{r}
+
+mj = lmer(surprisal ~ ambiguity.numeric + (1|sent_index), data=filter(dc, length == "short", LSTM == "JRNN"))
+mg = lmer(surprisal ~ ambiguity.numeric + (1|sent_index), data=filter(dc, length == "short", LSTM == "GRNN"))
+mr = lmer(surprisal ~ ambiguity.numeric + (1|sent_index), data=filter(dc, length == "short", LSTM == "RNNG"))
+mt = lmer(surprisal ~ ambiguity.numeric + (1|sent_index), data=filter(dc, length == "short", LSTM == "tinylstm"))
+
+
+summary(mj)
+summary(mg)
+summary(mr)
+summary(mt)
+
+```
+
+
+## Is there an interaction of length and ambiguity? 
+
+Positive = Digging in effect, negative = forgetting the complementizer?
+
+```{r}
+
+# Compare short vs. long
+
+mj.long = lmer(surprisal ~ ambiguity.numeric * length.short.long + (1+ambiguity.numeric+length.short.long|sent_index), 
+          data=filter(dc, length != "verylong", LSTM == "JRNN"))
+mg.long = lmer(surprisal ~ ambiguity.numeric * length.short.long + (1+ambiguity.numeric+length.short.long|sent_index), 
+          data=filter(dc, length != "verylong", LSTM == "GRNN"))
+mr.long = lmer(surprisal ~ ambiguity.numeric * length.short.long + (1+ambiguity.numeric+length.short.long|sent_index), 
+          data=filter(dc, length != "verylong", LSTM == "RNNG"))
+
+summary(mj.long)
+summary(mg.long)
+summary(mr.long)
+
+# Found significant anti-digging-in effects.
+
+
+# Using the comma as the blocker:
+
+# Compare short vs. verylong.
+
+mj.verylong = lmer(surprisal ~ comma.numeric * length.short.long + (1+comma.numeric+length.short.long|sent_index), 
+          data=filter(dc, length != "long", LSTM == "JRNN", blocker == "noblocker"))
+mg.verylong = lmer(surprisal ~ comma.numeric * length.short.long + (1+comma.numeric+length.short.long|sent_index), 
+          data=filter(dc, length != "long", LSTM == "GRNN", blocker == "noblocker"))
+mr.verylong = lmer(surprisal ~ comma.numeric * length.short.long + (1+comma.numeric+length.short.long|sent_index), 
+          data=filter(dc, length != "long", LSTM == "RNNG", blocker == "noblocker"))
+mt.verylong = lmer(surprisal ~ comma.numeric * length.short.long + (1+comma.numeric+length.short.long|sent_index), 
+          data=filter(dc, length != "long", LSTM == "tinylstm", blocker == "noblocker"))
+
+
+summary(mj.verylong)
+summary(mg.verylong)
+summary(mr.verylong)
+summary(mt.verylong)
+
+
+# Found significant anti-digging-in effects for Gulordava, not for Jozefowicz
+
+# Use length as a numerical predictor.
+mj.numeric = lmer(surprisal ~ comma.numeric * length.numeric + (1+comma.numeric+length.numeric|sent_index), 
+          data=filter(dc, LSTM == "JRNN", blocker == "noblocker"))
+mg.numeric = lmer(surprisal ~ comma.numeric * length.numeric + (1+comma.numeric+length.numeric|sent_index), 
+          data=filter(dc, LSTM == "GRNN", blocker == "noblocker"))
+mr.numeric = lmer(surprisal ~ comma.numeric * length.numeric + (1+comma.numeric+length.numeric|sent_index), 
+          data=filter(dc, LSTM == "RNNG", blocker == "noblocker"))
+mt.numeric = lmer(surprisal ~ comma.numeric * length.numeric + (1+comma.numeric+length.numeric|sent_index), 
+          data=filter(dc, LSTM == "tinylstm", blocker == "noblocker"))
+
+
+summary(mj.numeric)
+summary(mg.numeric)
+
+
+# Found significant negative effect for Gulordava, not for Jozefowicz.
+
+```
+
+
+

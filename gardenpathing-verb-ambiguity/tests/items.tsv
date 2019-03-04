@@ -1,0 +1,3509 @@
+	sent_index	word_index	word	region	condition
+0	0	0	The	Start	unambig_unreduced_short
+1	0	1	woman	Noun	unambig_unreduced_short
+2	0	2	who	Unreduced content	unambig_unreduced_short
+3	0	3	was	Unreduced content	unambig_unreduced_short
+4	0	4	given	Unambiguous verb	unambig_unreduced_short
+5	0	5	the	RC contents	unambig_unreduced_short
+6	0	6	sandwich	RC contents	unambig_unreduced_short
+7	0	7	from	RC contents	unambig_unreduced_short
+8	0	8	the	RC contents	unambig_unreduced_short
+9	0	9	kitchen	RC contents	unambig_unreduced_short
+10	0	10	tripped	Disambiguator	unambig_unreduced_short
+11	0	11	on	End	unambig_unreduced_short
+12	0	12	the	End	unambig_unreduced_short
+13	0	13	carpet	End	unambig_unreduced_short
+14	0	14	.	End	unambig_unreduced_short
+15	0	15	<eos>	End	unambig_unreduced_short
+16	1	0	The	Start	unambig_unreduced_short
+17	1	1	captive	Noun	unambig_unreduced_short
+18	1	2	who	Unreduced content	unambig_unreduced_short
+19	1	3	was	Unreduced content	unambig_unreduced_short
+20	1	4	taken	Unambiguous verb	unambig_unreduced_short
+21	1	5	into	RC contents	unambig_unreduced_short
+22	1	6	the	RC contents	unambig_unreduced_short
+23	1	7	dark	RC contents	unambig_unreduced_short
+24	1	8	cave	RC contents	unambig_unreduced_short
+25	1	9	tried	Disambiguator	unambig_unreduced_short
+26	1	10	to	End	unambig_unreduced_short
+27	1	11	escape	End	unambig_unreduced_short
+28	1	12	but	End	unambig_unreduced_short
+29	1	13	failed	End	unambig_unreduced_short
+30	1	14	.	End	unambig_unreduced_short
+31	1	15	<eos>	End	unambig_unreduced_short
+32	2	0	The	Start	unambig_unreduced_short
+33	2	1	prisoners	Noun	unambig_unreduced_short
+34	2	2	who	Unreduced content	unambig_unreduced_short
+35	2	3	were	Unreduced content	unambig_unreduced_short
+36	2	4	beaten	Unambiguous verb	unambig_unreduced_short
+37	2	5	for	RC contents	unambig_unreduced_short
+38	2	6	hours	RC contents	unambig_unreduced_short
+39	2	7	and	RC contents	unambig_unreduced_short
+40	2	8	hours	RC contents	unambig_unreduced_short
+41	2	9	confessed	Disambiguator	unambig_unreduced_short
+42	2	10	to	End	unambig_unreduced_short
+43	2	11	crimes	End	unambig_unreduced_short
+44	2	12	they	End	unambig_unreduced_short
+45	2	13	never	End	unambig_unreduced_short
+46	2	14	committed	End	unambig_unreduced_short
+47	2	15	.	End	unambig_unreduced_short
+48	2	16	<eos>	End	unambig_unreduced_short
+49	3	0	The	Start	unambig_unreduced_short
+50	3	1	business	Noun	unambig_unreduced_short
+51	3	2	that	Unreduced content	unambig_unreduced_short
+52	3	3	was	Unreduced content	unambig_unreduced_short
+53	3	4	grown	Unambiguous verb	unambig_unreduced_short
+54	3	5	into	RC contents	unambig_unreduced_short
+55	3	6	an	RC contents	unambig_unreduced_short
+56	3	7	empire	RC contents	unambig_unreduced_short
+57	3	8	was	Disambiguator	unambig_unreduced_short
+58	3	9	sold	End	unambig_unreduced_short
+59	3	10	for	End	unambig_unreduced_short
+60	3	11	billions	End	unambig_unreduced_short
+61	3	12	of	End	unambig_unreduced_short
+62	3	13	dollars	End	unambig_unreduced_short
+63	3	14	.	End	unambig_unreduced_short
+64	3	15	<eos>	End	unambig_unreduced_short
+65	4	0	The	Start	unambig_unreduced_short
+66	4	1	rats	Noun	unambig_unreduced_short
+67	4	2	that	Unreduced content	unambig_unreduced_short
+68	4	3	were	Unreduced content	unambig_unreduced_short
+69	4	4	eaten	Unambiguous verb	unambig_unreduced_short
+70	4	5	rapidly	RC contents	unambig_unreduced_short
+71	4	6	and	RC contents	unambig_unreduced_short
+72	4	7	entirely	RC contents	unambig_unreduced_short
+73	4	8	were	Disambiguator	unambig_unreduced_short
+74	4	9	digested	End	unambig_unreduced_short
+75	4	10	in	End	unambig_unreduced_short
+76	4	11	the	End	unambig_unreduced_short
+77	4	12	belly	End	unambig_unreduced_short
+78	4	13	of	End	unambig_unreduced_short
+79	4	14	the	End	unambig_unreduced_short
+80	4	15	cat	End	unambig_unreduced_short
+81	4	16	.	End	unambig_unreduced_short
+82	4	17	<eos>	End	unambig_unreduced_short
+83	5	0	The	Start	unambig_unreduced_short
+84	5	1	lawyer	Noun	unambig_unreduced_short
+85	5	2	that	Unreduced content	unambig_unreduced_short
+86	5	3	was	Unreduced content	unambig_unreduced_short
+87	5	4	sworn	Unambiguous verb	unambig_unreduced_short
+88	5	5	to	RC contents	unambig_unreduced_short
+89	5	6	complete	RC contents	unambig_unreduced_short
+90	5	7	secrecy	RC contents	unambig_unreduced_short
+91	5	8	was	Disambiguator	unambig_unreduced_short
+92	5	9	discovered	End	unambig_unreduced_short
+93	5	10	to	End	unambig_unreduced_short
+94	5	11	have	End	unambig_unreduced_short
+95	5	12	broken	End	unambig_unreduced_short
+96	5	13	his	End	unambig_unreduced_short
+97	5	14	promise	End	unambig_unreduced_short
+98	5	15	.	End	unambig_unreduced_short
+99	5	16	<eos>	End	unambig_unreduced_short
+100	6	0	The	Start	unambig_unreduced_short
+101	6	1	child	Noun	unambig_unreduced_short
+102	6	2	who	Unreduced content	unambig_unreduced_short
+103	6	3	was	Unreduced content	unambig_unreduced_short
+104	6	4	forgotten	Unambiguous verb	unambig_unreduced_short
+105	6	5	in	RC contents	unambig_unreduced_short
+106	6	6	the	RC contents	unambig_unreduced_short
+107	6	7	chaos	RC contents	unambig_unreduced_short
+108	6	8	found	Disambiguator	unambig_unreduced_short
+109	6	9	her	End	unambig_unreduced_short
+110	6	10	way	End	unambig_unreduced_short
+111	6	11	back	End	unambig_unreduced_short
+112	6	12	home	End	unambig_unreduced_short
+113	6	13	.	End	unambig_unreduced_short
+114	6	14	<eos>	End	unambig_unreduced_short
+115	7	0	The	Start	unambig_unreduced_short
+116	7	1	horses	Noun	unambig_unreduced_short
+117	7	2	that	Unreduced content	unambig_unreduced_short
+118	7	3	were	Unreduced content	unambig_unreduced_short
+119	7	4	ridden	Unambiguous verb	unambig_unreduced_short
+120	7	5	past	RC contents	unambig_unreduced_short
+121	7	6	the	RC contents	unambig_unreduced_short
+122	7	7	barn	RC contents	unambig_unreduced_short
+123	7	8	fell	Disambiguator	unambig_unreduced_short
+124	7	9	into	End	unambig_unreduced_short
+125	7	10	a	End	unambig_unreduced_short
+126	7	11	ditch	End	unambig_unreduced_short
+127	7	12	.	End	unambig_unreduced_short
+128	7	13	<eos>	End	unambig_unreduced_short
+129	8	0	The	Start	unambig_unreduced_short
+130	8	1	artist	Noun	unambig_unreduced_short
+131	8	2	who	Unreduced content	unambig_unreduced_short
+132	8	3	was	Unreduced content	unambig_unreduced_short
+133	8	4	drawn	Unambiguous verb	unambig_unreduced_short
+134	8	5	a	RC contents	unambig_unreduced_short
+135	8	6	hasty	RC contents	unambig_unreduced_short
+136	8	7	portrait	RC contents	unambig_unreduced_short
+137	8	8	was	Disambiguator	unambig_unreduced_short
+138	8	9	impressed	End	unambig_unreduced_short
+139	8	10	with	End	unambig_unreduced_short
+140	8	11	the	End	unambig_unreduced_short
+141	8	12	work	End	unambig_unreduced_short
+142	8	13	.	End	unambig_unreduced_short
+143	8	14	<eos>	End	unambig_unreduced_short
+144	9	0	The	Start	unambig_unreduced_short
+145	9	1	car	Noun	unambig_unreduced_short
+146	9	2	that	Unreduced content	unambig_unreduced_short
+147	9	3	was	Unreduced content	unambig_unreduced_short
+148	9	4	driven	Unambiguous verb	unambig_unreduced_short
+149	9	5	into	RC contents	unambig_unreduced_short
+150	9	6	the	RC contents	unambig_unreduced_short
+151	9	7	garage	RC contents	unambig_unreduced_short
+152	9	8	crashed	Disambiguator	unambig_unreduced_short
+153	9	9	into	End	unambig_unreduced_short
+154	9	10	a	End	unambig_unreduced_short
+155	9	11	concrete	End	unambig_unreduced_short
+156	9	12	pillar	End	unambig_unreduced_short
+157	9	13	.	End	unambig_unreduced_short
+158	9	14	<eos>	End	unambig_unreduced_short
+159	10	0	The	Start	unambig_unreduced_short
+160	10	1	campaign	Noun	unambig_unreduced_short
+161	10	2	that	Unreduced content	unambig_unreduced_short
+162	10	3	was	Unreduced content	unambig_unreduced_short
+163	10	4	known	Unambiguous verb	unambig_unreduced_short
+164	10	5	to	RC contents	unambig_unreduced_short
+165	10	6	be	RC contents	unambig_unreduced_short
+166	10	7	very	RC contents	unambig_unreduced_short
+167	10	8	popular	RC contents	unambig_unreduced_short
+168	10	9	was	Disambiguator	unambig_unreduced_short
+169	10	10	still	End	unambig_unreduced_short
+170	10	11	unsuccessful	End	unambig_unreduced_short
+171	10	12	.	End	unambig_unreduced_short
+172	10	13	<eos>	End	unambig_unreduced_short
+173	11	0	The	Start	unambig_unreduced_short
+174	11	1	student	Noun	unambig_unreduced_short
+175	11	2	who	Unreduced content	unambig_unreduced_short
+176	11	3	was	Unreduced content	unambig_unreduced_short
+177	11	4	written	Unambiguous verb	unambig_unreduced_short
+178	11	5	a	RC contents	unambig_unreduced_short
+179	11	6	carefully	RC contents	unambig_unreduced_short
+180	11	7	worded	RC contents	unambig_unreduced_short
+181	11	8	excuse	RC contents	unambig_unreduced_short
+182	11	9	forgot	Disambiguator	unambig_unreduced_short
+183	11	10	to	End	unambig_unreduced_short
+184	11	11	give	End	unambig_unreduced_short
+185	11	12	it	End	unambig_unreduced_short
+186	11	13	to	End	unambig_unreduced_short
+187	11	14	the	End	unambig_unreduced_short
+188	11	15	teacher	End	unambig_unreduced_short
+189	11	16	.	End	unambig_unreduced_short
+190	11	17	<eos>	End	unambig_unreduced_short
+191	12	0	The	Start	unambig_unreduced_short
+192	12	1	television	Noun	unambig_unreduced_short
+193	12	2	show	Noun	unambig_unreduced_short
+194	12	3	that	Unreduced content	unambig_unreduced_short
+195	12	4	was	Unreduced content	unambig_unreduced_short
+196	12	5	begun	Unambiguous verb	unambig_unreduced_short
+197	12	6	three	RC contents	unambig_unreduced_short
+198	12	7	weeks	RC contents	unambig_unreduced_short
+199	12	8	ago	RC contents	unambig_unreduced_short
+200	12	9	was	Disambiguator	unambig_unreduced_short
+201	12	10	cancelled	End	unambig_unreduced_short
+202	12	11	immediately	End	unambig_unreduced_short
+203	12	12	.	End	unambig_unreduced_short
+204	12	13	<eos>	End	unambig_unreduced_short
+205	13	0	The	Start	unambig_unreduced_short
+206	13	1	boys	Noun	unambig_unreduced_short
+207	13	2	who	Unreduced content	unambig_unreduced_short
+208	13	3	were	Unreduced content	unambig_unreduced_short
+209	13	4	done	Unambiguous verb	unambig_unreduced_short
+210	13	5	an	RC contents	unambig_unreduced_short
+211	13	6	unsolicited	RC contents	unambig_unreduced_short
+212	13	7	favor	RC contents	unambig_unreduced_short
+213	13	8	thanked	Disambiguator	unambig_unreduced_short
+214	13	9	the	End	unambig_unreduced_short
+215	13	10	person	End	unambig_unreduced_short
+216	13	11	who	End	unambig_unreduced_short
+217	13	12	helped	End	unambig_unreduced_short
+218	13	13	them	End	unambig_unreduced_short
+219	13	14	.	End	unambig_unreduced_short
+220	13	15	<eos>	End	unambig_unreduced_short
+221	14	0	The	Start	unambig_unreduced_short
+222	14	1	player	Noun	unambig_unreduced_short
+223	14	2	who	Unreduced content	unambig_unreduced_short
+224	14	3	was	Unreduced content	unambig_unreduced_short
+225	14	4	thrown	Unambiguous verb	unambig_unreduced_short
+226	14	5	the	RC contents	unambig_unreduced_short
+227	14	6	plastic	RC contents	unambig_unreduced_short
+228	14	7	frisbee	RC contents	unambig_unreduced_short
+229	14	8	dropped	Disambiguator	unambig_unreduced_short
+230	14	9	it	End	unambig_unreduced_short
+231	14	10	on	End	unambig_unreduced_short
+232	14	11	the	End	unambig_unreduced_short
+233	14	12	ground	End	unambig_unreduced_short
+234	14	13	.	End	unambig_unreduced_short
+235	14	14	<eos>	End	unambig_unreduced_short
+236	15	0	The	Start	unambig_unreduced_short
+237	15	1	man	Noun	unambig_unreduced_short
+238	15	2	who	Unreduced content	unambig_unreduced_short
+239	15	3	was	Unreduced content	unambig_unreduced_short
+240	15	4	bitten	Unambiguous verb	unambig_unreduced_short
+241	15	5	deeply	RC contents	unambig_unreduced_short
+242	15	6	and	RC contents	unambig_unreduced_short
+243	15	7	fatally	RC contents	unambig_unreduced_short
+244	15	8	died	Disambiguator	unambig_unreduced_short
+245	15	9	very	End	unambig_unreduced_short
+246	15	10	quickly	End	unambig_unreduced_short
+247	15	11	.	End	unambig_unreduced_short
+248	15	12	<eos>	End	unambig_unreduced_short
+249	16	0	The	Start	unambig_unreduced_short
+250	16	1	child	Noun	unambig_unreduced_short
+251	16	2	who	Unreduced content	unambig_unreduced_short
+252	16	3	was	Unreduced content	unambig_unreduced_short
+253	16	4	leapt	Unambiguous verb	unambig_unreduced_short
+254	16	5	completely	RC contents	unambig_unreduced_short
+255	16	6	past	RC contents	unambig_unreduced_short
+256	16	7	was	Disambiguator	unambig_unreduced_short
+257	16	8	upset	End	unambig_unreduced_short
+258	16	9	about	End	unambig_unreduced_short
+259	16	10	it	End	unambig_unreduced_short
+260	16	11	.	End	unambig_unreduced_short
+261	16	12	<eos>	End	unambig_unreduced_short
+262	17	0	The	Start	unambig_unreduced_short
+263	17	1	students	Noun	unambig_unreduced_short
+264	17	2	who	Unreduced content	unambig_unreduced_short
+265	17	3	were	Unreduced content	unambig_unreduced_short
+266	17	4	gotten	Unambiguous verb	unambig_unreduced_short
+267	17	5	a	RC contents	unambig_unreduced_short
+268	17	6	fancy	RC contents	unambig_unreduced_short
+269	17	7	dinner	RC contents	unambig_unreduced_short
+270	17	8	ate	Disambiguator	unambig_unreduced_short
+271	17	9	the	End	unambig_unreduced_short
+272	17	10	meal	End	unambig_unreduced_short
+273	17	11	quickly	End	unambig_unreduced_short
+274	17	12	.	End	unambig_unreduced_short
+275	17	13	<eos>	End	unambig_unreduced_short
+276	18	0	The	Start	unambig_unreduced_short
+277	18	1	infant	Noun	unambig_unreduced_short
+278	18	2	that	Unreduced content	unambig_unreduced_short
+279	18	3	was	Unreduced content	unambig_unreduced_short
+280	18	4	woken	Unambiguous verb	unambig_unreduced_short
+281	18	5	during	RC contents	unambig_unreduced_short
+282	18	6	the	RC contents	unambig_unreduced_short
+283	18	7	night	RC contents	unambig_unreduced_short
+284	18	8	cried	Disambiguator	unambig_unreduced_short
+285	18	9	intensely	End	unambig_unreduced_short
+286	18	10	.	End	unambig_unreduced_short
+287	18	11	<eos>	End	unambig_unreduced_short
+288	19	0	The	Start	unambig_unreduced_short
+289	19	1	convict	Noun	unambig_unreduced_short
+290	19	2	who	Unreduced content	unambig_unreduced_short
+291	19	3	was	Unreduced content	unambig_unreduced_short
+292	19	4	hidden	Unambiguous verb	unambig_unreduced_short
+293	19	5	away	RC contents	unambig_unreduced_short
+294	19	6	in	RC contents	unambig_unreduced_short
+295	19	7	the	RC contents	unambig_unreduced_short
+296	19	8	basement	RC contents	unambig_unreduced_short
+297	19	9	escaped	Disambiguator	unambig_unreduced_short
+298	19	10	during	End	unambig_unreduced_short
+299	19	11	the	End	unambig_unreduced_short
+300	19	12	night	End	unambig_unreduced_short
+301	19	13	.	End	unambig_unreduced_short
+302	19	14	<eos>	End	unambig_unreduced_short
+303	20	0	The	Start	unambig_unreduced_short
+304	20	1	dog	Noun	unambig_unreduced_short
+305	20	2	that	Unreduced content	unambig_unreduced_short
+306	20	3	was	Unreduced content	unambig_unreduced_short
+307	20	4	seen	Unambiguous verb	unambig_unreduced_short
+308	20	5	on	RC contents	unambig_unreduced_short
+309	20	6	the	RC contents	unambig_unreduced_short
+310	20	7	boardwalk	RC contents	unambig_unreduced_short
+311	20	8	barked	Disambiguator	unambig_unreduced_short
+312	20	9	at	End	unambig_unreduced_short
+313	20	10	the	End	unambig_unreduced_short
+314	20	11	onlookers	End	unambig_unreduced_short
+315	20	12	.	End	unambig_unreduced_short
+316	20	13	<eos>	End	unambig_unreduced_short
+317	21	0	The	Start	unambig_unreduced_short
+318	21	1	ship	Noun	unambig_unreduced_short
+319	21	2	that	Unreduced content	unambig_unreduced_short
+320	21	3	was	Unreduced content	unambig_unreduced_short
+321	21	4	blown	Unambiguous verb	unambig_unreduced_short
+322	21	5	off	RC contents	unambig_unreduced_short
+323	21	6	course	RC contents	unambig_unreduced_short
+324	21	7	sank	Disambiguator	unambig_unreduced_short
+325	21	8	on	End	unambig_unreduced_short
+326	21	9	the	End	unambig_unreduced_short
+327	21	10	reef	End	unambig_unreduced_short
+328	21	11	.	End	unambig_unreduced_short
+329	21	12	<eos>	End	unambig_unreduced_short
+330	22	0	The	Start	unambig_unreduced_short
+331	22	1	balloon	Noun	unambig_unreduced_short
+332	22	2	that	Unreduced content	unambig_unreduced_short
+333	22	3	was	Unreduced content	unambig_unreduced_short
+334	22	4	shrunk	Unambiguous verb	unambig_unreduced_short
+335	22	5	to	RC contents	unambig_unreduced_short
+336	22	6	a	RC contents	unambig_unreduced_short
+337	22	7	small	RC contents	unambig_unreduced_short
+338	22	8	size	RC contents	unambig_unreduced_short
+339	22	9	popped	Disambiguator	unambig_unreduced_short
+340	22	10	with	End	unambig_unreduced_short
+341	22	11	a	End	unambig_unreduced_short
+342	22	12	bang	End	unambig_unreduced_short
+343	22	13	.	End	unambig_unreduced_short
+344	22	14	<eos>	End	unambig_unreduced_short
+345	23	0	The	Start	unambig_unreduced_short
+346	23	1	boat	Noun	unambig_unreduced_short
+347	23	2	that	Unreduced content	unambig_unreduced_short
+348	23	3	was	Unreduced content	unambig_unreduced_short
+349	23	4	sunk	Unambiguous verb	unambig_unreduced_short
+350	23	5	in	RC contents	unambig_unreduced_short
+351	23	6	the	RC contents	unambig_unreduced_short
+352	23	7	lake	RC contents	unambig_unreduced_short
+353	23	8	disappeared	Disambiguator	unambig_unreduced_short
+354	23	9	in	End	unambig_unreduced_short
+355	23	10	the	End	unambig_unreduced_short
+356	23	11	storm	End	unambig_unreduced_short
+357	23	12	.	End	unambig_unreduced_short
+358	23	13	<eos>	End	unambig_unreduced_short
+359	24	0	The	Start	unambig_unreduced_short
+360	24	1	couple	Noun	unambig_unreduced_short
+361	24	2	that	Unreduced content	unambig_unreduced_short
+362	24	3	was	Unreduced content	unambig_unreduced_short
+363	24	4	shown	Unambiguous verb	unambig_unreduced_short
+364	24	5	the	RC contents	unambig_unreduced_short
+365	24	6	apartment	RC contents	unambig_unreduced_short
+366	24	7	moved	Disambiguator	unambig_unreduced_short
+367	24	8	to	End	unambig_unreduced_short
+368	24	9	a	End	unambig_unreduced_short
+369	24	10	different	End	unambig_unreduced_short
+370	24	11	city	End	unambig_unreduced_short
+371	24	12	.	End	unambig_unreduced_short
+372	24	13	<eos>	End	unambig_unreduced_short
+373	25	0	The	Start	unambig_unreduced_short
+374	25	1	girl	Noun	unambig_unreduced_short
+375	25	2	who	Unreduced content	unambig_unreduced_short
+376	25	3	was	Unreduced content	unambig_unreduced_short
+377	25	4	woven	Unambiguous verb	unambig_unreduced_short
+378	25	5	a	RC contents	unambig_unreduced_short
+379	25	6	new	RC contents	unambig_unreduced_short
+380	25	7	shawl	RC contents	unambig_unreduced_short
+381	25	8	lost	Disambiguator	unambig_unreduced_short
+382	25	9	it	End	unambig_unreduced_short
+383	25	10	during	End	unambig_unreduced_short
+384	25	11	the	End	unambig_unreduced_short
+385	25	12	trip	End	unambig_unreduced_short
+386	25	13	.	End	unambig_unreduced_short
+387	25	14	<eos>	End	unambig_unreduced_short
+388	26	0	The	Start	unambig_unreduced_short
+389	26	1	airplane	Noun	unambig_unreduced_short
+390	26	2	that	Unreduced content	unambig_unreduced_short
+391	26	3	was	Unreduced content	unambig_unreduced_short
+392	26	4	flown	Unambiguous verb	unambig_unreduced_short
+393	26	5	in	RC contents	unambig_unreduced_short
+394	26	6	the	RC contents	unambig_unreduced_short
+395	26	7	arctic	RC contents	unambig_unreduced_short
+396	26	8	froze	Disambiguator	unambig_unreduced_short
+397	26	9	during	End	unambig_unreduced_short
+398	26	10	the	End	unambig_unreduced_short
+399	26	11	ice	End	unambig_unreduced_short
+400	26	12	storm	End	unambig_unreduced_short
+401	26	13	.	End	unambig_unreduced_short
+402	26	14	<eos>	End	unambig_unreduced_short
+403	27	0	The	Start	unambig_unreduced_short
+404	27	1	toddler	Noun	unambig_unreduced_short
+405	27	2	that	Unreduced content	unambig_unreduced_short
+406	27	3	was	Unreduced content	unambig_unreduced_short
+407	27	4	borne	Unambiguous verb	unambig_unreduced_short
+408	27	5	down	RC contents	unambig_unreduced_short
+409	27	6	the	RC contents	unambig_unreduced_short
+410	27	7	hallway	RC contents	unambig_unreduced_short
+411	27	8	sobbed	Disambiguator	unambig_unreduced_short
+412	27	9	at	End	unambig_unreduced_short
+413	27	10	the	End	unambig_unreduced_short
+414	27	11	top	End	unambig_unreduced_short
+415	27	12	of	End	unambig_unreduced_short
+416	27	13	his	End	unambig_unreduced_short
+417	27	14	lungs	End	unambig_unreduced_short
+418	27	15	.	End	unambig_unreduced_short
+419	27	16	<eos>	End	unambig_unreduced_short
+420	0	0	The	Start	ambig_unreduced_short
+421	0	1	woman	Noun	ambig_unreduced_short
+422	0	2	who	Unreduced content	ambig_unreduced_short
+423	0	3	was	Unreduced content	ambig_unreduced_short
+424	0	4	brought	Ambiguous verb	ambig_unreduced_short
+425	0	5	the	RC contents	ambig_unreduced_short
+426	0	6	sandwich	RC contents	ambig_unreduced_short
+427	0	7	from	RC contents	ambig_unreduced_short
+428	0	8	the	RC contents	ambig_unreduced_short
+429	0	9	kitchen	RC contents	ambig_unreduced_short
+430	0	10	tripped	Disambiguator	ambig_unreduced_short
+431	0	11	on	End	ambig_unreduced_short
+432	0	12	the	End	ambig_unreduced_short
+433	0	13	carpet	End	ambig_unreduced_short
+434	0	14	.	End	ambig_unreduced_short
+435	0	15	<eos>	End	ambig_unreduced_short
+436	1	0	The	Start	ambig_unreduced_short
+437	1	1	captive	Noun	ambig_unreduced_short
+438	1	2	who	Unreduced content	ambig_unreduced_short
+439	1	3	was	Unreduced content	ambig_unreduced_short
+440	1	4	walked	Ambiguous verb	ambig_unreduced_short
+441	1	5	into	RC contents	ambig_unreduced_short
+442	1	6	the	RC contents	ambig_unreduced_short
+443	1	7	dark	RC contents	ambig_unreduced_short
+444	1	8	cave	RC contents	ambig_unreduced_short
+445	1	9	tried	Disambiguator	ambig_unreduced_short
+446	1	10	to	End	ambig_unreduced_short
+447	1	11	escape	End	ambig_unreduced_short
+448	1	12	but	End	ambig_unreduced_short
+449	1	13	failed	End	ambig_unreduced_short
+450	1	14	.	End	ambig_unreduced_short
+451	1	15	<eos>	End	ambig_unreduced_short
+452	2	0	The	Start	ambig_unreduced_short
+453	2	1	prisoners	Noun	ambig_unreduced_short
+454	2	2	who	Unreduced content	ambig_unreduced_short
+455	2	3	were	Unreduced content	ambig_unreduced_short
+456	2	4	pounded	Ambiguous verb	ambig_unreduced_short
+457	2	5	for	RC contents	ambig_unreduced_short
+458	2	6	hours	RC contents	ambig_unreduced_short
+459	2	7	and	RC contents	ambig_unreduced_short
+460	2	8	hours	RC contents	ambig_unreduced_short
+461	2	9	confessed	Disambiguator	ambig_unreduced_short
+462	2	10	to	End	ambig_unreduced_short
+463	2	11	crimes	End	ambig_unreduced_short
+464	2	12	they	End	ambig_unreduced_short
+465	2	13	never	End	ambig_unreduced_short
+466	2	14	committed	End	ambig_unreduced_short
+467	2	15	.	End	ambig_unreduced_short
+468	2	16	<eos>	End	ambig_unreduced_short
+469	3	0	The	Start	ambig_unreduced_short
+470	3	1	business	Noun	ambig_unreduced_short
+471	3	2	that	Unreduced content	ambig_unreduced_short
+472	3	3	was	Unreduced content	ambig_unreduced_short
+473	3	4	expanded	Ambiguous verb	ambig_unreduced_short
+474	3	5	into	RC contents	ambig_unreduced_short
+475	3	6	an	RC contents	ambig_unreduced_short
+476	3	7	empire	RC contents	ambig_unreduced_short
+477	3	8	was	Disambiguator	ambig_unreduced_short
+478	3	9	sold	End	ambig_unreduced_short
+479	3	10	for	End	ambig_unreduced_short
+480	3	11	billions	End	ambig_unreduced_short
+481	3	12	of	End	ambig_unreduced_short
+482	3	13	dollars	End	ambig_unreduced_short
+483	3	14	.	End	ambig_unreduced_short
+484	3	15	<eos>	End	ambig_unreduced_short
+485	4	0	The	Start	ambig_unreduced_short
+486	4	1	rats	Noun	ambig_unreduced_short
+487	4	2	that	Unreduced content	ambig_unreduced_short
+488	4	3	were	Unreduced content	ambig_unreduced_short
+489	4	4	consumed	Ambiguous verb	ambig_unreduced_short
+490	4	5	rapidly	RC contents	ambig_unreduced_short
+491	4	6	and	RC contents	ambig_unreduced_short
+492	4	7	entirely	RC contents	ambig_unreduced_short
+493	4	8	were	Disambiguator	ambig_unreduced_short
+494	4	9	digested	End	ambig_unreduced_short
+495	4	10	in	End	ambig_unreduced_short
+496	4	11	the	End	ambig_unreduced_short
+497	4	12	belly	End	ambig_unreduced_short
+498	4	13	of	End	ambig_unreduced_short
+499	4	14	the	End	ambig_unreduced_short
+500	4	15	cat	End	ambig_unreduced_short
+501	4	16	.	End	ambig_unreduced_short
+502	4	17	<eos>	End	ambig_unreduced_short
+503	5	0	The	Start	ambig_unreduced_short
+504	5	1	lawyer	Noun	ambig_unreduced_short
+505	5	2	that	Unreduced content	ambig_unreduced_short
+506	5	3	was	Unreduced content	ambig_unreduced_short
+507	5	4	pledged	Ambiguous verb	ambig_unreduced_short
+508	5	5	to	RC contents	ambig_unreduced_short
+509	5	6	complete	RC contents	ambig_unreduced_short
+510	5	7	secrecy	RC contents	ambig_unreduced_short
+511	5	8	was	Disambiguator	ambig_unreduced_short
+512	5	9	discovered	End	ambig_unreduced_short
+513	5	10	to	End	ambig_unreduced_short
+514	5	11	have	End	ambig_unreduced_short
+515	5	12	broken	End	ambig_unreduced_short
+516	5	13	his	End	ambig_unreduced_short
+517	5	14	promise	End	ambig_unreduced_short
+518	5	15	.	End	ambig_unreduced_short
+519	5	16	<eos>	End	ambig_unreduced_short
+520	6	0	The	Start	ambig_unreduced_short
+521	6	1	child	Noun	ambig_unreduced_short
+522	6	2	who	Unreduced content	ambig_unreduced_short
+523	6	3	was	Unreduced content	ambig_unreduced_short
+524	6	4	neglected	Ambiguous verb	ambig_unreduced_short
+525	6	5	in	RC contents	ambig_unreduced_short
+526	6	6	the	RC contents	ambig_unreduced_short
+527	6	7	chaos	RC contents	ambig_unreduced_short
+528	6	8	found	Disambiguator	ambig_unreduced_short
+529	6	9	her	End	ambig_unreduced_short
+530	6	10	way	End	ambig_unreduced_short
+531	6	11	back	End	ambig_unreduced_short
+532	6	12	home	End	ambig_unreduced_short
+533	6	13	.	End	ambig_unreduced_short
+534	6	14	<eos>	End	ambig_unreduced_short
+535	7	0	The	Start	ambig_unreduced_short
+536	7	1	horses	Noun	ambig_unreduced_short
+537	7	2	that	Unreduced content	ambig_unreduced_short
+538	7	3	were	Unreduced content	ambig_unreduced_short
+539	7	4	raced	Ambiguous verb	ambig_unreduced_short
+540	7	5	past	RC contents	ambig_unreduced_short
+541	7	6	the	RC contents	ambig_unreduced_short
+542	7	7	barn	RC contents	ambig_unreduced_short
+543	7	8	fell	Disambiguator	ambig_unreduced_short
+544	7	9	into	End	ambig_unreduced_short
+545	7	10	a	End	ambig_unreduced_short
+546	7	11	ditch	End	ambig_unreduced_short
+547	7	12	.	End	ambig_unreduced_short
+548	7	13	<eos>	End	ambig_unreduced_short
+549	8	0	The	Start	ambig_unreduced_short
+550	8	1	artist	Noun	ambig_unreduced_short
+551	8	2	who	Unreduced content	ambig_unreduced_short
+552	8	3	was	Unreduced content	ambig_unreduced_short
+553	8	4	sketched	Ambiguous verb	ambig_unreduced_short
+554	8	5	a	RC contents	ambig_unreduced_short
+555	8	6	hasty	RC contents	ambig_unreduced_short
+556	8	7	portrait	RC contents	ambig_unreduced_short
+557	8	8	was	Disambiguator	ambig_unreduced_short
+558	8	9	impressed	End	ambig_unreduced_short
+559	8	10	with	End	ambig_unreduced_short
+560	8	11	the	End	ambig_unreduced_short
+561	8	12	work	End	ambig_unreduced_short
+562	8	13	.	End	ambig_unreduced_short
+563	8	14	<eos>	End	ambig_unreduced_short
+564	9	0	The	Start	ambig_unreduced_short
+565	9	1	car	Noun	ambig_unreduced_short
+566	9	2	that	Unreduced content	ambig_unreduced_short
+567	9	3	was	Unreduced content	ambig_unreduced_short
+568	9	4	steered	Ambiguous verb	ambig_unreduced_short
+569	9	5	into	RC contents	ambig_unreduced_short
+570	9	6	the	RC contents	ambig_unreduced_short
+571	9	7	garage	RC contents	ambig_unreduced_short
+572	9	8	crashed	Disambiguator	ambig_unreduced_short
+573	9	9	into	End	ambig_unreduced_short
+574	9	10	a	End	ambig_unreduced_short
+575	9	11	concrete	End	ambig_unreduced_short
+576	9	12	pillar	End	ambig_unreduced_short
+577	9	13	.	End	ambig_unreduced_short
+578	9	14	<eos>	End	ambig_unreduced_short
+579	10	0	The	Start	ambig_unreduced_short
+580	10	1	campaign	Noun	ambig_unreduced_short
+581	10	2	that	Unreduced content	ambig_unreduced_short
+582	10	3	was	Unreduced content	ambig_unreduced_short
+583	10	4	intended	Ambiguous verb	ambig_unreduced_short
+584	10	5	to	RC contents	ambig_unreduced_short
+585	10	6	be	RC contents	ambig_unreduced_short
+586	10	7	very	RC contents	ambig_unreduced_short
+587	10	8	popular	RC contents	ambig_unreduced_short
+588	10	9	was	Disambiguator	ambig_unreduced_short
+589	10	10	still	End	ambig_unreduced_short
+590	10	11	unsuccessful	End	ambig_unreduced_short
+591	10	12	.	End	ambig_unreduced_short
+592	10	13	<eos>	End	ambig_unreduced_short
+593	11	0	The	Start	ambig_unreduced_short
+594	11	1	student	Noun	ambig_unreduced_short
+595	11	2	who	Unreduced content	ambig_unreduced_short
+596	11	3	was	Unreduced content	ambig_unreduced_short
+597	11	4	composed	Ambiguous verb	ambig_unreduced_short
+598	11	5	a	RC contents	ambig_unreduced_short
+599	11	6	carefully	RC contents	ambig_unreduced_short
+600	11	7	worded	RC contents	ambig_unreduced_short
+601	11	8	excuse	RC contents	ambig_unreduced_short
+602	11	9	forgot	Disambiguator	ambig_unreduced_short
+603	11	10	to	End	ambig_unreduced_short
+604	11	11	give	End	ambig_unreduced_short
+605	11	12	it	End	ambig_unreduced_short
+606	11	13	to	End	ambig_unreduced_short
+607	11	14	the	End	ambig_unreduced_short
+608	11	15	teacher	End	ambig_unreduced_short
+609	11	16	.	End	ambig_unreduced_short
+610	11	17	<eos>	End	ambig_unreduced_short
+611	12	0	The	Start	ambig_unreduced_short
+612	12	1	television	Noun	ambig_unreduced_short
+613	12	2	show	Noun	ambig_unreduced_short
+614	12	3	that	Unreduced content	ambig_unreduced_short
+615	12	4	was	Unreduced content	ambig_unreduced_short
+616	12	5	started	Ambiguous verb	ambig_unreduced_short
+617	12	6	three	RC contents	ambig_unreduced_short
+618	12	7	weeks	RC contents	ambig_unreduced_short
+619	12	8	ago	RC contents	ambig_unreduced_short
+620	12	9	was	Disambiguator	ambig_unreduced_short
+621	12	10	cancelled	End	ambig_unreduced_short
+622	12	11	immediately	End	ambig_unreduced_short
+623	12	12	.	End	ambig_unreduced_short
+624	12	13	<eos>	End	ambig_unreduced_short
+625	13	0	The	Start	ambig_unreduced_short
+626	13	1	boys	Noun	ambig_unreduced_short
+627	13	2	who	Unreduced content	ambig_unreduced_short
+628	13	3	were	Unreduced content	ambig_unreduced_short
+629	13	4	performed	Ambiguous verb	ambig_unreduced_short
+630	13	5	an	RC contents	ambig_unreduced_short
+631	13	6	unsolicited	RC contents	ambig_unreduced_short
+632	13	7	favor	RC contents	ambig_unreduced_short
+633	13	8	thanked	Disambiguator	ambig_unreduced_short
+634	13	9	the	End	ambig_unreduced_short
+635	13	10	person	End	ambig_unreduced_short
+636	13	11	who	End	ambig_unreduced_short
+637	13	12	helped	End	ambig_unreduced_short
+638	13	13	them	End	ambig_unreduced_short
+639	13	14	.	End	ambig_unreduced_short
+640	13	15	<eos>	End	ambig_unreduced_short
+641	14	0	The	Start	ambig_unreduced_short
+642	14	1	player	Noun	ambig_unreduced_short
+643	14	2	who	Unreduced content	ambig_unreduced_short
+644	14	3	was	Unreduced content	ambig_unreduced_short
+645	14	4	tossed	Ambiguous verb	ambig_unreduced_short
+646	14	5	the	RC contents	ambig_unreduced_short
+647	14	6	plastic	RC contents	ambig_unreduced_short
+648	14	7	frisbee	RC contents	ambig_unreduced_short
+649	14	8	dropped	Disambiguator	ambig_unreduced_short
+650	14	9	it	End	ambig_unreduced_short
+651	14	10	on	End	ambig_unreduced_short
+652	14	11	the	End	ambig_unreduced_short
+653	14	12	ground	End	ambig_unreduced_short
+654	14	13	.	End	ambig_unreduced_short
+655	14	14	<eos>	End	ambig_unreduced_short
+656	15	0	The	Start	ambig_unreduced_short
+657	15	1	man	Noun	ambig_unreduced_short
+658	15	2	who	Unreduced content	ambig_unreduced_short
+659	15	3	was	Unreduced content	ambig_unreduced_short
+660	15	4	stabbed	Ambiguous verb	ambig_unreduced_short
+661	15	5	deeply	RC contents	ambig_unreduced_short
+662	15	6	and	RC contents	ambig_unreduced_short
+663	15	7	fatally	RC contents	ambig_unreduced_short
+664	15	8	died	Disambiguator	ambig_unreduced_short
+665	15	9	very	End	ambig_unreduced_short
+666	15	10	quickly	End	ambig_unreduced_short
+667	15	11	.	End	ambig_unreduced_short
+668	15	12	<eos>	End	ambig_unreduced_short
+669	16	0	The	Start	ambig_unreduced_short
+670	16	1	child	Noun	ambig_unreduced_short
+671	16	2	who	Unreduced content	ambig_unreduced_short
+672	16	3	was	Unreduced content	ambig_unreduced_short
+673	16	4	jumped	Ambiguous verb	ambig_unreduced_short
+674	16	5	completely	RC contents	ambig_unreduced_short
+675	16	6	past	RC contents	ambig_unreduced_short
+676	16	7	was	Disambiguator	ambig_unreduced_short
+677	16	8	upset	End	ambig_unreduced_short
+678	16	9	about	End	ambig_unreduced_short
+679	16	10	it	End	ambig_unreduced_short
+680	16	11	.	End	ambig_unreduced_short
+681	16	12	<eos>	End	ambig_unreduced_short
+682	17	0	The	Start	ambig_unreduced_short
+683	17	1	students	Noun	ambig_unreduced_short
+684	17	2	who	Unreduced content	ambig_unreduced_short
+685	17	3	were	Unreduced content	ambig_unreduced_short
+686	17	4	prepared	Ambiguous verb	ambig_unreduced_short
+687	17	5	a	RC contents	ambig_unreduced_short
+688	17	6	fancy	RC contents	ambig_unreduced_short
+689	17	7	dinner	RC contents	ambig_unreduced_short
+690	17	8	ate	Disambiguator	ambig_unreduced_short
+691	17	9	the	End	ambig_unreduced_short
+692	17	10	meal	End	ambig_unreduced_short
+693	17	11	quickly	End	ambig_unreduced_short
+694	17	12	.	End	ambig_unreduced_short
+695	17	13	<eos>	End	ambig_unreduced_short
+696	18	0	The	Start	ambig_unreduced_short
+697	18	1	infant	Noun	ambig_unreduced_short
+698	18	2	that	Unreduced content	ambig_unreduced_short
+699	18	3	was	Unreduced content	ambig_unreduced_short
+700	18	4	fed	Ambiguous verb	ambig_unreduced_short
+701	18	5	during	RC contents	ambig_unreduced_short
+702	18	6	the	RC contents	ambig_unreduced_short
+703	18	7	night	RC contents	ambig_unreduced_short
+704	18	8	cried	Disambiguator	ambig_unreduced_short
+705	18	9	intensely	End	ambig_unreduced_short
+706	18	10	.	End	ambig_unreduced_short
+707	18	11	<eos>	End	ambig_unreduced_short
+708	19	0	The	Start	ambig_unreduced_short
+709	19	1	convict	Noun	ambig_unreduced_short
+710	19	2	who	Unreduced content	ambig_unreduced_short
+711	19	3	was	Unreduced content	ambig_unreduced_short
+712	19	4	stowed	Ambiguous verb	ambig_unreduced_short
+713	19	5	away	RC contents	ambig_unreduced_short
+714	19	6	in	RC contents	ambig_unreduced_short
+715	19	7	the	RC contents	ambig_unreduced_short
+716	19	8	basement	RC contents	ambig_unreduced_short
+717	19	9	escaped	Disambiguator	ambig_unreduced_short
+718	19	10	during	End	ambig_unreduced_short
+719	19	11	the	End	ambig_unreduced_short
+720	19	12	night	End	ambig_unreduced_short
+721	19	13	.	End	ambig_unreduced_short
+722	19	14	<eos>	End	ambig_unreduced_short
+723	20	0	The	Start	ambig_unreduced_short
+724	20	1	dog	Noun	ambig_unreduced_short
+725	20	2	that	Unreduced content	ambig_unreduced_short
+726	20	3	was	Unreduced content	ambig_unreduced_short
+727	20	4	promenaded	Ambiguous verb	ambig_unreduced_short
+728	20	5	on	RC contents	ambig_unreduced_short
+729	20	6	the	RC contents	ambig_unreduced_short
+730	20	7	boardwalk	RC contents	ambig_unreduced_short
+731	20	8	barked	Disambiguator	ambig_unreduced_short
+732	20	9	at	End	ambig_unreduced_short
+733	20	10	the	End	ambig_unreduced_short
+734	20	11	onlookers	End	ambig_unreduced_short
+735	20	12	.	End	ambig_unreduced_short
+736	20	13	<eos>	End	ambig_unreduced_short
+737	21	0	The	Start	ambig_unreduced_short
+738	21	1	ship	Noun	ambig_unreduced_short
+739	21	2	that	Unreduced content	ambig_unreduced_short
+740	21	3	was	Unreduced content	ambig_unreduced_short
+741	21	4	navigated	Ambiguous verb	ambig_unreduced_short
+742	21	5	off	RC contents	ambig_unreduced_short
+743	21	6	course	RC contents	ambig_unreduced_short
+744	21	7	sank	Disambiguator	ambig_unreduced_short
+745	21	8	on	End	ambig_unreduced_short
+746	21	9	the	End	ambig_unreduced_short
+747	21	10	reef	End	ambig_unreduced_short
+748	21	11	.	End	ambig_unreduced_short
+749	21	12	<eos>	End	ambig_unreduced_short
+750	22	0	The	Start	ambig_unreduced_short
+751	22	1	balloon	Noun	ambig_unreduced_short
+752	22	2	that	Unreduced content	ambig_unreduced_short
+753	22	3	was	Unreduced content	ambig_unreduced_short
+754	22	4	deflated	Ambiguous verb	ambig_unreduced_short
+755	22	5	to	RC contents	ambig_unreduced_short
+756	22	6	a	RC contents	ambig_unreduced_short
+757	22	7	small	RC contents	ambig_unreduced_short
+758	22	8	size	RC contents	ambig_unreduced_short
+759	22	9	popped	Disambiguator	ambig_unreduced_short
+760	22	10	with	End	ambig_unreduced_short
+761	22	11	a	End	ambig_unreduced_short
+762	22	12	bang	End	ambig_unreduced_short
+763	22	13	.	End	ambig_unreduced_short
+764	22	14	<eos>	End	ambig_unreduced_short
+765	23	0	The	Start	ambig_unreduced_short
+766	23	1	boat	Noun	ambig_unreduced_short
+767	23	2	that	Unreduced content	ambig_unreduced_short
+768	23	3	was	Unreduced content	ambig_unreduced_short
+769	23	4	sailed	Ambiguous verb	ambig_unreduced_short
+770	23	5	in	RC contents	ambig_unreduced_short
+771	23	6	the	RC contents	ambig_unreduced_short
+772	23	7	lake	RC contents	ambig_unreduced_short
+773	23	8	disappeared	Disambiguator	ambig_unreduced_short
+774	23	9	in	End	ambig_unreduced_short
+775	23	10	the	End	ambig_unreduced_short
+776	23	11	storm	End	ambig_unreduced_short
+777	23	12	.	End	ambig_unreduced_short
+778	23	13	<eos>	End	ambig_unreduced_short
+779	24	0	The	Start	ambig_unreduced_short
+780	24	1	couple	Noun	ambig_unreduced_short
+781	24	2	that	Unreduced content	ambig_unreduced_short
+782	24	3	was	Unreduced content	ambig_unreduced_short
+783	24	4	bought	Ambiguous verb	ambig_unreduced_short
+784	24	5	the	RC contents	ambig_unreduced_short
+785	24	6	apartment	RC contents	ambig_unreduced_short
+786	24	7	moved	Disambiguator	ambig_unreduced_short
+787	24	8	to	End	ambig_unreduced_short
+788	24	9	a	End	ambig_unreduced_short
+789	24	10	different	End	ambig_unreduced_short
+790	24	11	city	End	ambig_unreduced_short
+791	24	12	.	End	ambig_unreduced_short
+792	24	13	<eos>	End	ambig_unreduced_short
+793	25	0	The	Start	ambig_unreduced_short
+794	25	1	girl	Noun	ambig_unreduced_short
+795	25	2	who	Unreduced content	ambig_unreduced_short
+796	25	3	was	Unreduced content	ambig_unreduced_short
+797	25	4	stitched	Ambiguous verb	ambig_unreduced_short
+798	25	5	a	RC contents	ambig_unreduced_short
+799	25	6	new	RC contents	ambig_unreduced_short
+800	25	7	shawl	RC contents	ambig_unreduced_short
+801	25	8	lost	Disambiguator	ambig_unreduced_short
+802	25	9	it	End	ambig_unreduced_short
+803	25	10	during	End	ambig_unreduced_short
+804	25	11	the	End	ambig_unreduced_short
+805	25	12	trip	End	ambig_unreduced_short
+806	25	13	.	End	ambig_unreduced_short
+807	25	14	<eos>	End	ambig_unreduced_short
+808	26	0	The	Start	ambig_unreduced_short
+809	26	1	airplane	Noun	ambig_unreduced_short
+810	26	2	that	Unreduced content	ambig_unreduced_short
+811	26	3	was	Unreduced content	ambig_unreduced_short
+812	26	4	landed	Ambiguous verb	ambig_unreduced_short
+813	26	5	in	RC contents	ambig_unreduced_short
+814	26	6	the	RC contents	ambig_unreduced_short
+815	26	7	arctic	RC contents	ambig_unreduced_short
+816	26	8	froze	Disambiguator	ambig_unreduced_short
+817	26	9	during	End	ambig_unreduced_short
+818	26	10	the	End	ambig_unreduced_short
+819	26	11	ice	End	ambig_unreduced_short
+820	26	12	storm	End	ambig_unreduced_short
+821	26	13	.	End	ambig_unreduced_short
+822	26	14	<eos>	End	ambig_unreduced_short
+823	27	0	The	Start	ambig_unreduced_short
+824	27	1	toddler	Noun	ambig_unreduced_short
+825	27	2	that	Unreduced content	ambig_unreduced_short
+826	27	3	was	Unreduced content	ambig_unreduced_short
+827	27	4	hurried	Ambiguous verb	ambig_unreduced_short
+828	27	5	down	RC contents	ambig_unreduced_short
+829	27	6	the	RC contents	ambig_unreduced_short
+830	27	7	hallway	RC contents	ambig_unreduced_short
+831	27	8	sobbed	Disambiguator	ambig_unreduced_short
+832	27	9	at	End	ambig_unreduced_short
+833	27	10	the	End	ambig_unreduced_short
+834	27	11	top	End	ambig_unreduced_short
+835	27	12	of	End	ambig_unreduced_short
+836	27	13	his	End	ambig_unreduced_short
+837	27	14	lungs	End	ambig_unreduced_short
+838	27	15	.	End	ambig_unreduced_short
+839	27	16	<eos>	End	ambig_unreduced_short
+840	0	0	The	Start	unambig_reduced_short
+841	0	1	woman	Noun	unambig_reduced_short
+842	0	2	given	Unambiguous verb	unambig_reduced_short
+843	0	3	the	RC contents	unambig_reduced_short
+844	0	4	sandwich	RC contents	unambig_reduced_short
+845	0	5	from	RC contents	unambig_reduced_short
+846	0	6	the	RC contents	unambig_reduced_short
+847	0	7	kitchen	RC contents	unambig_reduced_short
+848	0	8	tripped	Disambiguator	unambig_reduced_short
+849	0	9	on	End	unambig_reduced_short
+850	0	10	the	End	unambig_reduced_short
+851	0	11	carpet	End	unambig_reduced_short
+852	0	12	.	End	unambig_reduced_short
+853	0	13	<eos>	End	unambig_reduced_short
+854	1	0	The	Start	unambig_reduced_short
+855	1	1	captive	Noun	unambig_reduced_short
+856	1	2	taken	Unambiguous verb	unambig_reduced_short
+857	1	3	into	RC contents	unambig_reduced_short
+858	1	4	the	RC contents	unambig_reduced_short
+859	1	5	dark	RC contents	unambig_reduced_short
+860	1	6	cave	RC contents	unambig_reduced_short
+861	1	7	tried	Disambiguator	unambig_reduced_short
+862	1	8	to	End	unambig_reduced_short
+863	1	9	escape	End	unambig_reduced_short
+864	1	10	but	End	unambig_reduced_short
+865	1	11	failed	End	unambig_reduced_short
+866	1	12	.	End	unambig_reduced_short
+867	1	13	<eos>	End	unambig_reduced_short
+868	2	0	The	Start	unambig_reduced_short
+869	2	1	prisoners	Noun	unambig_reduced_short
+870	2	2	beaten	Unambiguous verb	unambig_reduced_short
+871	2	3	for	RC contents	unambig_reduced_short
+872	2	4	hours	RC contents	unambig_reduced_short
+873	2	5	and	RC contents	unambig_reduced_short
+874	2	6	hours	RC contents	unambig_reduced_short
+875	2	7	confessed	Disambiguator	unambig_reduced_short
+876	2	8	to	End	unambig_reduced_short
+877	2	9	crimes	End	unambig_reduced_short
+878	2	10	they	End	unambig_reduced_short
+879	2	11	never	End	unambig_reduced_short
+880	2	12	committed	End	unambig_reduced_short
+881	2	13	.	End	unambig_reduced_short
+882	2	14	<eos>	End	unambig_reduced_short
+883	3	0	The	Start	unambig_reduced_short
+884	3	1	business	Noun	unambig_reduced_short
+885	3	2	grown	Unambiguous verb	unambig_reduced_short
+886	3	3	into	RC contents	unambig_reduced_short
+887	3	4	an	RC contents	unambig_reduced_short
+888	3	5	empire	RC contents	unambig_reduced_short
+889	3	6	was	Disambiguator	unambig_reduced_short
+890	3	7	sold	End	unambig_reduced_short
+891	3	8	for	End	unambig_reduced_short
+892	3	9	billions	End	unambig_reduced_short
+893	3	10	of	End	unambig_reduced_short
+894	3	11	dollars	End	unambig_reduced_short
+895	3	12	.	End	unambig_reduced_short
+896	3	13	<eos>	End	unambig_reduced_short
+897	4	0	The	Start	unambig_reduced_short
+898	4	1	rats	Noun	unambig_reduced_short
+899	4	2	eaten	Unambiguous verb	unambig_reduced_short
+900	4	3	rapidly	RC contents	unambig_reduced_short
+901	4	4	and	RC contents	unambig_reduced_short
+902	4	5	entirely	RC contents	unambig_reduced_short
+903	4	6	were	Disambiguator	unambig_reduced_short
+904	4	7	digested	End	unambig_reduced_short
+905	4	8	in	End	unambig_reduced_short
+906	4	9	the	End	unambig_reduced_short
+907	4	10	belly	End	unambig_reduced_short
+908	4	11	of	End	unambig_reduced_short
+909	4	12	the	End	unambig_reduced_short
+910	4	13	cat	End	unambig_reduced_short
+911	4	14	.	End	unambig_reduced_short
+912	4	15	<eos>	End	unambig_reduced_short
+913	5	0	The	Start	unambig_reduced_short
+914	5	1	lawyer	Noun	unambig_reduced_short
+915	5	2	sworn	Unambiguous verb	unambig_reduced_short
+916	5	3	to	RC contents	unambig_reduced_short
+917	5	4	complete	RC contents	unambig_reduced_short
+918	5	5	secrecy	RC contents	unambig_reduced_short
+919	5	6	was	Disambiguator	unambig_reduced_short
+920	5	7	discovered	End	unambig_reduced_short
+921	5	8	to	End	unambig_reduced_short
+922	5	9	have	End	unambig_reduced_short
+923	5	10	broken	End	unambig_reduced_short
+924	5	11	his	End	unambig_reduced_short
+925	5	12	promise	End	unambig_reduced_short
+926	5	13	.	End	unambig_reduced_short
+927	5	14	<eos>	End	unambig_reduced_short
+928	6	0	The	Start	unambig_reduced_short
+929	6	1	child	Noun	unambig_reduced_short
+930	6	2	forgotten	Unambiguous verb	unambig_reduced_short
+931	6	3	in	RC contents	unambig_reduced_short
+932	6	4	the	RC contents	unambig_reduced_short
+933	6	5	chaos	RC contents	unambig_reduced_short
+934	6	6	found	Disambiguator	unambig_reduced_short
+935	6	7	her	End	unambig_reduced_short
+936	6	8	way	End	unambig_reduced_short
+937	6	9	back	End	unambig_reduced_short
+938	6	10	home	End	unambig_reduced_short
+939	6	11	.	End	unambig_reduced_short
+940	6	12	<eos>	End	unambig_reduced_short
+941	7	0	The	Start	unambig_reduced_short
+942	7	1	horses	Noun	unambig_reduced_short
+943	7	2	ridden	Unambiguous verb	unambig_reduced_short
+944	7	3	past	RC contents	unambig_reduced_short
+945	7	4	the	RC contents	unambig_reduced_short
+946	7	5	barn	RC contents	unambig_reduced_short
+947	7	6	fell	Disambiguator	unambig_reduced_short
+948	7	7	into	End	unambig_reduced_short
+949	7	8	a	End	unambig_reduced_short
+950	7	9	ditch	End	unambig_reduced_short
+951	7	10	.	End	unambig_reduced_short
+952	7	11	<eos>	End	unambig_reduced_short
+953	8	0	The	Start	unambig_reduced_short
+954	8	1	artist	Noun	unambig_reduced_short
+955	8	2	drawn	Unambiguous verb	unambig_reduced_short
+956	8	3	a	RC contents	unambig_reduced_short
+957	8	4	hasty	RC contents	unambig_reduced_short
+958	8	5	portrait	RC contents	unambig_reduced_short
+959	8	6	was	Disambiguator	unambig_reduced_short
+960	8	7	impressed	End	unambig_reduced_short
+961	8	8	with	End	unambig_reduced_short
+962	8	9	the	End	unambig_reduced_short
+963	8	10	work	End	unambig_reduced_short
+964	8	11	.	End	unambig_reduced_short
+965	8	12	<eos>	End	unambig_reduced_short
+966	9	0	The	Start	unambig_reduced_short
+967	9	1	car	Noun	unambig_reduced_short
+968	9	2	driven	Unambiguous verb	unambig_reduced_short
+969	9	3	into	RC contents	unambig_reduced_short
+970	9	4	the	RC contents	unambig_reduced_short
+971	9	5	garage	RC contents	unambig_reduced_short
+972	9	6	crashed	Disambiguator	unambig_reduced_short
+973	9	7	into	End	unambig_reduced_short
+974	9	8	a	End	unambig_reduced_short
+975	9	9	concrete	End	unambig_reduced_short
+976	9	10	pillar	End	unambig_reduced_short
+977	9	11	.	End	unambig_reduced_short
+978	9	12	<eos>	End	unambig_reduced_short
+979	10	0	The	Start	unambig_reduced_short
+980	10	1	campaign	Noun	unambig_reduced_short
+981	10	2	known	Unambiguous verb	unambig_reduced_short
+982	10	3	to	RC contents	unambig_reduced_short
+983	10	4	be	RC contents	unambig_reduced_short
+984	10	5	very	RC contents	unambig_reduced_short
+985	10	6	popular	RC contents	unambig_reduced_short
+986	10	7	was	Disambiguator	unambig_reduced_short
+987	10	8	still	End	unambig_reduced_short
+988	10	9	unsuccessful	End	unambig_reduced_short
+989	10	10	.	End	unambig_reduced_short
+990	10	11	<eos>	End	unambig_reduced_short
+991	11	0	The	Start	unambig_reduced_short
+992	11	1	student	Noun	unambig_reduced_short
+993	11	2	written	Unambiguous verb	unambig_reduced_short
+994	11	3	a	RC contents	unambig_reduced_short
+995	11	4	carefully	RC contents	unambig_reduced_short
+996	11	5	worded	RC contents	unambig_reduced_short
+997	11	6	excuse	RC contents	unambig_reduced_short
+998	11	7	forgot	Disambiguator	unambig_reduced_short
+999	11	8	to	End	unambig_reduced_short
+1000	11	9	give	End	unambig_reduced_short
+1001	11	10	it	End	unambig_reduced_short
+1002	11	11	to	End	unambig_reduced_short
+1003	11	12	the	End	unambig_reduced_short
+1004	11	13	teacher	End	unambig_reduced_short
+1005	11	14	.	End	unambig_reduced_short
+1006	11	15	<eos>	End	unambig_reduced_short
+1007	12	0	The	Start	unambig_reduced_short
+1008	12	1	television	Noun	unambig_reduced_short
+1009	12	2	show	Noun	unambig_reduced_short
+1010	12	3	begun	Unambiguous verb	unambig_reduced_short
+1011	12	4	three	RC contents	unambig_reduced_short
+1012	12	5	weeks	RC contents	unambig_reduced_short
+1013	12	6	ago	RC contents	unambig_reduced_short
+1014	12	7	was	Disambiguator	unambig_reduced_short
+1015	12	8	cancelled	End	unambig_reduced_short
+1016	12	9	immediately	End	unambig_reduced_short
+1017	12	10	.	End	unambig_reduced_short
+1018	12	11	<eos>	End	unambig_reduced_short
+1019	13	0	The	Start	unambig_reduced_short
+1020	13	1	boys	Noun	unambig_reduced_short
+1021	13	2	done	Unambiguous verb	unambig_reduced_short
+1022	13	3	an	RC contents	unambig_reduced_short
+1023	13	4	unsolicited	RC contents	unambig_reduced_short
+1024	13	5	favor	RC contents	unambig_reduced_short
+1025	13	6	thanked	Disambiguator	unambig_reduced_short
+1026	13	7	the	End	unambig_reduced_short
+1027	13	8	person	End	unambig_reduced_short
+1028	13	9	who	End	unambig_reduced_short
+1029	13	10	helped	End	unambig_reduced_short
+1030	13	11	them	End	unambig_reduced_short
+1031	13	12	.	End	unambig_reduced_short
+1032	13	13	<eos>	End	unambig_reduced_short
+1033	14	0	The	Start	unambig_reduced_short
+1034	14	1	player	Noun	unambig_reduced_short
+1035	14	2	thrown	Unambiguous verb	unambig_reduced_short
+1036	14	3	the	RC contents	unambig_reduced_short
+1037	14	4	plastic	RC contents	unambig_reduced_short
+1038	14	5	frisbee	RC contents	unambig_reduced_short
+1039	14	6	dropped	Disambiguator	unambig_reduced_short
+1040	14	7	it	End	unambig_reduced_short
+1041	14	8	on	End	unambig_reduced_short
+1042	14	9	the	End	unambig_reduced_short
+1043	14	10	ground	End	unambig_reduced_short
+1044	14	11	.	End	unambig_reduced_short
+1045	14	12	<eos>	End	unambig_reduced_short
+1046	15	0	The	Start	unambig_reduced_short
+1047	15	1	man	Noun	unambig_reduced_short
+1048	15	2	bitten	Unambiguous verb	unambig_reduced_short
+1049	15	3	deeply	RC contents	unambig_reduced_short
+1050	15	4	and	RC contents	unambig_reduced_short
+1051	15	5	fatally	RC contents	unambig_reduced_short
+1052	15	6	died	Disambiguator	unambig_reduced_short
+1053	15	7	very	End	unambig_reduced_short
+1054	15	8	quickly	End	unambig_reduced_short
+1055	15	9	.	End	unambig_reduced_short
+1056	15	10	<eos>	End	unambig_reduced_short
+1057	16	0	The	Start	unambig_reduced_short
+1058	16	1	child	Noun	unambig_reduced_short
+1059	16	2	leapt	Unambiguous verb	unambig_reduced_short
+1060	16	3	completely	RC contents	unambig_reduced_short
+1061	16	4	past	RC contents	unambig_reduced_short
+1062	16	5	was	Disambiguator	unambig_reduced_short
+1063	16	6	upset	End	unambig_reduced_short
+1064	16	7	about	End	unambig_reduced_short
+1065	16	8	it	End	unambig_reduced_short
+1066	16	9	.	End	unambig_reduced_short
+1067	16	10	<eos>	End	unambig_reduced_short
+1068	17	0	The	Start	unambig_reduced_short
+1069	17	1	students	Noun	unambig_reduced_short
+1070	17	2	gotten	Unambiguous verb	unambig_reduced_short
+1071	17	3	a	RC contents	unambig_reduced_short
+1072	17	4	fancy	RC contents	unambig_reduced_short
+1073	17	5	dinner	RC contents	unambig_reduced_short
+1074	17	6	ate	Disambiguator	unambig_reduced_short
+1075	17	7	the	End	unambig_reduced_short
+1076	17	8	meal	End	unambig_reduced_short
+1077	17	9	quickly	End	unambig_reduced_short
+1078	17	10	.	End	unambig_reduced_short
+1079	17	11	<eos>	End	unambig_reduced_short
+1080	18	0	The	Start	unambig_reduced_short
+1081	18	1	infant	Noun	unambig_reduced_short
+1082	18	2	woken	Unambiguous verb	unambig_reduced_short
+1083	18	3	during	RC contents	unambig_reduced_short
+1084	18	4	the	RC contents	unambig_reduced_short
+1085	18	5	night	RC contents	unambig_reduced_short
+1086	18	6	cried	Disambiguator	unambig_reduced_short
+1087	18	7	intensely	End	unambig_reduced_short
+1088	18	8	.	End	unambig_reduced_short
+1089	18	9	<eos>	End	unambig_reduced_short
+1090	19	0	The	Start	unambig_reduced_short
+1091	19	1	convict	Noun	unambig_reduced_short
+1092	19	2	hidden	Unambiguous verb	unambig_reduced_short
+1093	19	3	away	RC contents	unambig_reduced_short
+1094	19	4	in	RC contents	unambig_reduced_short
+1095	19	5	the	RC contents	unambig_reduced_short
+1096	19	6	basement	RC contents	unambig_reduced_short
+1097	19	7	escaped	Disambiguator	unambig_reduced_short
+1098	19	8	during	End	unambig_reduced_short
+1099	19	9	the	End	unambig_reduced_short
+1100	19	10	night	End	unambig_reduced_short
+1101	19	11	.	End	unambig_reduced_short
+1102	19	12	<eos>	End	unambig_reduced_short
+1103	20	0	The	Start	unambig_reduced_short
+1104	20	1	dog	Noun	unambig_reduced_short
+1105	20	2	seen	Unambiguous verb	unambig_reduced_short
+1106	20	3	on	RC contents	unambig_reduced_short
+1107	20	4	the	RC contents	unambig_reduced_short
+1108	20	5	boardwalk	RC contents	unambig_reduced_short
+1109	20	6	barked	Disambiguator	unambig_reduced_short
+1110	20	7	at	End	unambig_reduced_short
+1111	20	8	the	End	unambig_reduced_short
+1112	20	9	onlookers	End	unambig_reduced_short
+1113	20	10	.	End	unambig_reduced_short
+1114	20	11	<eos>	End	unambig_reduced_short
+1115	21	0	The	Start	unambig_reduced_short
+1116	21	1	ship	Noun	unambig_reduced_short
+1117	21	2	blown	Unambiguous verb	unambig_reduced_short
+1118	21	3	off	RC contents	unambig_reduced_short
+1119	21	4	course	RC contents	unambig_reduced_short
+1120	21	5	sank	Disambiguator	unambig_reduced_short
+1121	21	6	on	End	unambig_reduced_short
+1122	21	7	the	End	unambig_reduced_short
+1123	21	8	reef	End	unambig_reduced_short
+1124	21	9	.	End	unambig_reduced_short
+1125	21	10	<eos>	End	unambig_reduced_short
+1126	22	0	The	Start	unambig_reduced_short
+1127	22	1	balloon	Noun	unambig_reduced_short
+1128	22	2	shrunk	Unambiguous verb	unambig_reduced_short
+1129	22	3	to	RC contents	unambig_reduced_short
+1130	22	4	a	RC contents	unambig_reduced_short
+1131	22	5	small	RC contents	unambig_reduced_short
+1132	22	6	size	RC contents	unambig_reduced_short
+1133	22	7	popped	Disambiguator	unambig_reduced_short
+1134	22	8	with	End	unambig_reduced_short
+1135	22	9	a	End	unambig_reduced_short
+1136	22	10	bang	End	unambig_reduced_short
+1137	22	11	.	End	unambig_reduced_short
+1138	22	12	<eos>	End	unambig_reduced_short
+1139	23	0	The	Start	unambig_reduced_short
+1140	23	1	boat	Noun	unambig_reduced_short
+1141	23	2	sunk	Unambiguous verb	unambig_reduced_short
+1142	23	3	in	RC contents	unambig_reduced_short
+1143	23	4	the	RC contents	unambig_reduced_short
+1144	23	5	lake	RC contents	unambig_reduced_short
+1145	23	6	disappeared	Disambiguator	unambig_reduced_short
+1146	23	7	in	End	unambig_reduced_short
+1147	23	8	the	End	unambig_reduced_short
+1148	23	9	storm	End	unambig_reduced_short
+1149	23	10	.	End	unambig_reduced_short
+1150	23	11	<eos>	End	unambig_reduced_short
+1151	24	0	The	Start	unambig_reduced_short
+1152	24	1	couple	Noun	unambig_reduced_short
+1153	24	2	shown	Unambiguous verb	unambig_reduced_short
+1154	24	3	the	RC contents	unambig_reduced_short
+1155	24	4	apartment	RC contents	unambig_reduced_short
+1156	24	5	moved	Disambiguator	unambig_reduced_short
+1157	24	6	to	End	unambig_reduced_short
+1158	24	7	a	End	unambig_reduced_short
+1159	24	8	different	End	unambig_reduced_short
+1160	24	9	city	End	unambig_reduced_short
+1161	24	10	.	End	unambig_reduced_short
+1162	24	11	<eos>	End	unambig_reduced_short
+1163	25	0	The	Start	unambig_reduced_short
+1164	25	1	girl	Noun	unambig_reduced_short
+1165	25	2	woven	Unambiguous verb	unambig_reduced_short
+1166	25	3	a	RC contents	unambig_reduced_short
+1167	25	4	new	RC contents	unambig_reduced_short
+1168	25	5	shawl	RC contents	unambig_reduced_short
+1169	25	6	lost	Disambiguator	unambig_reduced_short
+1170	25	7	it	End	unambig_reduced_short
+1171	25	8	during	End	unambig_reduced_short
+1172	25	9	the	End	unambig_reduced_short
+1173	25	10	trip	End	unambig_reduced_short
+1174	25	11	.	End	unambig_reduced_short
+1175	25	12	<eos>	End	unambig_reduced_short
+1176	26	0	The	Start	unambig_reduced_short
+1177	26	1	airplane	Noun	unambig_reduced_short
+1178	26	2	flown	Unambiguous verb	unambig_reduced_short
+1179	26	3	in	RC contents	unambig_reduced_short
+1180	26	4	the	RC contents	unambig_reduced_short
+1181	26	5	arctic	RC contents	unambig_reduced_short
+1182	26	6	froze	Disambiguator	unambig_reduced_short
+1183	26	7	during	End	unambig_reduced_short
+1184	26	8	the	End	unambig_reduced_short
+1185	26	9	ice	End	unambig_reduced_short
+1186	26	10	storm	End	unambig_reduced_short
+1187	26	11	.	End	unambig_reduced_short
+1188	26	12	<eos>	End	unambig_reduced_short
+1189	27	0	The	Start	unambig_reduced_short
+1190	27	1	toddler	Noun	unambig_reduced_short
+1191	27	2	borne	Unambiguous verb	unambig_reduced_short
+1192	27	3	down	RC contents	unambig_reduced_short
+1193	27	4	the	RC contents	unambig_reduced_short
+1194	27	5	hallway	RC contents	unambig_reduced_short
+1195	27	6	sobbed	Disambiguator	unambig_reduced_short
+1196	27	7	at	End	unambig_reduced_short
+1197	27	8	the	End	unambig_reduced_short
+1198	27	9	top	End	unambig_reduced_short
+1199	27	10	of	End	unambig_reduced_short
+1200	27	11	his	End	unambig_reduced_short
+1201	27	12	lungs	End	unambig_reduced_short
+1202	27	13	.	End	unambig_reduced_short
+1203	27	14	<eos>	End	unambig_reduced_short
+1204	0	0	The	Start	ambig_reduced_short
+1205	0	1	woman	Noun	ambig_reduced_short
+1206	0	2	brought	Ambiguous verb	ambig_reduced_short
+1207	0	3	the	RC contents	ambig_reduced_short
+1208	0	4	sandwich	RC contents	ambig_reduced_short
+1209	0	5	from	RC contents	ambig_reduced_short
+1210	0	6	the	RC contents	ambig_reduced_short
+1211	0	7	kitchen	RC contents	ambig_reduced_short
+1212	0	8	tripped	Disambiguator	ambig_reduced_short
+1213	0	9	on	End	ambig_reduced_short
+1214	0	10	the	End	ambig_reduced_short
+1215	0	11	carpet	End	ambig_reduced_short
+1216	0	12	.	End	ambig_reduced_short
+1217	0	13	<eos>	End	ambig_reduced_short
+1218	1	0	The	Start	ambig_reduced_short
+1219	1	1	captive	Noun	ambig_reduced_short
+1220	1	2	walked	Ambiguous verb	ambig_reduced_short
+1221	1	3	into	RC contents	ambig_reduced_short
+1222	1	4	the	RC contents	ambig_reduced_short
+1223	1	5	dark	RC contents	ambig_reduced_short
+1224	1	6	cave	RC contents	ambig_reduced_short
+1225	1	7	tried	Disambiguator	ambig_reduced_short
+1226	1	8	to	End	ambig_reduced_short
+1227	1	9	escape	End	ambig_reduced_short
+1228	1	10	but	End	ambig_reduced_short
+1229	1	11	failed	End	ambig_reduced_short
+1230	1	12	.	End	ambig_reduced_short
+1231	1	13	<eos>	End	ambig_reduced_short
+1232	2	0	The	Start	ambig_reduced_short
+1233	2	1	prisoners	Noun	ambig_reduced_short
+1234	2	2	pounded	Ambiguous verb	ambig_reduced_short
+1235	2	3	for	RC contents	ambig_reduced_short
+1236	2	4	hours	RC contents	ambig_reduced_short
+1237	2	5	and	RC contents	ambig_reduced_short
+1238	2	6	hours	RC contents	ambig_reduced_short
+1239	2	7	confessed	Disambiguator	ambig_reduced_short
+1240	2	8	to	End	ambig_reduced_short
+1241	2	9	crimes	End	ambig_reduced_short
+1242	2	10	they	End	ambig_reduced_short
+1243	2	11	never	End	ambig_reduced_short
+1244	2	12	committed	End	ambig_reduced_short
+1245	2	13	.	End	ambig_reduced_short
+1246	2	14	<eos>	End	ambig_reduced_short
+1247	3	0	The	Start	ambig_reduced_short
+1248	3	1	business	Noun	ambig_reduced_short
+1249	3	2	expanded	Ambiguous verb	ambig_reduced_short
+1250	3	3	into	RC contents	ambig_reduced_short
+1251	3	4	an	RC contents	ambig_reduced_short
+1252	3	5	empire	RC contents	ambig_reduced_short
+1253	3	6	was	Disambiguator	ambig_reduced_short
+1254	3	7	sold	End	ambig_reduced_short
+1255	3	8	for	End	ambig_reduced_short
+1256	3	9	billions	End	ambig_reduced_short
+1257	3	10	of	End	ambig_reduced_short
+1258	3	11	dollars	End	ambig_reduced_short
+1259	3	12	.	End	ambig_reduced_short
+1260	3	13	<eos>	End	ambig_reduced_short
+1261	4	0	The	Start	ambig_reduced_short
+1262	4	1	rats	Noun	ambig_reduced_short
+1263	4	2	consumed	Ambiguous verb	ambig_reduced_short
+1264	4	3	rapidly	RC contents	ambig_reduced_short
+1265	4	4	and	RC contents	ambig_reduced_short
+1266	4	5	entirely	RC contents	ambig_reduced_short
+1267	4	6	were	Disambiguator	ambig_reduced_short
+1268	4	7	digested	End	ambig_reduced_short
+1269	4	8	in	End	ambig_reduced_short
+1270	4	9	the	End	ambig_reduced_short
+1271	4	10	belly	End	ambig_reduced_short
+1272	4	11	of	End	ambig_reduced_short
+1273	4	12	the	End	ambig_reduced_short
+1274	4	13	cat	End	ambig_reduced_short
+1275	4	14	.	End	ambig_reduced_short
+1276	4	15	<eos>	End	ambig_reduced_short
+1277	5	0	The	Start	ambig_reduced_short
+1278	5	1	lawyer	Noun	ambig_reduced_short
+1279	5	2	pledged	Ambiguous verb	ambig_reduced_short
+1280	5	3	to	RC contents	ambig_reduced_short
+1281	5	4	complete	RC contents	ambig_reduced_short
+1282	5	5	secrecy	RC contents	ambig_reduced_short
+1283	5	6	was	Disambiguator	ambig_reduced_short
+1284	5	7	discovered	End	ambig_reduced_short
+1285	5	8	to	End	ambig_reduced_short
+1286	5	9	have	End	ambig_reduced_short
+1287	5	10	broken	End	ambig_reduced_short
+1288	5	11	his	End	ambig_reduced_short
+1289	5	12	promise	End	ambig_reduced_short
+1290	5	13	.	End	ambig_reduced_short
+1291	5	14	<eos>	End	ambig_reduced_short
+1292	6	0	The	Start	ambig_reduced_short
+1293	6	1	child	Noun	ambig_reduced_short
+1294	6	2	neglected	Ambiguous verb	ambig_reduced_short
+1295	6	3	in	RC contents	ambig_reduced_short
+1296	6	4	the	RC contents	ambig_reduced_short
+1297	6	5	chaos	RC contents	ambig_reduced_short
+1298	6	6	found	Disambiguator	ambig_reduced_short
+1299	6	7	her	End	ambig_reduced_short
+1300	6	8	way	End	ambig_reduced_short
+1301	6	9	back	End	ambig_reduced_short
+1302	6	10	home	End	ambig_reduced_short
+1303	6	11	.	End	ambig_reduced_short
+1304	6	12	<eos>	End	ambig_reduced_short
+1305	7	0	The	Start	ambig_reduced_short
+1306	7	1	horses	Noun	ambig_reduced_short
+1307	7	2	raced	Ambiguous verb	ambig_reduced_short
+1308	7	3	past	RC contents	ambig_reduced_short
+1309	7	4	the	RC contents	ambig_reduced_short
+1310	7	5	barn	RC contents	ambig_reduced_short
+1311	7	6	fell	Disambiguator	ambig_reduced_short
+1312	7	7	into	End	ambig_reduced_short
+1313	7	8	a	End	ambig_reduced_short
+1314	7	9	ditch	End	ambig_reduced_short
+1315	7	10	.	End	ambig_reduced_short
+1316	7	11	<eos>	End	ambig_reduced_short
+1317	8	0	The	Start	ambig_reduced_short
+1318	8	1	artist	Noun	ambig_reduced_short
+1319	8	2	sketched	Ambiguous verb	ambig_reduced_short
+1320	8	3	a	RC contents	ambig_reduced_short
+1321	8	4	hasty	RC contents	ambig_reduced_short
+1322	8	5	portrait	RC contents	ambig_reduced_short
+1323	8	6	was	Disambiguator	ambig_reduced_short
+1324	8	7	impressed	End	ambig_reduced_short
+1325	8	8	with	End	ambig_reduced_short
+1326	8	9	the	End	ambig_reduced_short
+1327	8	10	work	End	ambig_reduced_short
+1328	8	11	.	End	ambig_reduced_short
+1329	8	12	<eos>	End	ambig_reduced_short
+1330	9	0	The	Start	ambig_reduced_short
+1331	9	1	car	Noun	ambig_reduced_short
+1332	9	2	steered	Ambiguous verb	ambig_reduced_short
+1333	9	3	into	RC contents	ambig_reduced_short
+1334	9	4	the	RC contents	ambig_reduced_short
+1335	9	5	garage	RC contents	ambig_reduced_short
+1336	9	6	crashed	Disambiguator	ambig_reduced_short
+1337	9	7	into	End	ambig_reduced_short
+1338	9	8	a	End	ambig_reduced_short
+1339	9	9	concrete	End	ambig_reduced_short
+1340	9	10	pillar	End	ambig_reduced_short
+1341	9	11	.	End	ambig_reduced_short
+1342	9	12	<eos>	End	ambig_reduced_short
+1343	10	0	The	Start	ambig_reduced_short
+1344	10	1	campaign	Noun	ambig_reduced_short
+1345	10	2	intended	Ambiguous verb	ambig_reduced_short
+1346	10	3	to	RC contents	ambig_reduced_short
+1347	10	4	be	RC contents	ambig_reduced_short
+1348	10	5	very	RC contents	ambig_reduced_short
+1349	10	6	popular	RC contents	ambig_reduced_short
+1350	10	7	was	Disambiguator	ambig_reduced_short
+1351	10	8	still	End	ambig_reduced_short
+1352	10	9	unsuccessful	End	ambig_reduced_short
+1353	10	10	.	End	ambig_reduced_short
+1354	10	11	<eos>	End	ambig_reduced_short
+1355	11	0	The	Start	ambig_reduced_short
+1356	11	1	student	Noun	ambig_reduced_short
+1357	11	2	composed	Ambiguous verb	ambig_reduced_short
+1358	11	3	a	RC contents	ambig_reduced_short
+1359	11	4	carefully	RC contents	ambig_reduced_short
+1360	11	5	worded	RC contents	ambig_reduced_short
+1361	11	6	excuse	RC contents	ambig_reduced_short
+1362	11	7	forgot	Disambiguator	ambig_reduced_short
+1363	11	8	to	End	ambig_reduced_short
+1364	11	9	give	End	ambig_reduced_short
+1365	11	10	it	End	ambig_reduced_short
+1366	11	11	to	End	ambig_reduced_short
+1367	11	12	the	End	ambig_reduced_short
+1368	11	13	teacher	End	ambig_reduced_short
+1369	11	14	.	End	ambig_reduced_short
+1370	11	15	<eos>	End	ambig_reduced_short
+1371	12	0	The	Start	ambig_reduced_short
+1372	12	1	television	Noun	ambig_reduced_short
+1373	12	2	show	Noun	ambig_reduced_short
+1374	12	3	started	Ambiguous verb	ambig_reduced_short
+1375	12	4	three	RC contents	ambig_reduced_short
+1376	12	5	weeks	RC contents	ambig_reduced_short
+1377	12	6	ago	RC contents	ambig_reduced_short
+1378	12	7	was	Disambiguator	ambig_reduced_short
+1379	12	8	cancelled	End	ambig_reduced_short
+1380	12	9	immediately	End	ambig_reduced_short
+1381	12	10	.	End	ambig_reduced_short
+1382	12	11	<eos>	End	ambig_reduced_short
+1383	13	0	The	Start	ambig_reduced_short
+1384	13	1	boys	Noun	ambig_reduced_short
+1385	13	2	performed	Ambiguous verb	ambig_reduced_short
+1386	13	3	an	RC contents	ambig_reduced_short
+1387	13	4	unsolicited	RC contents	ambig_reduced_short
+1388	13	5	favor	RC contents	ambig_reduced_short
+1389	13	6	thanked	Disambiguator	ambig_reduced_short
+1390	13	7	the	End	ambig_reduced_short
+1391	13	8	person	End	ambig_reduced_short
+1392	13	9	who	End	ambig_reduced_short
+1393	13	10	helped	End	ambig_reduced_short
+1394	13	11	them	End	ambig_reduced_short
+1395	13	12	.	End	ambig_reduced_short
+1396	13	13	<eos>	End	ambig_reduced_short
+1397	14	0	The	Start	ambig_reduced_short
+1398	14	1	player	Noun	ambig_reduced_short
+1399	14	2	tossed	Ambiguous verb	ambig_reduced_short
+1400	14	3	the	RC contents	ambig_reduced_short
+1401	14	4	plastic	RC contents	ambig_reduced_short
+1402	14	5	frisbee	RC contents	ambig_reduced_short
+1403	14	6	dropped	Disambiguator	ambig_reduced_short
+1404	14	7	it	End	ambig_reduced_short
+1405	14	8	on	End	ambig_reduced_short
+1406	14	9	the	End	ambig_reduced_short
+1407	14	10	ground	End	ambig_reduced_short
+1408	14	11	.	End	ambig_reduced_short
+1409	14	12	<eos>	End	ambig_reduced_short
+1410	15	0	The	Start	ambig_reduced_short
+1411	15	1	man	Noun	ambig_reduced_short
+1412	15	2	stabbed	Ambiguous verb	ambig_reduced_short
+1413	15	3	deeply	RC contents	ambig_reduced_short
+1414	15	4	and	RC contents	ambig_reduced_short
+1415	15	5	fatally	RC contents	ambig_reduced_short
+1416	15	6	died	Disambiguator	ambig_reduced_short
+1417	15	7	very	End	ambig_reduced_short
+1418	15	8	quickly	End	ambig_reduced_short
+1419	15	9	.	End	ambig_reduced_short
+1420	15	10	<eos>	End	ambig_reduced_short
+1421	16	0	The	Start	ambig_reduced_short
+1422	16	1	child	Noun	ambig_reduced_short
+1423	16	2	jumped	Ambiguous verb	ambig_reduced_short
+1424	16	3	completely	RC contents	ambig_reduced_short
+1425	16	4	past	RC contents	ambig_reduced_short
+1426	16	5	was	Disambiguator	ambig_reduced_short
+1427	16	6	upset	End	ambig_reduced_short
+1428	16	7	about	End	ambig_reduced_short
+1429	16	8	it	End	ambig_reduced_short
+1430	16	9	.	End	ambig_reduced_short
+1431	16	10	<eos>	End	ambig_reduced_short
+1432	17	0	The	Start	ambig_reduced_short
+1433	17	1	students	Noun	ambig_reduced_short
+1434	17	2	prepared	Ambiguous verb	ambig_reduced_short
+1435	17	3	a	RC contents	ambig_reduced_short
+1436	17	4	fancy	RC contents	ambig_reduced_short
+1437	17	5	dinner	RC contents	ambig_reduced_short
+1438	17	6	ate	Disambiguator	ambig_reduced_short
+1439	17	7	the	End	ambig_reduced_short
+1440	17	8	meal	End	ambig_reduced_short
+1441	17	9	quickly	End	ambig_reduced_short
+1442	17	10	.	End	ambig_reduced_short
+1443	17	11	<eos>	End	ambig_reduced_short
+1444	18	0	The	Start	ambig_reduced_short
+1445	18	1	infant	Noun	ambig_reduced_short
+1446	18	2	fed	Ambiguous verb	ambig_reduced_short
+1447	18	3	during	RC contents	ambig_reduced_short
+1448	18	4	the	RC contents	ambig_reduced_short
+1449	18	5	night	RC contents	ambig_reduced_short
+1450	18	6	cried	Disambiguator	ambig_reduced_short
+1451	18	7	intensely	End	ambig_reduced_short
+1452	18	8	.	End	ambig_reduced_short
+1453	18	9	<eos>	End	ambig_reduced_short
+1454	19	0	The	Start	ambig_reduced_short
+1455	19	1	convict	Noun	ambig_reduced_short
+1456	19	2	stowed	Ambiguous verb	ambig_reduced_short
+1457	19	3	away	RC contents	ambig_reduced_short
+1458	19	4	in	RC contents	ambig_reduced_short
+1459	19	5	the	RC contents	ambig_reduced_short
+1460	19	6	basement	RC contents	ambig_reduced_short
+1461	19	7	escaped	Disambiguator	ambig_reduced_short
+1462	19	8	during	End	ambig_reduced_short
+1463	19	9	the	End	ambig_reduced_short
+1464	19	10	night	End	ambig_reduced_short
+1465	19	11	.	End	ambig_reduced_short
+1466	19	12	<eos>	End	ambig_reduced_short
+1467	20	0	The	Start	ambig_reduced_short
+1468	20	1	dog	Noun	ambig_reduced_short
+1469	20	2	promenaded	Ambiguous verb	ambig_reduced_short
+1470	20	3	on	RC contents	ambig_reduced_short
+1471	20	4	the	RC contents	ambig_reduced_short
+1472	20	5	boardwalk	RC contents	ambig_reduced_short
+1473	20	6	barked	Disambiguator	ambig_reduced_short
+1474	20	7	at	End	ambig_reduced_short
+1475	20	8	the	End	ambig_reduced_short
+1476	20	9	onlookers	End	ambig_reduced_short
+1477	20	10	.	End	ambig_reduced_short
+1478	20	11	<eos>	End	ambig_reduced_short
+1479	21	0	The	Start	ambig_reduced_short
+1480	21	1	ship	Noun	ambig_reduced_short
+1481	21	2	navigated	Ambiguous verb	ambig_reduced_short
+1482	21	3	off	RC contents	ambig_reduced_short
+1483	21	4	course	RC contents	ambig_reduced_short
+1484	21	5	sank	Disambiguator	ambig_reduced_short
+1485	21	6	on	End	ambig_reduced_short
+1486	21	7	the	End	ambig_reduced_short
+1487	21	8	reef	End	ambig_reduced_short
+1488	21	9	.	End	ambig_reduced_short
+1489	21	10	<eos>	End	ambig_reduced_short
+1490	22	0	The	Start	ambig_reduced_short
+1491	22	1	balloon	Noun	ambig_reduced_short
+1492	22	2	deflated	Ambiguous verb	ambig_reduced_short
+1493	22	3	to	RC contents	ambig_reduced_short
+1494	22	4	a	RC contents	ambig_reduced_short
+1495	22	5	small	RC contents	ambig_reduced_short
+1496	22	6	size	RC contents	ambig_reduced_short
+1497	22	7	popped	Disambiguator	ambig_reduced_short
+1498	22	8	with	End	ambig_reduced_short
+1499	22	9	a	End	ambig_reduced_short
+1500	22	10	bang	End	ambig_reduced_short
+1501	22	11	.	End	ambig_reduced_short
+1502	22	12	<eos>	End	ambig_reduced_short
+1503	23	0	The	Start	ambig_reduced_short
+1504	23	1	boat	Noun	ambig_reduced_short
+1505	23	2	sailed	Ambiguous verb	ambig_reduced_short
+1506	23	3	in	RC contents	ambig_reduced_short
+1507	23	4	the	RC contents	ambig_reduced_short
+1508	23	5	lake	RC contents	ambig_reduced_short
+1509	23	6	disappeared	Disambiguator	ambig_reduced_short
+1510	23	7	in	End	ambig_reduced_short
+1511	23	8	the	End	ambig_reduced_short
+1512	23	9	storm	End	ambig_reduced_short
+1513	23	10	.	End	ambig_reduced_short
+1514	23	11	<eos>	End	ambig_reduced_short
+1515	24	0	The	Start	ambig_reduced_short
+1516	24	1	couple	Noun	ambig_reduced_short
+1517	24	2	bought	Ambiguous verb	ambig_reduced_short
+1518	24	3	the	RC contents	ambig_reduced_short
+1519	24	4	apartment	RC contents	ambig_reduced_short
+1520	24	5	moved	Disambiguator	ambig_reduced_short
+1521	24	6	to	End	ambig_reduced_short
+1522	24	7	a	End	ambig_reduced_short
+1523	24	8	different	End	ambig_reduced_short
+1524	24	9	city	End	ambig_reduced_short
+1525	24	10	.	End	ambig_reduced_short
+1526	24	11	<eos>	End	ambig_reduced_short
+1527	25	0	The	Start	ambig_reduced_short
+1528	25	1	girl	Noun	ambig_reduced_short
+1529	25	2	stitched	Ambiguous verb	ambig_reduced_short
+1530	25	3	a	RC contents	ambig_reduced_short
+1531	25	4	new	RC contents	ambig_reduced_short
+1532	25	5	shawl	RC contents	ambig_reduced_short
+1533	25	6	lost	Disambiguator	ambig_reduced_short
+1534	25	7	it	End	ambig_reduced_short
+1535	25	8	during	End	ambig_reduced_short
+1536	25	9	the	End	ambig_reduced_short
+1537	25	10	trip	End	ambig_reduced_short
+1538	25	11	.	End	ambig_reduced_short
+1539	25	12	<eos>	End	ambig_reduced_short
+1540	26	0	The	Start	ambig_reduced_short
+1541	26	1	airplane	Noun	ambig_reduced_short
+1542	26	2	landed	Ambiguous verb	ambig_reduced_short
+1543	26	3	in	RC contents	ambig_reduced_short
+1544	26	4	the	RC contents	ambig_reduced_short
+1545	26	5	arctic	RC contents	ambig_reduced_short
+1546	26	6	froze	Disambiguator	ambig_reduced_short
+1547	26	7	during	End	ambig_reduced_short
+1548	26	8	the	End	ambig_reduced_short
+1549	26	9	ice	End	ambig_reduced_short
+1550	26	10	storm	End	ambig_reduced_short
+1551	26	11	.	End	ambig_reduced_short
+1552	26	12	<eos>	End	ambig_reduced_short
+1553	27	0	The	Start	ambig_reduced_short
+1554	27	1	toddler	Noun	ambig_reduced_short
+1555	27	2	hurried	Ambiguous verb	ambig_reduced_short
+1556	27	3	down	RC contents	ambig_reduced_short
+1557	27	4	the	RC contents	ambig_reduced_short
+1558	27	5	hallway	RC contents	ambig_reduced_short
+1559	27	6	sobbed	Disambiguator	ambig_reduced_short
+1560	27	7	at	End	ambig_reduced_short
+1561	27	8	the	End	ambig_reduced_short
+1562	27	9	top	End	ambig_reduced_short
+1563	27	10	of	End	ambig_reduced_short
+1564	27	11	his	End	ambig_reduced_short
+1565	27	12	lungs	End	ambig_reduced_short
+1566	27	13	.	End	ambig_reduced_short
+1567	27	14	<eos>	End	ambig_reduced_short
+1568	0	0	The	Start	unambig_unreduced_long
+1569	0	1	woman	Noun	unambig_unreduced_long
+1570	0	2	who	Unreduced content	unambig_unreduced_long
+1571	0	3	was	Unreduced content	unambig_unreduced_long
+1572	0	4	given	Unambiguous verb	unambig_unreduced_long
+1573	0	5	the	RC contents	unambig_unreduced_long
+1574	0	6	sandwich	RC contents	unambig_unreduced_long
+1575	0	7	from	RC contents	unambig_unreduced_long
+1576	0	8	the	RC contents	unambig_unreduced_long
+1577	0	9	kitchen	RC contents	unambig_unreduced_long
+1578	0	10	with	Intervener	unambig_unreduced_long
+1579	0	11	a	Intervener	unambig_unreduced_long
+1580	0	12	new	Intervener	unambig_unreduced_long
+1581	0	13	oven	Intervener	unambig_unreduced_long
+1582	0	14	tripped	Disambiguator	unambig_unreduced_long
+1583	0	15	on	End	unambig_unreduced_long
+1584	0	16	the	End	unambig_unreduced_long
+1585	0	17	carpet	End	unambig_unreduced_long
+1586	0	18	.	End	unambig_unreduced_long
+1587	0	19	<eos>	End	unambig_unreduced_long
+1588	1	0	The	Start	unambig_unreduced_long
+1589	1	1	captive	Noun	unambig_unreduced_long
+1590	1	2	who	Unreduced content	unambig_unreduced_long
+1591	1	3	was	Unreduced content	unambig_unreduced_long
+1592	1	4	taken	Unambiguous verb	unambig_unreduced_long
+1593	1	5	into	RC contents	unambig_unreduced_long
+1594	1	6	the	RC contents	unambig_unreduced_long
+1595	1	7	dark	RC contents	unambig_unreduced_long
+1596	1	8	cave	RC contents	unambig_unreduced_long
+1597	1	9	lit	Intervener	unambig_unreduced_long
+1598	1	10	by	Intervener	unambig_unreduced_long
+1599	1	11	torches	Intervener	unambig_unreduced_long
+1600	1	12	tried	Disambiguator	unambig_unreduced_long
+1601	1	13	to	End	unambig_unreduced_long
+1602	1	14	escape	End	unambig_unreduced_long
+1603	1	15	but	End	unambig_unreduced_long
+1604	1	16	failed	End	unambig_unreduced_long
+1605	1	17	.	End	unambig_unreduced_long
+1606	1	18	<eos>	End	unambig_unreduced_long
+1607	2	0	The	Start	unambig_unreduced_long
+1608	2	1	prisoners	Noun	unambig_unreduced_long
+1609	2	2	who	Unreduced content	unambig_unreduced_long
+1610	2	3	were	Unreduced content	unambig_unreduced_long
+1611	2	4	beaten	Unambiguous verb	unambig_unreduced_long
+1612	2	5	for	RC contents	unambig_unreduced_long
+1613	2	6	hours	RC contents	unambig_unreduced_long
+1614	2	7	and	RC contents	unambig_unreduced_long
+1615	2	8	hours	RC contents	unambig_unreduced_long
+1616	2	9	in	Intervener	unambig_unreduced_long
+1617	2	10	the	Intervener	unambig_unreduced_long
+1618	2	11	morning	Intervener	unambig_unreduced_long
+1619	2	12	confessed	Disambiguator	unambig_unreduced_long
+1620	2	13	to	End	unambig_unreduced_long
+1621	2	14	crimes	End	unambig_unreduced_long
+1622	2	15	they	End	unambig_unreduced_long
+1623	2	16	never	End	unambig_unreduced_long
+1624	2	17	committed	End	unambig_unreduced_long
+1625	2	18	.	End	unambig_unreduced_long
+1626	2	19	<eos>	End	unambig_unreduced_long
+1627	3	0	The	Start	unambig_unreduced_long
+1628	3	1	business	Noun	unambig_unreduced_long
+1629	3	2	that	Unreduced content	unambig_unreduced_long
+1630	3	3	was	Unreduced content	unambig_unreduced_long
+1631	3	4	grown	Unambiguous verb	unambig_unreduced_long
+1632	3	5	into	RC contents	unambig_unreduced_long
+1633	3	6	an	RC contents	unambig_unreduced_long
+1634	3	7	empire	RC contents	unambig_unreduced_long
+1635	3	8	spanning	Intervener	unambig_unreduced_long
+1636	3	9	multiple	Intervener	unambig_unreduced_long
+1637	3	10	countries	Intervener	unambig_unreduced_long
+1638	3	11	was	Disambiguator	unambig_unreduced_long
+1639	3	12	sold	End	unambig_unreduced_long
+1640	3	13	for	End	unambig_unreduced_long
+1641	3	14	billions	End	unambig_unreduced_long
+1642	3	15	of	End	unambig_unreduced_long
+1643	3	16	dollars	End	unambig_unreduced_long
+1644	3	17	.	End	unambig_unreduced_long
+1645	3	18	<eos>	End	unambig_unreduced_long
+1646	4	0	The	Start	unambig_unreduced_long
+1647	4	1	rats	Noun	unambig_unreduced_long
+1648	4	2	that	Unreduced content	unambig_unreduced_long
+1649	4	3	were	Unreduced content	unambig_unreduced_long
+1650	4	4	eaten	Unambiguous verb	unambig_unreduced_long
+1651	4	5	rapidly	RC contents	unambig_unreduced_long
+1652	4	6	and	RC contents	unambig_unreduced_long
+1653	4	7	entirely	RC contents	unambig_unreduced_long
+1654	4	8	due	Intervener	unambig_unreduced_long
+1655	4	9	to	Intervener	unambig_unreduced_long
+1656	4	10	great	Intervener	unambig_unreduced_long
+1657	4	11	hunger	Intervener	unambig_unreduced_long
+1658	4	12	were	Disambiguator	unambig_unreduced_long
+1659	4	13	digested	End	unambig_unreduced_long
+1660	4	14	in	End	unambig_unreduced_long
+1661	4	15	the	End	unambig_unreduced_long
+1662	4	16	belly	End	unambig_unreduced_long
+1663	4	17	of	End	unambig_unreduced_long
+1664	4	18	the	End	unambig_unreduced_long
+1665	4	19	cat	End	unambig_unreduced_long
+1666	4	20	.	End	unambig_unreduced_long
+1667	4	21	<eos>	End	unambig_unreduced_long
+1668	5	0	The	Start	unambig_unreduced_long
+1669	5	1	lawyer	Noun	unambig_unreduced_long
+1670	5	2	that	Unreduced content	unambig_unreduced_long
+1671	5	3	was	Unreduced content	unambig_unreduced_long
+1672	5	4	sworn	Unambiguous verb	unambig_unreduced_long
+1673	5	5	to	RC contents	unambig_unreduced_long
+1674	5	6	complete	RC contents	unambig_unreduced_long
+1675	5	7	secrecy	RC contents	unambig_unreduced_long
+1676	5	8	due	Intervener	unambig_unreduced_long
+1677	5	9	to	Intervener	unambig_unreduced_long
+1678	5	10	security	Intervener	unambig_unreduced_long
+1679	5	11	issues	Intervener	unambig_unreduced_long
+1680	5	12	was	Disambiguator	unambig_unreduced_long
+1681	5	13	discovered	End	unambig_unreduced_long
+1682	5	14	to	End	unambig_unreduced_long
+1683	5	15	have	End	unambig_unreduced_long
+1684	5	16	broken	End	unambig_unreduced_long
+1685	5	17	his	End	unambig_unreduced_long
+1686	5	18	promise	End	unambig_unreduced_long
+1687	5	19	.	End	unambig_unreduced_long
+1688	5	20	<eos>	End	unambig_unreduced_long
+1689	6	0	The	Start	unambig_unreduced_long
+1690	6	1	child	Noun	unambig_unreduced_long
+1691	6	2	who	Unreduced content	unambig_unreduced_long
+1692	6	3	was	Unreduced content	unambig_unreduced_long
+1693	6	4	forgotten	Unambiguous verb	unambig_unreduced_long
+1694	6	5	in	RC contents	unambig_unreduced_long
+1695	6	6	the	RC contents	unambig_unreduced_long
+1696	6	7	chaos	RC contents	unambig_unreduced_long
+1697	6	8	of	Intervener	unambig_unreduced_long
+1698	6	9	the	Intervener	unambig_unreduced_long
+1699	6	10	war	Intervener	unambig_unreduced_long
+1700	6	11	found	Disambiguator	unambig_unreduced_long
+1701	6	12	her	End	unambig_unreduced_long
+1702	6	13	way	End	unambig_unreduced_long
+1703	6	14	back	End	unambig_unreduced_long
+1704	6	15	home	End	unambig_unreduced_long
+1705	6	16	.	End	unambig_unreduced_long
+1706	6	17	<eos>	End	unambig_unreduced_long
+1707	7	0	The	Start	unambig_unreduced_long
+1708	7	1	horses	Noun	unambig_unreduced_long
+1709	7	2	that	Unreduced content	unambig_unreduced_long
+1710	7	3	were	Unreduced content	unambig_unreduced_long
+1711	7	4	ridden	Unambiguous verb	unambig_unreduced_long
+1712	7	5	past	RC contents	unambig_unreduced_long
+1713	7	6	the	RC contents	unambig_unreduced_long
+1714	7	7	barn	RC contents	unambig_unreduced_long
+1715	7	8	in	Intervener	unambig_unreduced_long
+1716	7	9	the	Intervener	unambig_unreduced_long
+1717	7	10	countryside	Intervener	unambig_unreduced_long
+1718	7	11	fell	Disambiguator	unambig_unreduced_long
+1719	7	12	into	End	unambig_unreduced_long
+1720	7	13	a	End	unambig_unreduced_long
+1721	7	14	ditch	End	unambig_unreduced_long
+1722	7	15	.	End	unambig_unreduced_long
+1723	7	16	<eos>	End	unambig_unreduced_long
+1724	8	0	The	Start	unambig_unreduced_long
+1725	8	1	artist	Noun	unambig_unreduced_long
+1726	8	2	who	Unreduced content	unambig_unreduced_long
+1727	8	3	was	Unreduced content	unambig_unreduced_long
+1728	8	4	drawn	Unambiguous verb	unambig_unreduced_long
+1729	8	5	a	RC contents	unambig_unreduced_long
+1730	8	6	hasty	RC contents	unambig_unreduced_long
+1731	8	7	portrait	RC contents	unambig_unreduced_long
+1732	8	8	of	Intervener	unambig_unreduced_long
+1733	8	9	the	Intervener	unambig_unreduced_long
+1734	8	10	woman	Intervener	unambig_unreduced_long
+1735	8	11	was	Disambiguator	unambig_unreduced_long
+1736	8	12	impressed	End	unambig_unreduced_long
+1737	8	13	with	End	unambig_unreduced_long
+1738	8	14	the	End	unambig_unreduced_long
+1739	8	15	work	End	unambig_unreduced_long
+1740	8	16	.	End	unambig_unreduced_long
+1741	8	17	<eos>	End	unambig_unreduced_long
+1742	9	0	The	Start	unambig_unreduced_long
+1743	9	1	car	Noun	unambig_unreduced_long
+1744	9	2	that	Unreduced content	unambig_unreduced_long
+1745	9	3	was	Unreduced content	unambig_unreduced_long
+1746	9	4	driven	Unambiguous verb	unambig_unreduced_long
+1747	9	5	into	RC contents	unambig_unreduced_long
+1748	9	6	the	RC contents	unambig_unreduced_long
+1749	9	7	garage	RC contents	unambig_unreduced_long
+1750	9	8	filled	Intervener	unambig_unreduced_long
+1751	9	9	with	Intervener	unambig_unreduced_long
+1752	9	10	tools	Intervener	unambig_unreduced_long
+1753	9	11	crashed	Disambiguator	unambig_unreduced_long
+1754	9	12	into	End	unambig_unreduced_long
+1755	9	13	a	End	unambig_unreduced_long
+1756	9	14	concrete	End	unambig_unreduced_long
+1757	9	15	pillar	End	unambig_unreduced_long
+1758	9	16	.	End	unambig_unreduced_long
+1759	9	17	<eos>	End	unambig_unreduced_long
+1760	10	0	The	Start	unambig_unreduced_long
+1761	10	1	campaign	Noun	unambig_unreduced_long
+1762	10	2	that	Unreduced content	unambig_unreduced_long
+1763	10	3	was	Unreduced content	unambig_unreduced_long
+1764	10	4	known	Unambiguous verb	unambig_unreduced_long
+1765	10	5	to	RC contents	unambig_unreduced_long
+1766	10	6	be	RC contents	unambig_unreduced_long
+1767	10	7	very	RC contents	unambig_unreduced_long
+1768	10	8	popular	RC contents	unambig_unreduced_long
+1769	10	9	among	Intervener	unambig_unreduced_long
+1770	10	10	the	Intervener	unambig_unreduced_long
+1771	10	11	masses	Intervener	unambig_unreduced_long
+1772	10	12	was	Disambiguator	unambig_unreduced_long
+1773	10	13	still	End	unambig_unreduced_long
+1774	10	14	unsuccessful	End	unambig_unreduced_long
+1775	10	15	.	End	unambig_unreduced_long
+1776	10	16	<eos>	End	unambig_unreduced_long
+1777	11	0	The	Start	unambig_unreduced_long
+1778	11	1	student	Noun	unambig_unreduced_long
+1779	11	2	who	Unreduced content	unambig_unreduced_long
+1780	11	3	was	Unreduced content	unambig_unreduced_long
+1781	11	4	written	Unambiguous verb	unambig_unreduced_long
+1782	11	5	a	RC contents	unambig_unreduced_long
+1783	11	6	carefully	RC contents	unambig_unreduced_long
+1784	11	7	worded	RC contents	unambig_unreduced_long
+1785	11	8	excuse	RC contents	unambig_unreduced_long
+1786	11	9	filled	Intervener	unambig_unreduced_long
+1787	11	10	with	Intervener	unambig_unreduced_long
+1788	11	11	lies	Intervener	unambig_unreduced_long
+1789	11	12	forgot	Disambiguator	unambig_unreduced_long
+1790	11	13	to	End	unambig_unreduced_long
+1791	11	14	give	End	unambig_unreduced_long
+1792	11	15	it	End	unambig_unreduced_long
+1793	11	16	to	End	unambig_unreduced_long
+1794	11	17	the	End	unambig_unreduced_long
+1795	11	18	teacher	End	unambig_unreduced_long
+1796	11	19	.	End	unambig_unreduced_long
+1797	11	20	<eos>	End	unambig_unreduced_long
+1798	12	0	The	Start	unambig_unreduced_long
+1799	12	1	television	Noun	unambig_unreduced_long
+1800	12	2	show	Noun	unambig_unreduced_long
+1801	12	3	that	Unreduced content	unambig_unreduced_long
+1802	12	4	was	Unreduced content	unambig_unreduced_long
+1803	12	5	begun	Unambiguous verb	unambig_unreduced_long
+1804	12	6	three	RC contents	unambig_unreduced_long
+1805	12	7	weeks	RC contents	unambig_unreduced_long
+1806	12	8	ago	RC contents	unambig_unreduced_long
+1807	12	9	on	Intervener	unambig_unreduced_long
+1808	12	10	a	Intervener	unambig_unreduced_long
+1809	12	11	cable	Intervener	unambig_unreduced_long
+1810	12	12	channel	Intervener	unambig_unreduced_long
+1811	12	13	was	Disambiguator	unambig_unreduced_long
+1812	12	14	cancelled	End	unambig_unreduced_long
+1813	12	15	immediately	End	unambig_unreduced_long
+1814	12	16	.	End	unambig_unreduced_long
+1815	12	17	<eos>	End	unambig_unreduced_long
+1816	13	0	The	Start	unambig_unreduced_long
+1817	13	1	boys	Noun	unambig_unreduced_long
+1818	13	2	who	Unreduced content	unambig_unreduced_long
+1819	13	3	were	Unreduced content	unambig_unreduced_long
+1820	13	4	done	Unambiguous verb	unambig_unreduced_long
+1821	13	5	an	RC contents	unambig_unreduced_long
+1822	13	6	unsolicited	RC contents	unambig_unreduced_long
+1823	13	7	favor	RC contents	unambig_unreduced_long
+1824	13	8	for	Intervener	unambig_unreduced_long
+1825	13	9	no	Intervener	unambig_unreduced_long
+1826	13	10	good	Intervener	unambig_unreduced_long
+1827	13	11	reason	Intervener	unambig_unreduced_long
+1828	13	12	thanked	Disambiguator	unambig_unreduced_long
+1829	13	13	the	End	unambig_unreduced_long
+1830	13	14	person	End	unambig_unreduced_long
+1831	13	15	who	End	unambig_unreduced_long
+1832	13	16	helped	End	unambig_unreduced_long
+1833	13	17	them	End	unambig_unreduced_long
+1834	13	18	.	End	unambig_unreduced_long
+1835	13	19	<eos>	End	unambig_unreduced_long
+1836	14	0	The	Start	unambig_unreduced_long
+1837	14	1	player	Noun	unambig_unreduced_long
+1838	14	2	who	Unreduced content	unambig_unreduced_long
+1839	14	3	was	Unreduced content	unambig_unreduced_long
+1840	14	4	thrown	Unambiguous verb	unambig_unreduced_long
+1841	14	5	the	RC contents	unambig_unreduced_long
+1842	14	6	plastic	RC contents	unambig_unreduced_long
+1843	14	7	frisbee	RC contents	unambig_unreduced_long
+1844	14	8	during	Intervener	unambig_unreduced_long
+1845	14	9	the	Intervener	unambig_unreduced_long
+1846	14	10	game	Intervener	unambig_unreduced_long
+1847	14	11	dropped	Disambiguator	unambig_unreduced_long
+1848	14	12	it	End	unambig_unreduced_long
+1849	14	13	on	End	unambig_unreduced_long
+1850	14	14	the	End	unambig_unreduced_long
+1851	14	15	ground	End	unambig_unreduced_long
+1852	14	16	.	End	unambig_unreduced_long
+1853	14	17	<eos>	End	unambig_unreduced_long
+1854	15	0	The	Start	unambig_unreduced_long
+1855	15	1	man	Noun	unambig_unreduced_long
+1856	15	2	who	Unreduced content	unambig_unreduced_long
+1857	15	3	was	Unreduced content	unambig_unreduced_long
+1858	15	4	bitten	Unambiguous verb	unambig_unreduced_long
+1859	15	5	deeply	RC contents	unambig_unreduced_long
+1860	15	6	and	RC contents	unambig_unreduced_long
+1861	15	7	fatally	RC contents	unambig_unreduced_long
+1862	15	8	in	Intervener	unambig_unreduced_long
+1863	15	9	the	Intervener	unambig_unreduced_long
+1864	15	10	afternoon	Intervener	unambig_unreduced_long
+1865	15	11	died	Disambiguator	unambig_unreduced_long
+1866	15	12	very	End	unambig_unreduced_long
+1867	15	13	quickly	End	unambig_unreduced_long
+1868	15	14	.	End	unambig_unreduced_long
+1869	15	15	<eos>	End	unambig_unreduced_long
+1870	16	0	The	Start	unambig_unreduced_long
+1871	16	1	child	Noun	unambig_unreduced_long
+1872	16	2	who	Unreduced content	unambig_unreduced_long
+1873	16	3	was	Unreduced content	unambig_unreduced_long
+1874	16	4	leapt	Unambiguous verb	unambig_unreduced_long
+1875	16	5	completely	RC contents	unambig_unreduced_long
+1876	16	6	past	RC contents	unambig_unreduced_long
+1877	16	7	in	Intervener	unambig_unreduced_long
+1878	16	8	the	Intervener	unambig_unreduced_long
+1879	16	9	playground	Intervener	unambig_unreduced_long
+1880	16	10	was	Disambiguator	unambig_unreduced_long
+1881	16	11	upset	End	unambig_unreduced_long
+1882	16	12	about	End	unambig_unreduced_long
+1883	16	13	it	End	unambig_unreduced_long
+1884	16	14	.	End	unambig_unreduced_long
+1885	16	15	<eos>	End	unambig_unreduced_long
+1886	17	0	The	Start	unambig_unreduced_long
+1887	17	1	students	Noun	unambig_unreduced_long
+1888	17	2	who	Unreduced content	unambig_unreduced_long
+1889	17	3	were	Unreduced content	unambig_unreduced_long
+1890	17	4	gotten	Unambiguous verb	unambig_unreduced_long
+1891	17	5	a	RC contents	unambig_unreduced_long
+1892	17	6	fancy	RC contents	unambig_unreduced_long
+1893	17	7	dinner	RC contents	unambig_unreduced_long
+1894	17	8	for	Intervener	unambig_unreduced_long
+1895	17	9	the	Intervener	unambig_unreduced_long
+1896	17	10	holiday	Intervener	unambig_unreduced_long
+1897	17	11	ate	Disambiguator	unambig_unreduced_long
+1898	17	12	the	End	unambig_unreduced_long
+1899	17	13	meal	End	unambig_unreduced_long
+1900	17	14	quickly	End	unambig_unreduced_long
+1901	17	15	.	End	unambig_unreduced_long
+1902	17	16	<eos>	End	unambig_unreduced_long
+1903	18	0	The	Start	unambig_unreduced_long
+1904	18	1	infant	Noun	unambig_unreduced_long
+1905	18	2	that	Unreduced content	unambig_unreduced_long
+1906	18	3	was	Unreduced content	unambig_unreduced_long
+1907	18	4	woken	Unambiguous verb	unambig_unreduced_long
+1908	18	5	during	RC contents	unambig_unreduced_long
+1909	18	6	the	RC contents	unambig_unreduced_long
+1910	18	7	night	RC contents	unambig_unreduced_long
+1911	18	8	of	Intervener	unambig_unreduced_long
+1912	18	9	the	Intervener	unambig_unreduced_long
+1913	18	10	first	Intervener	unambig_unreduced_long
+1914	18	11	full	Intervener	unambig_unreduced_long
+1915	18	12	moon	Intervener	unambig_unreduced_long
+1916	18	13	cried	Disambiguator	unambig_unreduced_long
+1917	18	14	intensely	End	unambig_unreduced_long
+1918	18	15	.	End	unambig_unreduced_long
+1919	18	16	<eos>	End	unambig_unreduced_long
+1920	19	0	The	Start	unambig_unreduced_long
+1921	19	1	convict	Noun	unambig_unreduced_long
+1922	19	2	who	Unreduced content	unambig_unreduced_long
+1923	19	3	was	Unreduced content	unambig_unreduced_long
+1924	19	4	hidden	Unambiguous verb	unambig_unreduced_long
+1925	19	5	away	RC contents	unambig_unreduced_long
+1926	19	6	in	RC contents	unambig_unreduced_long
+1927	19	7	the	RC contents	unambig_unreduced_long
+1928	19	8	basement	RC contents	unambig_unreduced_long
+1929	19	9	filled	Intervener	unambig_unreduced_long
+1930	19	10	with	Intervener	unambig_unreduced_long
+1931	19	11	mold	Intervener	unambig_unreduced_long
+1932	19	12	escaped	Disambiguator	unambig_unreduced_long
+1933	19	13	during	End	unambig_unreduced_long
+1934	19	14	the	End	unambig_unreduced_long
+1935	19	15	night	End	unambig_unreduced_long
+1936	19	16	.	End	unambig_unreduced_long
+1937	19	17	<eos>	End	unambig_unreduced_long
+1938	20	0	The	Start	unambig_unreduced_long
+1939	20	1	dog	Noun	unambig_unreduced_long
+1940	20	2	that	Unreduced content	unambig_unreduced_long
+1941	20	3	was	Unreduced content	unambig_unreduced_long
+1942	20	4	seen	Unambiguous verb	unambig_unreduced_long
+1943	20	5	on	RC contents	unambig_unreduced_long
+1944	20	6	the	RC contents	unambig_unreduced_long
+1945	20	7	boardwalk	RC contents	unambig_unreduced_long
+1946	20	8	of	Intervener	unambig_unreduced_long
+1947	20	9	the	Intervener	unambig_unreduced_long
+1948	20	10	marina	Intervener	unambig_unreduced_long
+1949	20	11	barked	Disambiguator	unambig_unreduced_long
+1950	20	12	at	End	unambig_unreduced_long
+1951	20	13	the	End	unambig_unreduced_long
+1952	20	14	onlookers	End	unambig_unreduced_long
+1953	20	15	.	End	unambig_unreduced_long
+1954	20	16	<eos>	End	unambig_unreduced_long
+1955	21	0	The	Start	unambig_unreduced_long
+1956	21	1	ship	Noun	unambig_unreduced_long
+1957	21	2	that	Unreduced content	unambig_unreduced_long
+1958	21	3	was	Unreduced content	unambig_unreduced_long
+1959	21	4	blown	Unambiguous verb	unambig_unreduced_long
+1960	21	5	off	RC contents	unambig_unreduced_long
+1961	21	6	course	RC contents	unambig_unreduced_long
+1962	21	7	in	Intervener	unambig_unreduced_long
+1963	21	8	the	Intervener	unambig_unreduced_long
+1964	21	9	Pacific	Intervener	unambig_unreduced_long
+1965	21	10	Ocean	Intervener	unambig_unreduced_long
+1966	21	11	sank	Disambiguator	unambig_unreduced_long
+1967	21	12	on	End	unambig_unreduced_long
+1968	21	13	the	End	unambig_unreduced_long
+1969	21	14	reef	End	unambig_unreduced_long
+1970	21	15	.	End	unambig_unreduced_long
+1971	21	16	<eos>	End	unambig_unreduced_long
+1972	22	0	The	Start	unambig_unreduced_long
+1973	22	1	balloon	Noun	unambig_unreduced_long
+1974	22	2	that	Unreduced content	unambig_unreduced_long
+1975	22	3	was	Unreduced content	unambig_unreduced_long
+1976	22	4	shrunk	Unambiguous verb	unambig_unreduced_long
+1977	22	5	to	RC contents	unambig_unreduced_long
+1978	22	6	a	RC contents	unambig_unreduced_long
+1979	22	7	small	RC contents	unambig_unreduced_long
+1980	22	8	size	RC contents	unambig_unreduced_long
+1981	22	9	over	Intervener	unambig_unreduced_long
+1982	22	10	several	Intervener	unambig_unreduced_long
+1983	22	11	hours	Intervener	unambig_unreduced_long
+1984	22	12	popped	Disambiguator	unambig_unreduced_long
+1985	22	13	with	End	unambig_unreduced_long
+1986	22	14	a	End	unambig_unreduced_long
+1987	22	15	bang	End	unambig_unreduced_long
+1988	22	16	.	End	unambig_unreduced_long
+1989	22	17	<eos>	End	unambig_unreduced_long
+1990	23	0	The	Start	unambig_unreduced_long
+1991	23	1	boat	Noun	unambig_unreduced_long
+1992	23	2	that	Unreduced content	unambig_unreduced_long
+1993	23	3	was	Unreduced content	unambig_unreduced_long
+1994	23	4	sunk	Unambiguous verb	unambig_unreduced_long
+1995	23	5	in	RC contents	unambig_unreduced_long
+1996	23	6	the	RC contents	unambig_unreduced_long
+1997	23	7	lake	RC contents	unambig_unreduced_long
+1998	23	8	filled	Intervener	unambig_unreduced_long
+1999	23	9	with	Intervener	unambig_unreduced_long
+2000	23	10	crocodiles	Intervener	unambig_unreduced_long
+2001	23	11	disappeared	Disambiguator	unambig_unreduced_long
+2002	23	12	in	End	unambig_unreduced_long
+2003	23	13	the	End	unambig_unreduced_long
+2004	23	14	storm	End	unambig_unreduced_long
+2005	23	15	.	End	unambig_unreduced_long
+2006	23	16	<eos>	End	unambig_unreduced_long
+2007	24	0	The	Start	unambig_unreduced_long
+2008	24	1	couple	Noun	unambig_unreduced_long
+2009	24	2	that	Unreduced content	unambig_unreduced_long
+2010	24	3	was	Unreduced content	unambig_unreduced_long
+2011	24	4	shown	Unambiguous verb	unambig_unreduced_long
+2012	24	5	the	RC contents	unambig_unreduced_long
+2013	24	6	apartment	RC contents	unambig_unreduced_long
+2014	24	7	with	Intervener	unambig_unreduced_long
+2015	24	8	new	Intervener	unambig_unreduced_long
+2016	24	9	wood	Intervener	unambig_unreduced_long
+2017	24	10	floors	Intervener	unambig_unreduced_long
+2018	24	11	moved	Disambiguator	unambig_unreduced_long
+2019	24	12	to	End	unambig_unreduced_long
+2020	24	13	a	End	unambig_unreduced_long
+2021	24	14	different	End	unambig_unreduced_long
+2022	24	15	city	End	unambig_unreduced_long
+2023	24	16	.	End	unambig_unreduced_long
+2024	24	17	<eos>	End	unambig_unreduced_long
+2025	25	0	The	Start	unambig_unreduced_long
+2026	25	1	girl	Noun	unambig_unreduced_long
+2027	25	2	who	Unreduced content	unambig_unreduced_long
+2028	25	3	was	Unreduced content	unambig_unreduced_long
+2029	25	4	woven	Unambiguous verb	unambig_unreduced_long
+2030	25	5	a	RC contents	unambig_unreduced_long
+2031	25	6	new	RC contents	unambig_unreduced_long
+2032	25	7	shawl	RC contents	unambig_unreduced_long
+2033	25	8	out	Intervener	unambig_unreduced_long
+2034	25	9	of	Intervener	unambig_unreduced_long
+2035	25	10	wool	Intervener	unambig_unreduced_long
+2036	25	11	lost	Disambiguator	unambig_unreduced_long
+2037	25	12	it	End	unambig_unreduced_long
+2038	25	13	during	End	unambig_unreduced_long
+2039	25	14	the	End	unambig_unreduced_long
+2040	25	15	trip	End	unambig_unreduced_long
+2041	25	16	.	End	unambig_unreduced_long
+2042	25	17	<eos>	End	unambig_unreduced_long
+2043	26	0	The	Start	unambig_unreduced_long
+2044	26	1	airplane	Noun	unambig_unreduced_long
+2045	26	2	that	Unreduced content	unambig_unreduced_long
+2046	26	3	was	Unreduced content	unambig_unreduced_long
+2047	26	4	flown	Unambiguous verb	unambig_unreduced_long
+2048	26	5	in	RC contents	unambig_unreduced_long
+2049	26	6	the	RC contents	unambig_unreduced_long
+2050	26	7	arctic	RC contents	unambig_unreduced_long
+2051	26	8	in	Intervener	unambig_unreduced_long
+2052	26	9	the	Intervener	unambig_unreduced_long
+2053	26	10	winter	Intervener	unambig_unreduced_long
+2054	26	11	froze	Disambiguator	unambig_unreduced_long
+2055	26	12	during	End	unambig_unreduced_long
+2056	26	13	the	End	unambig_unreduced_long
+2057	26	14	ice	End	unambig_unreduced_long
+2058	26	15	storm	End	unambig_unreduced_long
+2059	26	16	.	End	unambig_unreduced_long
+2060	26	17	<eos>	End	unambig_unreduced_long
+2061	27	0	The	Start	unambig_unreduced_long
+2062	27	1	toddler	Noun	unambig_unreduced_long
+2063	27	2	that	Unreduced content	unambig_unreduced_long
+2064	27	3	was	Unreduced content	unambig_unreduced_long
+2065	27	4	borne	Unambiguous verb	unambig_unreduced_long
+2066	27	5	down	RC contents	unambig_unreduced_long
+2067	27	6	the	RC contents	unambig_unreduced_long
+2068	27	7	hallway	RC contents	unambig_unreduced_long
+2069	27	8	of	Intervener	unambig_unreduced_long
+2070	27	9	the	Intervener	unambig_unreduced_long
+2071	27	10	school	Intervener	unambig_unreduced_long
+2072	27	11	sobbed	Disambiguator	unambig_unreduced_long
+2073	27	12	at	End	unambig_unreduced_long
+2074	27	13	the	End	unambig_unreduced_long
+2075	27	14	top	End	unambig_unreduced_long
+2076	27	15	of	End	unambig_unreduced_long
+2077	27	16	his	End	unambig_unreduced_long
+2078	27	17	lungs	End	unambig_unreduced_long
+2079	27	18	.	End	unambig_unreduced_long
+2080	27	19	<eos>	End	unambig_unreduced_long
+2081	0	0	The	Start	ambig_unreduced_long
+2082	0	1	woman	Noun	ambig_unreduced_long
+2083	0	2	who	Unreduced content	ambig_unreduced_long
+2084	0	3	was	Unreduced content	ambig_unreduced_long
+2085	0	4	brought	Ambiguous verb	ambig_unreduced_long
+2086	0	5	the	RC contents	ambig_unreduced_long
+2087	0	6	sandwich	RC contents	ambig_unreduced_long
+2088	0	7	from	RC contents	ambig_unreduced_long
+2089	0	8	the	RC contents	ambig_unreduced_long
+2090	0	9	kitchen	RC contents	ambig_unreduced_long
+2091	0	10	with	Intervener	ambig_unreduced_long
+2092	0	11	a	Intervener	ambig_unreduced_long
+2093	0	12	new	Intervener	ambig_unreduced_long
+2094	0	13	oven	Intervener	ambig_unreduced_long
+2095	0	14	tripped	Disambiguator	ambig_unreduced_long
+2096	0	15	on	End	ambig_unreduced_long
+2097	0	16	the	End	ambig_unreduced_long
+2098	0	17	carpet	End	ambig_unreduced_long
+2099	0	18	.	End	ambig_unreduced_long
+2100	0	19	<eos>	End	ambig_unreduced_long
+2101	1	0	The	Start	ambig_unreduced_long
+2102	1	1	captive	Noun	ambig_unreduced_long
+2103	1	2	who	Unreduced content	ambig_unreduced_long
+2104	1	3	was	Unreduced content	ambig_unreduced_long
+2105	1	4	walked	Ambiguous verb	ambig_unreduced_long
+2106	1	5	into	RC contents	ambig_unreduced_long
+2107	1	6	the	RC contents	ambig_unreduced_long
+2108	1	7	dark	RC contents	ambig_unreduced_long
+2109	1	8	cave	RC contents	ambig_unreduced_long
+2110	1	9	lit	Intervener	ambig_unreduced_long
+2111	1	10	by	Intervener	ambig_unreduced_long
+2112	1	11	torches	Intervener	ambig_unreduced_long
+2113	1	12	tried	Disambiguator	ambig_unreduced_long
+2114	1	13	to	End	ambig_unreduced_long
+2115	1	14	escape	End	ambig_unreduced_long
+2116	1	15	but	End	ambig_unreduced_long
+2117	1	16	failed	End	ambig_unreduced_long
+2118	1	17	.	End	ambig_unreduced_long
+2119	1	18	<eos>	End	ambig_unreduced_long
+2120	2	0	The	Start	ambig_unreduced_long
+2121	2	1	prisoners	Noun	ambig_unreduced_long
+2122	2	2	who	Unreduced content	ambig_unreduced_long
+2123	2	3	were	Unreduced content	ambig_unreduced_long
+2124	2	4	pounded	Ambiguous verb	ambig_unreduced_long
+2125	2	5	for	RC contents	ambig_unreduced_long
+2126	2	6	hours	RC contents	ambig_unreduced_long
+2127	2	7	and	RC contents	ambig_unreduced_long
+2128	2	8	hours	RC contents	ambig_unreduced_long
+2129	2	9	in	Intervener	ambig_unreduced_long
+2130	2	10	the	Intervener	ambig_unreduced_long
+2131	2	11	morning	Intervener	ambig_unreduced_long
+2132	2	12	confessed	Disambiguator	ambig_unreduced_long
+2133	2	13	to	End	ambig_unreduced_long
+2134	2	14	crimes	End	ambig_unreduced_long
+2135	2	15	they	End	ambig_unreduced_long
+2136	2	16	never	End	ambig_unreduced_long
+2137	2	17	committed	End	ambig_unreduced_long
+2138	2	18	.	End	ambig_unreduced_long
+2139	2	19	<eos>	End	ambig_unreduced_long
+2140	3	0	The	Start	ambig_unreduced_long
+2141	3	1	business	Noun	ambig_unreduced_long
+2142	3	2	that	Unreduced content	ambig_unreduced_long
+2143	3	3	was	Unreduced content	ambig_unreduced_long
+2144	3	4	expanded	Ambiguous verb	ambig_unreduced_long
+2145	3	5	into	RC contents	ambig_unreduced_long
+2146	3	6	an	RC contents	ambig_unreduced_long
+2147	3	7	empire	RC contents	ambig_unreduced_long
+2148	3	8	spanning	Intervener	ambig_unreduced_long
+2149	3	9	multiple	Intervener	ambig_unreduced_long
+2150	3	10	countries	Intervener	ambig_unreduced_long
+2151	3	11	was	Disambiguator	ambig_unreduced_long
+2152	3	12	sold	End	ambig_unreduced_long
+2153	3	13	for	End	ambig_unreduced_long
+2154	3	14	billions	End	ambig_unreduced_long
+2155	3	15	of	End	ambig_unreduced_long
+2156	3	16	dollars	End	ambig_unreduced_long
+2157	3	17	.	End	ambig_unreduced_long
+2158	3	18	<eos>	End	ambig_unreduced_long
+2159	4	0	The	Start	ambig_unreduced_long
+2160	4	1	rats	Noun	ambig_unreduced_long
+2161	4	2	that	Unreduced content	ambig_unreduced_long
+2162	4	3	were	Unreduced content	ambig_unreduced_long
+2163	4	4	consumed	Ambiguous verb	ambig_unreduced_long
+2164	4	5	rapidly	RC contents	ambig_unreduced_long
+2165	4	6	and	RC contents	ambig_unreduced_long
+2166	4	7	entirely	RC contents	ambig_unreduced_long
+2167	4	8	due	Intervener	ambig_unreduced_long
+2168	4	9	to	Intervener	ambig_unreduced_long
+2169	4	10	great	Intervener	ambig_unreduced_long
+2170	4	11	hunger	Intervener	ambig_unreduced_long
+2171	4	12	were	Disambiguator	ambig_unreduced_long
+2172	4	13	digested	End	ambig_unreduced_long
+2173	4	14	in	End	ambig_unreduced_long
+2174	4	15	the	End	ambig_unreduced_long
+2175	4	16	belly	End	ambig_unreduced_long
+2176	4	17	of	End	ambig_unreduced_long
+2177	4	18	the	End	ambig_unreduced_long
+2178	4	19	cat	End	ambig_unreduced_long
+2179	4	20	.	End	ambig_unreduced_long
+2180	4	21	<eos>	End	ambig_unreduced_long
+2181	5	0	The	Start	ambig_unreduced_long
+2182	5	1	lawyer	Noun	ambig_unreduced_long
+2183	5	2	that	Unreduced content	ambig_unreduced_long
+2184	5	3	was	Unreduced content	ambig_unreduced_long
+2185	5	4	pledged	Ambiguous verb	ambig_unreduced_long
+2186	5	5	to	RC contents	ambig_unreduced_long
+2187	5	6	complete	RC contents	ambig_unreduced_long
+2188	5	7	secrecy	RC contents	ambig_unreduced_long
+2189	5	8	due	Intervener	ambig_unreduced_long
+2190	5	9	to	Intervener	ambig_unreduced_long
+2191	5	10	security	Intervener	ambig_unreduced_long
+2192	5	11	issues	Intervener	ambig_unreduced_long
+2193	5	12	was	Disambiguator	ambig_unreduced_long
+2194	5	13	discovered	End	ambig_unreduced_long
+2195	5	14	to	End	ambig_unreduced_long
+2196	5	15	have	End	ambig_unreduced_long
+2197	5	16	broken	End	ambig_unreduced_long
+2198	5	17	his	End	ambig_unreduced_long
+2199	5	18	promise	End	ambig_unreduced_long
+2200	5	19	.	End	ambig_unreduced_long
+2201	5	20	<eos>	End	ambig_unreduced_long
+2202	6	0	The	Start	ambig_unreduced_long
+2203	6	1	child	Noun	ambig_unreduced_long
+2204	6	2	who	Unreduced content	ambig_unreduced_long
+2205	6	3	was	Unreduced content	ambig_unreduced_long
+2206	6	4	neglected	Ambiguous verb	ambig_unreduced_long
+2207	6	5	in	RC contents	ambig_unreduced_long
+2208	6	6	the	RC contents	ambig_unreduced_long
+2209	6	7	chaos	RC contents	ambig_unreduced_long
+2210	6	8	of	Intervener	ambig_unreduced_long
+2211	6	9	the	Intervener	ambig_unreduced_long
+2212	6	10	war	Intervener	ambig_unreduced_long
+2213	6	11	found	Disambiguator	ambig_unreduced_long
+2214	6	12	her	End	ambig_unreduced_long
+2215	6	13	way	End	ambig_unreduced_long
+2216	6	14	back	End	ambig_unreduced_long
+2217	6	15	home	End	ambig_unreduced_long
+2218	6	16	.	End	ambig_unreduced_long
+2219	6	17	<eos>	End	ambig_unreduced_long
+2220	7	0	The	Start	ambig_unreduced_long
+2221	7	1	horses	Noun	ambig_unreduced_long
+2222	7	2	that	Unreduced content	ambig_unreduced_long
+2223	7	3	were	Unreduced content	ambig_unreduced_long
+2224	7	4	raced	Ambiguous verb	ambig_unreduced_long
+2225	7	5	past	RC contents	ambig_unreduced_long
+2226	7	6	the	RC contents	ambig_unreduced_long
+2227	7	7	barn	RC contents	ambig_unreduced_long
+2228	7	8	in	Intervener	ambig_unreduced_long
+2229	7	9	the	Intervener	ambig_unreduced_long
+2230	7	10	countryside	Intervener	ambig_unreduced_long
+2231	7	11	fell	Disambiguator	ambig_unreduced_long
+2232	7	12	into	End	ambig_unreduced_long
+2233	7	13	a	End	ambig_unreduced_long
+2234	7	14	ditch	End	ambig_unreduced_long
+2235	7	15	.	End	ambig_unreduced_long
+2236	7	16	<eos>	End	ambig_unreduced_long
+2237	8	0	The	Start	ambig_unreduced_long
+2238	8	1	artist	Noun	ambig_unreduced_long
+2239	8	2	who	Unreduced content	ambig_unreduced_long
+2240	8	3	was	Unreduced content	ambig_unreduced_long
+2241	8	4	sketched	Ambiguous verb	ambig_unreduced_long
+2242	8	5	a	RC contents	ambig_unreduced_long
+2243	8	6	hasty	RC contents	ambig_unreduced_long
+2244	8	7	portrait	RC contents	ambig_unreduced_long
+2245	8	8	of	Intervener	ambig_unreduced_long
+2246	8	9	the	Intervener	ambig_unreduced_long
+2247	8	10	woman	Intervener	ambig_unreduced_long
+2248	8	11	was	Disambiguator	ambig_unreduced_long
+2249	8	12	impressed	End	ambig_unreduced_long
+2250	8	13	with	End	ambig_unreduced_long
+2251	8	14	the	End	ambig_unreduced_long
+2252	8	15	work	End	ambig_unreduced_long
+2253	8	16	.	End	ambig_unreduced_long
+2254	8	17	<eos>	End	ambig_unreduced_long
+2255	9	0	The	Start	ambig_unreduced_long
+2256	9	1	car	Noun	ambig_unreduced_long
+2257	9	2	that	Unreduced content	ambig_unreduced_long
+2258	9	3	was	Unreduced content	ambig_unreduced_long
+2259	9	4	steered	Ambiguous verb	ambig_unreduced_long
+2260	9	5	into	RC contents	ambig_unreduced_long
+2261	9	6	the	RC contents	ambig_unreduced_long
+2262	9	7	garage	RC contents	ambig_unreduced_long
+2263	9	8	filled	Intervener	ambig_unreduced_long
+2264	9	9	with	Intervener	ambig_unreduced_long
+2265	9	10	tools	Intervener	ambig_unreduced_long
+2266	9	11	crashed	Disambiguator	ambig_unreduced_long
+2267	9	12	into	End	ambig_unreduced_long
+2268	9	13	a	End	ambig_unreduced_long
+2269	9	14	concrete	End	ambig_unreduced_long
+2270	9	15	pillar	End	ambig_unreduced_long
+2271	9	16	.	End	ambig_unreduced_long
+2272	9	17	<eos>	End	ambig_unreduced_long
+2273	10	0	The	Start	ambig_unreduced_long
+2274	10	1	campaign	Noun	ambig_unreduced_long
+2275	10	2	that	Unreduced content	ambig_unreduced_long
+2276	10	3	was	Unreduced content	ambig_unreduced_long
+2277	10	4	intended	Ambiguous verb	ambig_unreduced_long
+2278	10	5	to	RC contents	ambig_unreduced_long
+2279	10	6	be	RC contents	ambig_unreduced_long
+2280	10	7	very	RC contents	ambig_unreduced_long
+2281	10	8	popular	RC contents	ambig_unreduced_long
+2282	10	9	among	Intervener	ambig_unreduced_long
+2283	10	10	the	Intervener	ambig_unreduced_long
+2284	10	11	masses	Intervener	ambig_unreduced_long
+2285	10	12	was	Disambiguator	ambig_unreduced_long
+2286	10	13	still	End	ambig_unreduced_long
+2287	10	14	unsuccessful	End	ambig_unreduced_long
+2288	10	15	.	End	ambig_unreduced_long
+2289	10	16	<eos>	End	ambig_unreduced_long
+2290	11	0	The	Start	ambig_unreduced_long
+2291	11	1	student	Noun	ambig_unreduced_long
+2292	11	2	who	Unreduced content	ambig_unreduced_long
+2293	11	3	was	Unreduced content	ambig_unreduced_long
+2294	11	4	composed	Ambiguous verb	ambig_unreduced_long
+2295	11	5	a	RC contents	ambig_unreduced_long
+2296	11	6	carefully	RC contents	ambig_unreduced_long
+2297	11	7	worded	RC contents	ambig_unreduced_long
+2298	11	8	excuse	RC contents	ambig_unreduced_long
+2299	11	9	filled	Intervener	ambig_unreduced_long
+2300	11	10	with	Intervener	ambig_unreduced_long
+2301	11	11	lies	Intervener	ambig_unreduced_long
+2302	11	12	forgot	Disambiguator	ambig_unreduced_long
+2303	11	13	to	End	ambig_unreduced_long
+2304	11	14	give	End	ambig_unreduced_long
+2305	11	15	it	End	ambig_unreduced_long
+2306	11	16	to	End	ambig_unreduced_long
+2307	11	17	the	End	ambig_unreduced_long
+2308	11	18	teacher	End	ambig_unreduced_long
+2309	11	19	.	End	ambig_unreduced_long
+2310	11	20	<eos>	End	ambig_unreduced_long
+2311	12	0	The	Start	ambig_unreduced_long
+2312	12	1	television	Noun	ambig_unreduced_long
+2313	12	2	show	Noun	ambig_unreduced_long
+2314	12	3	that	Unreduced content	ambig_unreduced_long
+2315	12	4	was	Unreduced content	ambig_unreduced_long
+2316	12	5	started	Ambiguous verb	ambig_unreduced_long
+2317	12	6	three	RC contents	ambig_unreduced_long
+2318	12	7	weeks	RC contents	ambig_unreduced_long
+2319	12	8	ago	RC contents	ambig_unreduced_long
+2320	12	9	on	Intervener	ambig_unreduced_long
+2321	12	10	a	Intervener	ambig_unreduced_long
+2322	12	11	cable	Intervener	ambig_unreduced_long
+2323	12	12	channel	Intervener	ambig_unreduced_long
+2324	12	13	was	Disambiguator	ambig_unreduced_long
+2325	12	14	cancelled	End	ambig_unreduced_long
+2326	12	15	immediately	End	ambig_unreduced_long
+2327	12	16	.	End	ambig_unreduced_long
+2328	12	17	<eos>	End	ambig_unreduced_long
+2329	13	0	The	Start	ambig_unreduced_long
+2330	13	1	boys	Noun	ambig_unreduced_long
+2331	13	2	who	Unreduced content	ambig_unreduced_long
+2332	13	3	were	Unreduced content	ambig_unreduced_long
+2333	13	4	performed	Ambiguous verb	ambig_unreduced_long
+2334	13	5	an	RC contents	ambig_unreduced_long
+2335	13	6	unsolicited	RC contents	ambig_unreduced_long
+2336	13	7	favor	RC contents	ambig_unreduced_long
+2337	13	8	for	Intervener	ambig_unreduced_long
+2338	13	9	no	Intervener	ambig_unreduced_long
+2339	13	10	good	Intervener	ambig_unreduced_long
+2340	13	11	reason	Intervener	ambig_unreduced_long
+2341	13	12	thanked	Disambiguator	ambig_unreduced_long
+2342	13	13	the	End	ambig_unreduced_long
+2343	13	14	person	End	ambig_unreduced_long
+2344	13	15	who	End	ambig_unreduced_long
+2345	13	16	helped	End	ambig_unreduced_long
+2346	13	17	them	End	ambig_unreduced_long
+2347	13	18	.	End	ambig_unreduced_long
+2348	13	19	<eos>	End	ambig_unreduced_long
+2349	14	0	The	Start	ambig_unreduced_long
+2350	14	1	player	Noun	ambig_unreduced_long
+2351	14	2	who	Unreduced content	ambig_unreduced_long
+2352	14	3	was	Unreduced content	ambig_unreduced_long
+2353	14	4	tossed	Ambiguous verb	ambig_unreduced_long
+2354	14	5	the	RC contents	ambig_unreduced_long
+2355	14	6	plastic	RC contents	ambig_unreduced_long
+2356	14	7	frisbee	RC contents	ambig_unreduced_long
+2357	14	8	during	Intervener	ambig_unreduced_long
+2358	14	9	the	Intervener	ambig_unreduced_long
+2359	14	10	game	Intervener	ambig_unreduced_long
+2360	14	11	dropped	Disambiguator	ambig_unreduced_long
+2361	14	12	it	End	ambig_unreduced_long
+2362	14	13	on	End	ambig_unreduced_long
+2363	14	14	the	End	ambig_unreduced_long
+2364	14	15	ground	End	ambig_unreduced_long
+2365	14	16	.	End	ambig_unreduced_long
+2366	14	17	<eos>	End	ambig_unreduced_long
+2367	15	0	The	Start	ambig_unreduced_long
+2368	15	1	man	Noun	ambig_unreduced_long
+2369	15	2	who	Unreduced content	ambig_unreduced_long
+2370	15	3	was	Unreduced content	ambig_unreduced_long
+2371	15	4	stabbed	Ambiguous verb	ambig_unreduced_long
+2372	15	5	deeply	RC contents	ambig_unreduced_long
+2373	15	6	and	RC contents	ambig_unreduced_long
+2374	15	7	fatally	RC contents	ambig_unreduced_long
+2375	15	8	in	Intervener	ambig_unreduced_long
+2376	15	9	the	Intervener	ambig_unreduced_long
+2377	15	10	afternoon	Intervener	ambig_unreduced_long
+2378	15	11	died	Disambiguator	ambig_unreduced_long
+2379	15	12	very	End	ambig_unreduced_long
+2380	15	13	quickly	End	ambig_unreduced_long
+2381	15	14	.	End	ambig_unreduced_long
+2382	15	15	<eos>	End	ambig_unreduced_long
+2383	16	0	The	Start	ambig_unreduced_long
+2384	16	1	child	Noun	ambig_unreduced_long
+2385	16	2	who	Unreduced content	ambig_unreduced_long
+2386	16	3	was	Unreduced content	ambig_unreduced_long
+2387	16	4	jumped	Ambiguous verb	ambig_unreduced_long
+2388	16	5	completely	RC contents	ambig_unreduced_long
+2389	16	6	past	RC contents	ambig_unreduced_long
+2390	16	7	in	Intervener	ambig_unreduced_long
+2391	16	8	the	Intervener	ambig_unreduced_long
+2392	16	9	playground	Intervener	ambig_unreduced_long
+2393	16	10	was	Disambiguator	ambig_unreduced_long
+2394	16	11	upset	End	ambig_unreduced_long
+2395	16	12	about	End	ambig_unreduced_long
+2396	16	13	it	End	ambig_unreduced_long
+2397	16	14	.	End	ambig_unreduced_long
+2398	16	15	<eos>	End	ambig_unreduced_long
+2399	17	0	The	Start	ambig_unreduced_long
+2400	17	1	students	Noun	ambig_unreduced_long
+2401	17	2	who	Unreduced content	ambig_unreduced_long
+2402	17	3	were	Unreduced content	ambig_unreduced_long
+2403	17	4	prepared	Ambiguous verb	ambig_unreduced_long
+2404	17	5	a	RC contents	ambig_unreduced_long
+2405	17	6	fancy	RC contents	ambig_unreduced_long
+2406	17	7	dinner	RC contents	ambig_unreduced_long
+2407	17	8	for	Intervener	ambig_unreduced_long
+2408	17	9	the	Intervener	ambig_unreduced_long
+2409	17	10	holiday	Intervener	ambig_unreduced_long
+2410	17	11	ate	Disambiguator	ambig_unreduced_long
+2411	17	12	the	End	ambig_unreduced_long
+2412	17	13	meal	End	ambig_unreduced_long
+2413	17	14	quickly	End	ambig_unreduced_long
+2414	17	15	.	End	ambig_unreduced_long
+2415	17	16	<eos>	End	ambig_unreduced_long
+2416	18	0	The	Start	ambig_unreduced_long
+2417	18	1	infant	Noun	ambig_unreduced_long
+2418	18	2	that	Unreduced content	ambig_unreduced_long
+2419	18	3	was	Unreduced content	ambig_unreduced_long
+2420	18	4	fed	Ambiguous verb	ambig_unreduced_long
+2421	18	5	during	RC contents	ambig_unreduced_long
+2422	18	6	the	RC contents	ambig_unreduced_long
+2423	18	7	night	RC contents	ambig_unreduced_long
+2424	18	8	of	Intervener	ambig_unreduced_long
+2425	18	9	the	Intervener	ambig_unreduced_long
+2426	18	10	first	Intervener	ambig_unreduced_long
+2427	18	11	full	Intervener	ambig_unreduced_long
+2428	18	12	moon	Intervener	ambig_unreduced_long
+2429	18	13	cried	Disambiguator	ambig_unreduced_long
+2430	18	14	intensely	End	ambig_unreduced_long
+2431	18	15	.	End	ambig_unreduced_long
+2432	18	16	<eos>	End	ambig_unreduced_long
+2433	19	0	The	Start	ambig_unreduced_long
+2434	19	1	convict	Noun	ambig_unreduced_long
+2435	19	2	who	Unreduced content	ambig_unreduced_long
+2436	19	3	was	Unreduced content	ambig_unreduced_long
+2437	19	4	stowed	Ambiguous verb	ambig_unreduced_long
+2438	19	5	away	RC contents	ambig_unreduced_long
+2439	19	6	in	RC contents	ambig_unreduced_long
+2440	19	7	the	RC contents	ambig_unreduced_long
+2441	19	8	basement	RC contents	ambig_unreduced_long
+2442	19	9	filled	Intervener	ambig_unreduced_long
+2443	19	10	with	Intervener	ambig_unreduced_long
+2444	19	11	mold	Intervener	ambig_unreduced_long
+2445	19	12	escaped	Disambiguator	ambig_unreduced_long
+2446	19	13	during	End	ambig_unreduced_long
+2447	19	14	the	End	ambig_unreduced_long
+2448	19	15	night	End	ambig_unreduced_long
+2449	19	16	.	End	ambig_unreduced_long
+2450	19	17	<eos>	End	ambig_unreduced_long
+2451	20	0	The	Start	ambig_unreduced_long
+2452	20	1	dog	Noun	ambig_unreduced_long
+2453	20	2	that	Unreduced content	ambig_unreduced_long
+2454	20	3	was	Unreduced content	ambig_unreduced_long
+2455	20	4	promenaded	Ambiguous verb	ambig_unreduced_long
+2456	20	5	on	RC contents	ambig_unreduced_long
+2457	20	6	the	RC contents	ambig_unreduced_long
+2458	20	7	boardwalk	RC contents	ambig_unreduced_long
+2459	20	8	of	Intervener	ambig_unreduced_long
+2460	20	9	the	Intervener	ambig_unreduced_long
+2461	20	10	marina	Intervener	ambig_unreduced_long
+2462	20	11	barked	Disambiguator	ambig_unreduced_long
+2463	20	12	at	End	ambig_unreduced_long
+2464	20	13	the	End	ambig_unreduced_long
+2465	20	14	onlookers	End	ambig_unreduced_long
+2466	20	15	.	End	ambig_unreduced_long
+2467	20	16	<eos>	End	ambig_unreduced_long
+2468	21	0	The	Start	ambig_unreduced_long
+2469	21	1	ship	Noun	ambig_unreduced_long
+2470	21	2	that	Unreduced content	ambig_unreduced_long
+2471	21	3	was	Unreduced content	ambig_unreduced_long
+2472	21	4	navigated	Ambiguous verb	ambig_unreduced_long
+2473	21	5	off	RC contents	ambig_unreduced_long
+2474	21	6	course	RC contents	ambig_unreduced_long
+2475	21	7	in	Intervener	ambig_unreduced_long
+2476	21	8	the	Intervener	ambig_unreduced_long
+2477	21	9	Pacific	Intervener	ambig_unreduced_long
+2478	21	10	Ocean	Intervener	ambig_unreduced_long
+2479	21	11	sank	Disambiguator	ambig_unreduced_long
+2480	21	12	on	End	ambig_unreduced_long
+2481	21	13	the	End	ambig_unreduced_long
+2482	21	14	reef	End	ambig_unreduced_long
+2483	21	15	.	End	ambig_unreduced_long
+2484	21	16	<eos>	End	ambig_unreduced_long
+2485	22	0	The	Start	ambig_unreduced_long
+2486	22	1	balloon	Noun	ambig_unreduced_long
+2487	22	2	that	Unreduced content	ambig_unreduced_long
+2488	22	3	was	Unreduced content	ambig_unreduced_long
+2489	22	4	deflated	Ambiguous verb	ambig_unreduced_long
+2490	22	5	to	RC contents	ambig_unreduced_long
+2491	22	6	a	RC contents	ambig_unreduced_long
+2492	22	7	small	RC contents	ambig_unreduced_long
+2493	22	8	size	RC contents	ambig_unreduced_long
+2494	22	9	over	Intervener	ambig_unreduced_long
+2495	22	10	several	Intervener	ambig_unreduced_long
+2496	22	11	hours	Intervener	ambig_unreduced_long
+2497	22	12	popped	Disambiguator	ambig_unreduced_long
+2498	22	13	with	End	ambig_unreduced_long
+2499	22	14	a	End	ambig_unreduced_long
+2500	22	15	bang	End	ambig_unreduced_long
+2501	22	16	.	End	ambig_unreduced_long
+2502	22	17	<eos>	End	ambig_unreduced_long
+2503	23	0	The	Start	ambig_unreduced_long
+2504	23	1	boat	Noun	ambig_unreduced_long
+2505	23	2	that	Unreduced content	ambig_unreduced_long
+2506	23	3	was	Unreduced content	ambig_unreduced_long
+2507	23	4	sailed	Ambiguous verb	ambig_unreduced_long
+2508	23	5	in	RC contents	ambig_unreduced_long
+2509	23	6	the	RC contents	ambig_unreduced_long
+2510	23	7	lake	RC contents	ambig_unreduced_long
+2511	23	8	filled	Intervener	ambig_unreduced_long
+2512	23	9	with	Intervener	ambig_unreduced_long
+2513	23	10	crocodiles	Intervener	ambig_unreduced_long
+2514	23	11	disappeared	Disambiguator	ambig_unreduced_long
+2515	23	12	in	End	ambig_unreduced_long
+2516	23	13	the	End	ambig_unreduced_long
+2517	23	14	storm	End	ambig_unreduced_long
+2518	23	15	.	End	ambig_unreduced_long
+2519	23	16	<eos>	End	ambig_unreduced_long
+2520	24	0	The	Start	ambig_unreduced_long
+2521	24	1	couple	Noun	ambig_unreduced_long
+2522	24	2	that	Unreduced content	ambig_unreduced_long
+2523	24	3	was	Unreduced content	ambig_unreduced_long
+2524	24	4	bought	Ambiguous verb	ambig_unreduced_long
+2525	24	5	the	RC contents	ambig_unreduced_long
+2526	24	6	apartment	RC contents	ambig_unreduced_long
+2527	24	7	with	Intervener	ambig_unreduced_long
+2528	24	8	new	Intervener	ambig_unreduced_long
+2529	24	9	wood	Intervener	ambig_unreduced_long
+2530	24	10	floors	Intervener	ambig_unreduced_long
+2531	24	11	moved	Disambiguator	ambig_unreduced_long
+2532	24	12	to	End	ambig_unreduced_long
+2533	24	13	a	End	ambig_unreduced_long
+2534	24	14	different	End	ambig_unreduced_long
+2535	24	15	city	End	ambig_unreduced_long
+2536	24	16	.	End	ambig_unreduced_long
+2537	24	17	<eos>	End	ambig_unreduced_long
+2538	25	0	The	Start	ambig_unreduced_long
+2539	25	1	girl	Noun	ambig_unreduced_long
+2540	25	2	who	Unreduced content	ambig_unreduced_long
+2541	25	3	was	Unreduced content	ambig_unreduced_long
+2542	25	4	stitched	Ambiguous verb	ambig_unreduced_long
+2543	25	5	a	RC contents	ambig_unreduced_long
+2544	25	6	new	RC contents	ambig_unreduced_long
+2545	25	7	shawl	RC contents	ambig_unreduced_long
+2546	25	8	out	Intervener	ambig_unreduced_long
+2547	25	9	of	Intervener	ambig_unreduced_long
+2548	25	10	wool	Intervener	ambig_unreduced_long
+2549	25	11	lost	Disambiguator	ambig_unreduced_long
+2550	25	12	it	End	ambig_unreduced_long
+2551	25	13	during	End	ambig_unreduced_long
+2552	25	14	the	End	ambig_unreduced_long
+2553	25	15	trip	End	ambig_unreduced_long
+2554	25	16	.	End	ambig_unreduced_long
+2555	25	17	<eos>	End	ambig_unreduced_long
+2556	26	0	The	Start	ambig_unreduced_long
+2557	26	1	airplane	Noun	ambig_unreduced_long
+2558	26	2	that	Unreduced content	ambig_unreduced_long
+2559	26	3	was	Unreduced content	ambig_unreduced_long
+2560	26	4	landed	Ambiguous verb	ambig_unreduced_long
+2561	26	5	in	RC contents	ambig_unreduced_long
+2562	26	6	the	RC contents	ambig_unreduced_long
+2563	26	7	arctic	RC contents	ambig_unreduced_long
+2564	26	8	in	Intervener	ambig_unreduced_long
+2565	26	9	the	Intervener	ambig_unreduced_long
+2566	26	10	winter	Intervener	ambig_unreduced_long
+2567	26	11	froze	Disambiguator	ambig_unreduced_long
+2568	26	12	during	End	ambig_unreduced_long
+2569	26	13	the	End	ambig_unreduced_long
+2570	26	14	ice	End	ambig_unreduced_long
+2571	26	15	storm	End	ambig_unreduced_long
+2572	26	16	.	End	ambig_unreduced_long
+2573	26	17	<eos>	End	ambig_unreduced_long
+2574	27	0	The	Start	ambig_unreduced_long
+2575	27	1	toddler	Noun	ambig_unreduced_long
+2576	27	2	that	Unreduced content	ambig_unreduced_long
+2577	27	3	was	Unreduced content	ambig_unreduced_long
+2578	27	4	hurried	Ambiguous verb	ambig_unreduced_long
+2579	27	5	down	RC contents	ambig_unreduced_long
+2580	27	6	the	RC contents	ambig_unreduced_long
+2581	27	7	hallway	RC contents	ambig_unreduced_long
+2582	27	8	of	Intervener	ambig_unreduced_long
+2583	27	9	the	Intervener	ambig_unreduced_long
+2584	27	10	school	Intervener	ambig_unreduced_long
+2585	27	11	sobbed	Disambiguator	ambig_unreduced_long
+2586	27	12	at	End	ambig_unreduced_long
+2587	27	13	the	End	ambig_unreduced_long
+2588	27	14	top	End	ambig_unreduced_long
+2589	27	15	of	End	ambig_unreduced_long
+2590	27	16	his	End	ambig_unreduced_long
+2591	27	17	lungs	End	ambig_unreduced_long
+2592	27	18	.	End	ambig_unreduced_long
+2593	27	19	<eos>	End	ambig_unreduced_long
+2594	0	0	The	Start	unambig_reduced_long
+2595	0	1	woman	Noun	unambig_reduced_long
+2596	0	2	given	Unambiguous verb	unambig_reduced_long
+2597	0	3	the	RC contents	unambig_reduced_long
+2598	0	4	sandwich	RC contents	unambig_reduced_long
+2599	0	5	from	RC contents	unambig_reduced_long
+2600	0	6	the	RC contents	unambig_reduced_long
+2601	0	7	kitchen	RC contents	unambig_reduced_long
+2602	0	8	with	Intervener	unambig_reduced_long
+2603	0	9	a	Intervener	unambig_reduced_long
+2604	0	10	new	Intervener	unambig_reduced_long
+2605	0	11	oven	Intervener	unambig_reduced_long
+2606	0	12	tripped	Disambiguator	unambig_reduced_long
+2607	0	13	on	End	unambig_reduced_long
+2608	0	14	the	End	unambig_reduced_long
+2609	0	15	carpet	End	unambig_reduced_long
+2610	0	16	.	End	unambig_reduced_long
+2611	0	17	<eos>	End	unambig_reduced_long
+2612	1	0	The	Start	unambig_reduced_long
+2613	1	1	captive	Noun	unambig_reduced_long
+2614	1	2	taken	Unambiguous verb	unambig_reduced_long
+2615	1	3	into	RC contents	unambig_reduced_long
+2616	1	4	the	RC contents	unambig_reduced_long
+2617	1	5	dark	RC contents	unambig_reduced_long
+2618	1	6	cave	RC contents	unambig_reduced_long
+2619	1	7	lit	Intervener	unambig_reduced_long
+2620	1	8	by	Intervener	unambig_reduced_long
+2621	1	9	torches	Intervener	unambig_reduced_long
+2622	1	10	tried	Disambiguator	unambig_reduced_long
+2623	1	11	to	End	unambig_reduced_long
+2624	1	12	escape	End	unambig_reduced_long
+2625	1	13	but	End	unambig_reduced_long
+2626	1	14	failed	End	unambig_reduced_long
+2627	1	15	.	End	unambig_reduced_long
+2628	1	16	<eos>	End	unambig_reduced_long
+2629	2	0	The	Start	unambig_reduced_long
+2630	2	1	prisoners	Noun	unambig_reduced_long
+2631	2	2	beaten	Unambiguous verb	unambig_reduced_long
+2632	2	3	for	RC contents	unambig_reduced_long
+2633	2	4	hours	RC contents	unambig_reduced_long
+2634	2	5	and	RC contents	unambig_reduced_long
+2635	2	6	hours	RC contents	unambig_reduced_long
+2636	2	7	in	Intervener	unambig_reduced_long
+2637	2	8	the	Intervener	unambig_reduced_long
+2638	2	9	morning	Intervener	unambig_reduced_long
+2639	2	10	confessed	Disambiguator	unambig_reduced_long
+2640	2	11	to	End	unambig_reduced_long
+2641	2	12	crimes	End	unambig_reduced_long
+2642	2	13	they	End	unambig_reduced_long
+2643	2	14	never	End	unambig_reduced_long
+2644	2	15	committed	End	unambig_reduced_long
+2645	2	16	.	End	unambig_reduced_long
+2646	2	17	<eos>	End	unambig_reduced_long
+2647	3	0	The	Start	unambig_reduced_long
+2648	3	1	business	Noun	unambig_reduced_long
+2649	3	2	grown	Unambiguous verb	unambig_reduced_long
+2650	3	3	into	RC contents	unambig_reduced_long
+2651	3	4	an	RC contents	unambig_reduced_long
+2652	3	5	empire	RC contents	unambig_reduced_long
+2653	3	6	spanning	Intervener	unambig_reduced_long
+2654	3	7	multiple	Intervener	unambig_reduced_long
+2655	3	8	countries	Intervener	unambig_reduced_long
+2656	3	9	was	Disambiguator	unambig_reduced_long
+2657	3	10	sold	End	unambig_reduced_long
+2658	3	11	for	End	unambig_reduced_long
+2659	3	12	billions	End	unambig_reduced_long
+2660	3	13	of	End	unambig_reduced_long
+2661	3	14	dollars	End	unambig_reduced_long
+2662	3	15	.	End	unambig_reduced_long
+2663	3	16	<eos>	End	unambig_reduced_long
+2664	4	0	The	Start	unambig_reduced_long
+2665	4	1	rats	Noun	unambig_reduced_long
+2666	4	2	eaten	Unambiguous verb	unambig_reduced_long
+2667	4	3	rapidly	RC contents	unambig_reduced_long
+2668	4	4	and	RC contents	unambig_reduced_long
+2669	4	5	entirely	RC contents	unambig_reduced_long
+2670	4	6	due	Intervener	unambig_reduced_long
+2671	4	7	to	Intervener	unambig_reduced_long
+2672	4	8	great	Intervener	unambig_reduced_long
+2673	4	9	hunger	Intervener	unambig_reduced_long
+2674	4	10	were	Disambiguator	unambig_reduced_long
+2675	4	11	digested	End	unambig_reduced_long
+2676	4	12	in	End	unambig_reduced_long
+2677	4	13	the	End	unambig_reduced_long
+2678	4	14	belly	End	unambig_reduced_long
+2679	4	15	of	End	unambig_reduced_long
+2680	4	16	the	End	unambig_reduced_long
+2681	4	17	cat	End	unambig_reduced_long
+2682	4	18	.	End	unambig_reduced_long
+2683	4	19	<eos>	End	unambig_reduced_long
+2684	5	0	The	Start	unambig_reduced_long
+2685	5	1	lawyer	Noun	unambig_reduced_long
+2686	5	2	sworn	Unambiguous verb	unambig_reduced_long
+2687	5	3	to	RC contents	unambig_reduced_long
+2688	5	4	complete	RC contents	unambig_reduced_long
+2689	5	5	secrecy	RC contents	unambig_reduced_long
+2690	5	6	due	Intervener	unambig_reduced_long
+2691	5	7	to	Intervener	unambig_reduced_long
+2692	5	8	security	Intervener	unambig_reduced_long
+2693	5	9	issues	Intervener	unambig_reduced_long
+2694	5	10	was	Disambiguator	unambig_reduced_long
+2695	5	11	discovered	End	unambig_reduced_long
+2696	5	12	to	End	unambig_reduced_long
+2697	5	13	have	End	unambig_reduced_long
+2698	5	14	broken	End	unambig_reduced_long
+2699	5	15	his	End	unambig_reduced_long
+2700	5	16	promise	End	unambig_reduced_long
+2701	5	17	.	End	unambig_reduced_long
+2702	5	18	<eos>	End	unambig_reduced_long
+2703	6	0	The	Start	unambig_reduced_long
+2704	6	1	child	Noun	unambig_reduced_long
+2705	6	2	forgotten	Unambiguous verb	unambig_reduced_long
+2706	6	3	in	RC contents	unambig_reduced_long
+2707	6	4	the	RC contents	unambig_reduced_long
+2708	6	5	chaos	RC contents	unambig_reduced_long
+2709	6	6	of	Intervener	unambig_reduced_long
+2710	6	7	the	Intervener	unambig_reduced_long
+2711	6	8	war	Intervener	unambig_reduced_long
+2712	6	9	found	Disambiguator	unambig_reduced_long
+2713	6	10	her	End	unambig_reduced_long
+2714	6	11	way	End	unambig_reduced_long
+2715	6	12	back	End	unambig_reduced_long
+2716	6	13	home	End	unambig_reduced_long
+2717	6	14	.	End	unambig_reduced_long
+2718	6	15	<eos>	End	unambig_reduced_long
+2719	7	0	The	Start	unambig_reduced_long
+2720	7	1	horses	Noun	unambig_reduced_long
+2721	7	2	ridden	Unambiguous verb	unambig_reduced_long
+2722	7	3	past	RC contents	unambig_reduced_long
+2723	7	4	the	RC contents	unambig_reduced_long
+2724	7	5	barn	RC contents	unambig_reduced_long
+2725	7	6	in	Intervener	unambig_reduced_long
+2726	7	7	the	Intervener	unambig_reduced_long
+2727	7	8	countryside	Intervener	unambig_reduced_long
+2728	7	9	fell	Disambiguator	unambig_reduced_long
+2729	7	10	into	End	unambig_reduced_long
+2730	7	11	a	End	unambig_reduced_long
+2731	7	12	ditch	End	unambig_reduced_long
+2732	7	13	.	End	unambig_reduced_long
+2733	7	14	<eos>	End	unambig_reduced_long
+2734	8	0	The	Start	unambig_reduced_long
+2735	8	1	artist	Noun	unambig_reduced_long
+2736	8	2	drawn	Unambiguous verb	unambig_reduced_long
+2737	8	3	a	RC contents	unambig_reduced_long
+2738	8	4	hasty	RC contents	unambig_reduced_long
+2739	8	5	portrait	RC contents	unambig_reduced_long
+2740	8	6	of	Intervener	unambig_reduced_long
+2741	8	7	the	Intervener	unambig_reduced_long
+2742	8	8	woman	Intervener	unambig_reduced_long
+2743	8	9	was	Disambiguator	unambig_reduced_long
+2744	8	10	impressed	End	unambig_reduced_long
+2745	8	11	with	End	unambig_reduced_long
+2746	8	12	the	End	unambig_reduced_long
+2747	8	13	work	End	unambig_reduced_long
+2748	8	14	.	End	unambig_reduced_long
+2749	8	15	<eos>	End	unambig_reduced_long
+2750	9	0	The	Start	unambig_reduced_long
+2751	9	1	car	Noun	unambig_reduced_long
+2752	9	2	driven	Unambiguous verb	unambig_reduced_long
+2753	9	3	into	RC contents	unambig_reduced_long
+2754	9	4	the	RC contents	unambig_reduced_long
+2755	9	5	garage	RC contents	unambig_reduced_long
+2756	9	6	filled	Intervener	unambig_reduced_long
+2757	9	7	with	Intervener	unambig_reduced_long
+2758	9	8	tools	Intervener	unambig_reduced_long
+2759	9	9	crashed	Disambiguator	unambig_reduced_long
+2760	9	10	into	End	unambig_reduced_long
+2761	9	11	a	End	unambig_reduced_long
+2762	9	12	concrete	End	unambig_reduced_long
+2763	9	13	pillar	End	unambig_reduced_long
+2764	9	14	.	End	unambig_reduced_long
+2765	9	15	<eos>	End	unambig_reduced_long
+2766	10	0	The	Start	unambig_reduced_long
+2767	10	1	campaign	Noun	unambig_reduced_long
+2768	10	2	known	Unambiguous verb	unambig_reduced_long
+2769	10	3	to	RC contents	unambig_reduced_long
+2770	10	4	be	RC contents	unambig_reduced_long
+2771	10	5	very	RC contents	unambig_reduced_long
+2772	10	6	popular	RC contents	unambig_reduced_long
+2773	10	7	among	Intervener	unambig_reduced_long
+2774	10	8	the	Intervener	unambig_reduced_long
+2775	10	9	masses	Intervener	unambig_reduced_long
+2776	10	10	was	Disambiguator	unambig_reduced_long
+2777	10	11	still	End	unambig_reduced_long
+2778	10	12	unsuccessful	End	unambig_reduced_long
+2779	10	13	.	End	unambig_reduced_long
+2780	10	14	<eos>	End	unambig_reduced_long
+2781	11	0	The	Start	unambig_reduced_long
+2782	11	1	student	Noun	unambig_reduced_long
+2783	11	2	written	Unambiguous verb	unambig_reduced_long
+2784	11	3	a	RC contents	unambig_reduced_long
+2785	11	4	carefully	RC contents	unambig_reduced_long
+2786	11	5	worded	RC contents	unambig_reduced_long
+2787	11	6	excuse	RC contents	unambig_reduced_long
+2788	11	7	filled	Intervener	unambig_reduced_long
+2789	11	8	with	Intervener	unambig_reduced_long
+2790	11	9	lies	Intervener	unambig_reduced_long
+2791	11	10	forgot	Disambiguator	unambig_reduced_long
+2792	11	11	to	End	unambig_reduced_long
+2793	11	12	give	End	unambig_reduced_long
+2794	11	13	it	End	unambig_reduced_long
+2795	11	14	to	End	unambig_reduced_long
+2796	11	15	the	End	unambig_reduced_long
+2797	11	16	teacher	End	unambig_reduced_long
+2798	11	17	.	End	unambig_reduced_long
+2799	11	18	<eos>	End	unambig_reduced_long
+2800	12	0	The	Start	unambig_reduced_long
+2801	12	1	television	Noun	unambig_reduced_long
+2802	12	2	show	Noun	unambig_reduced_long
+2803	12	3	begun	Unambiguous verb	unambig_reduced_long
+2804	12	4	three	RC contents	unambig_reduced_long
+2805	12	5	weeks	RC contents	unambig_reduced_long
+2806	12	6	ago	RC contents	unambig_reduced_long
+2807	12	7	on	Intervener	unambig_reduced_long
+2808	12	8	a	Intervener	unambig_reduced_long
+2809	12	9	cable	Intervener	unambig_reduced_long
+2810	12	10	channel	Intervener	unambig_reduced_long
+2811	12	11	was	Disambiguator	unambig_reduced_long
+2812	12	12	cancelled	End	unambig_reduced_long
+2813	12	13	immediately	End	unambig_reduced_long
+2814	12	14	.	End	unambig_reduced_long
+2815	12	15	<eos>	End	unambig_reduced_long
+2816	13	0	The	Start	unambig_reduced_long
+2817	13	1	boys	Noun	unambig_reduced_long
+2818	13	2	done	Unambiguous verb	unambig_reduced_long
+2819	13	3	an	RC contents	unambig_reduced_long
+2820	13	4	unsolicited	RC contents	unambig_reduced_long
+2821	13	5	favor	RC contents	unambig_reduced_long
+2822	13	6	for	Intervener	unambig_reduced_long
+2823	13	7	no	Intervener	unambig_reduced_long
+2824	13	8	good	Intervener	unambig_reduced_long
+2825	13	9	reason	Intervener	unambig_reduced_long
+2826	13	10	thanked	Disambiguator	unambig_reduced_long
+2827	13	11	the	End	unambig_reduced_long
+2828	13	12	person	End	unambig_reduced_long
+2829	13	13	who	End	unambig_reduced_long
+2830	13	14	helped	End	unambig_reduced_long
+2831	13	15	them	End	unambig_reduced_long
+2832	13	16	.	End	unambig_reduced_long
+2833	13	17	<eos>	End	unambig_reduced_long
+2834	14	0	The	Start	unambig_reduced_long
+2835	14	1	player	Noun	unambig_reduced_long
+2836	14	2	thrown	Unambiguous verb	unambig_reduced_long
+2837	14	3	the	RC contents	unambig_reduced_long
+2838	14	4	plastic	RC contents	unambig_reduced_long
+2839	14	5	frisbee	RC contents	unambig_reduced_long
+2840	14	6	during	Intervener	unambig_reduced_long
+2841	14	7	the	Intervener	unambig_reduced_long
+2842	14	8	game	Intervener	unambig_reduced_long
+2843	14	9	dropped	Disambiguator	unambig_reduced_long
+2844	14	10	it	End	unambig_reduced_long
+2845	14	11	on	End	unambig_reduced_long
+2846	14	12	the	End	unambig_reduced_long
+2847	14	13	ground	End	unambig_reduced_long
+2848	14	14	.	End	unambig_reduced_long
+2849	14	15	<eos>	End	unambig_reduced_long
+2850	15	0	The	Start	unambig_reduced_long
+2851	15	1	man	Noun	unambig_reduced_long
+2852	15	2	bitten	Unambiguous verb	unambig_reduced_long
+2853	15	3	deeply	RC contents	unambig_reduced_long
+2854	15	4	and	RC contents	unambig_reduced_long
+2855	15	5	fatally	RC contents	unambig_reduced_long
+2856	15	6	in	Intervener	unambig_reduced_long
+2857	15	7	the	Intervener	unambig_reduced_long
+2858	15	8	afternoon	Intervener	unambig_reduced_long
+2859	15	9	died	Disambiguator	unambig_reduced_long
+2860	15	10	very	End	unambig_reduced_long
+2861	15	11	quickly	End	unambig_reduced_long
+2862	15	12	.	End	unambig_reduced_long
+2863	15	13	<eos>	End	unambig_reduced_long
+2864	16	0	The	Start	unambig_reduced_long
+2865	16	1	child	Noun	unambig_reduced_long
+2866	16	2	leapt	Unambiguous verb	unambig_reduced_long
+2867	16	3	completely	RC contents	unambig_reduced_long
+2868	16	4	past	RC contents	unambig_reduced_long
+2869	16	5	in	Intervener	unambig_reduced_long
+2870	16	6	the	Intervener	unambig_reduced_long
+2871	16	7	playground	Intervener	unambig_reduced_long
+2872	16	8	was	Disambiguator	unambig_reduced_long
+2873	16	9	upset	End	unambig_reduced_long
+2874	16	10	about	End	unambig_reduced_long
+2875	16	11	it	End	unambig_reduced_long
+2876	16	12	.	End	unambig_reduced_long
+2877	16	13	<eos>	End	unambig_reduced_long
+2878	17	0	The	Start	unambig_reduced_long
+2879	17	1	students	Noun	unambig_reduced_long
+2880	17	2	gotten	Unambiguous verb	unambig_reduced_long
+2881	17	3	a	RC contents	unambig_reduced_long
+2882	17	4	fancy	RC contents	unambig_reduced_long
+2883	17	5	dinner	RC contents	unambig_reduced_long
+2884	17	6	for	Intervener	unambig_reduced_long
+2885	17	7	the	Intervener	unambig_reduced_long
+2886	17	8	holiday	Intervener	unambig_reduced_long
+2887	17	9	ate	Disambiguator	unambig_reduced_long
+2888	17	10	the	End	unambig_reduced_long
+2889	17	11	meal	End	unambig_reduced_long
+2890	17	12	quickly	End	unambig_reduced_long
+2891	17	13	.	End	unambig_reduced_long
+2892	17	14	<eos>	End	unambig_reduced_long
+2893	18	0	The	Start	unambig_reduced_long
+2894	18	1	infant	Noun	unambig_reduced_long
+2895	18	2	woken	Unambiguous verb	unambig_reduced_long
+2896	18	3	during	RC contents	unambig_reduced_long
+2897	18	4	the	RC contents	unambig_reduced_long
+2898	18	5	night	RC contents	unambig_reduced_long
+2899	18	6	of	Intervener	unambig_reduced_long
+2900	18	7	the	Intervener	unambig_reduced_long
+2901	18	8	first	Intervener	unambig_reduced_long
+2902	18	9	full	Intervener	unambig_reduced_long
+2903	18	10	moon	Intervener	unambig_reduced_long
+2904	18	11	cried	Disambiguator	unambig_reduced_long
+2905	18	12	intensely	End	unambig_reduced_long
+2906	18	13	.	End	unambig_reduced_long
+2907	18	14	<eos>	End	unambig_reduced_long
+2908	19	0	The	Start	unambig_reduced_long
+2909	19	1	convict	Noun	unambig_reduced_long
+2910	19	2	hidden	Unambiguous verb	unambig_reduced_long
+2911	19	3	away	RC contents	unambig_reduced_long
+2912	19	4	in	RC contents	unambig_reduced_long
+2913	19	5	the	RC contents	unambig_reduced_long
+2914	19	6	basement	RC contents	unambig_reduced_long
+2915	19	7	filled	Intervener	unambig_reduced_long
+2916	19	8	with	Intervener	unambig_reduced_long
+2917	19	9	mold	Intervener	unambig_reduced_long
+2918	19	10	escaped	Disambiguator	unambig_reduced_long
+2919	19	11	during	End	unambig_reduced_long
+2920	19	12	the	End	unambig_reduced_long
+2921	19	13	night	End	unambig_reduced_long
+2922	19	14	.	End	unambig_reduced_long
+2923	19	15	<eos>	End	unambig_reduced_long
+2924	20	0	The	Start	unambig_reduced_long
+2925	20	1	dog	Noun	unambig_reduced_long
+2926	20	2	seen	Unambiguous verb	unambig_reduced_long
+2927	20	3	on	RC contents	unambig_reduced_long
+2928	20	4	the	RC contents	unambig_reduced_long
+2929	20	5	boardwalk	RC contents	unambig_reduced_long
+2930	20	6	of	Intervener	unambig_reduced_long
+2931	20	7	the	Intervener	unambig_reduced_long
+2932	20	8	marina	Intervener	unambig_reduced_long
+2933	20	9	barked	Disambiguator	unambig_reduced_long
+2934	20	10	at	End	unambig_reduced_long
+2935	20	11	the	End	unambig_reduced_long
+2936	20	12	onlookers	End	unambig_reduced_long
+2937	20	13	.	End	unambig_reduced_long
+2938	20	14	<eos>	End	unambig_reduced_long
+2939	21	0	The	Start	unambig_reduced_long
+2940	21	1	ship	Noun	unambig_reduced_long
+2941	21	2	blown	Unambiguous verb	unambig_reduced_long
+2942	21	3	off	RC contents	unambig_reduced_long
+2943	21	4	course	RC contents	unambig_reduced_long
+2944	21	5	in	Intervener	unambig_reduced_long
+2945	21	6	the	Intervener	unambig_reduced_long
+2946	21	7	Pacific	Intervener	unambig_reduced_long
+2947	21	8	Ocean	Intervener	unambig_reduced_long
+2948	21	9	sank	Disambiguator	unambig_reduced_long
+2949	21	10	on	End	unambig_reduced_long
+2950	21	11	the	End	unambig_reduced_long
+2951	21	12	reef	End	unambig_reduced_long
+2952	21	13	.	End	unambig_reduced_long
+2953	21	14	<eos>	End	unambig_reduced_long
+2954	22	0	The	Start	unambig_reduced_long
+2955	22	1	balloon	Noun	unambig_reduced_long
+2956	22	2	shrunk	Unambiguous verb	unambig_reduced_long
+2957	22	3	to	RC contents	unambig_reduced_long
+2958	22	4	a	RC contents	unambig_reduced_long
+2959	22	5	small	RC contents	unambig_reduced_long
+2960	22	6	size	RC contents	unambig_reduced_long
+2961	22	7	over	Intervener	unambig_reduced_long
+2962	22	8	several	Intervener	unambig_reduced_long
+2963	22	9	hours	Intervener	unambig_reduced_long
+2964	22	10	popped	Disambiguator	unambig_reduced_long
+2965	22	11	with	End	unambig_reduced_long
+2966	22	12	a	End	unambig_reduced_long
+2967	22	13	bang	End	unambig_reduced_long
+2968	22	14	.	End	unambig_reduced_long
+2969	22	15	<eos>	End	unambig_reduced_long
+2970	23	0	The	Start	unambig_reduced_long
+2971	23	1	boat	Noun	unambig_reduced_long
+2972	23	2	sunk	Unambiguous verb	unambig_reduced_long
+2973	23	3	in	RC contents	unambig_reduced_long
+2974	23	4	the	RC contents	unambig_reduced_long
+2975	23	5	lake	RC contents	unambig_reduced_long
+2976	23	6	filled	Intervener	unambig_reduced_long
+2977	23	7	with	Intervener	unambig_reduced_long
+2978	23	8	crocodiles	Intervener	unambig_reduced_long
+2979	23	9	disappeared	Disambiguator	unambig_reduced_long
+2980	23	10	in	End	unambig_reduced_long
+2981	23	11	the	End	unambig_reduced_long
+2982	23	12	storm	End	unambig_reduced_long
+2983	23	13	.	End	unambig_reduced_long
+2984	23	14	<eos>	End	unambig_reduced_long
+2985	24	0	The	Start	unambig_reduced_long
+2986	24	1	couple	Noun	unambig_reduced_long
+2987	24	2	shown	Unambiguous verb	unambig_reduced_long
+2988	24	3	the	RC contents	unambig_reduced_long
+2989	24	4	apartment	RC contents	unambig_reduced_long
+2990	24	5	with	Intervener	unambig_reduced_long
+2991	24	6	new	Intervener	unambig_reduced_long
+2992	24	7	wood	Intervener	unambig_reduced_long
+2993	24	8	floors	Intervener	unambig_reduced_long
+2994	24	9	moved	Disambiguator	unambig_reduced_long
+2995	24	10	to	End	unambig_reduced_long
+2996	24	11	a	End	unambig_reduced_long
+2997	24	12	different	End	unambig_reduced_long
+2998	24	13	city	End	unambig_reduced_long
+2999	24	14	.	End	unambig_reduced_long
+3000	24	15	<eos>	End	unambig_reduced_long
+3001	25	0	The	Start	unambig_reduced_long
+3002	25	1	girl	Noun	unambig_reduced_long
+3003	25	2	woven	Unambiguous verb	unambig_reduced_long
+3004	25	3	a	RC contents	unambig_reduced_long
+3005	25	4	new	RC contents	unambig_reduced_long
+3006	25	5	shawl	RC contents	unambig_reduced_long
+3007	25	6	out	Intervener	unambig_reduced_long
+3008	25	7	of	Intervener	unambig_reduced_long
+3009	25	8	wool	Intervener	unambig_reduced_long
+3010	25	9	lost	Disambiguator	unambig_reduced_long
+3011	25	10	it	End	unambig_reduced_long
+3012	25	11	during	End	unambig_reduced_long
+3013	25	12	the	End	unambig_reduced_long
+3014	25	13	trip	End	unambig_reduced_long
+3015	25	14	.	End	unambig_reduced_long
+3016	25	15	<eos>	End	unambig_reduced_long
+3017	26	0	The	Start	unambig_reduced_long
+3018	26	1	airplane	Noun	unambig_reduced_long
+3019	26	2	flown	Unambiguous verb	unambig_reduced_long
+3020	26	3	in	RC contents	unambig_reduced_long
+3021	26	4	the	RC contents	unambig_reduced_long
+3022	26	5	arctic	RC contents	unambig_reduced_long
+3023	26	6	in	Intervener	unambig_reduced_long
+3024	26	7	the	Intervener	unambig_reduced_long
+3025	26	8	winter	Intervener	unambig_reduced_long
+3026	26	9	froze	Disambiguator	unambig_reduced_long
+3027	26	10	during	End	unambig_reduced_long
+3028	26	11	the	End	unambig_reduced_long
+3029	26	12	ice	End	unambig_reduced_long
+3030	26	13	storm	End	unambig_reduced_long
+3031	26	14	.	End	unambig_reduced_long
+3032	26	15	<eos>	End	unambig_reduced_long
+3033	27	0	The	Start	unambig_reduced_long
+3034	27	1	toddler	Noun	unambig_reduced_long
+3035	27	2	borne	Unambiguous verb	unambig_reduced_long
+3036	27	3	down	RC contents	unambig_reduced_long
+3037	27	4	the	RC contents	unambig_reduced_long
+3038	27	5	hallway	RC contents	unambig_reduced_long
+3039	27	6	of	Intervener	unambig_reduced_long
+3040	27	7	the	Intervener	unambig_reduced_long
+3041	27	8	school	Intervener	unambig_reduced_long
+3042	27	9	sobbed	Disambiguator	unambig_reduced_long
+3043	27	10	at	End	unambig_reduced_long
+3044	27	11	the	End	unambig_reduced_long
+3045	27	12	top	End	unambig_reduced_long
+3046	27	13	of	End	unambig_reduced_long
+3047	27	14	his	End	unambig_reduced_long
+3048	27	15	lungs	End	unambig_reduced_long
+3049	27	16	.	End	unambig_reduced_long
+3050	27	17	<eos>	End	unambig_reduced_long
+3051	0	0	The	Start	ambig_reduced_long
+3052	0	1	woman	Noun	ambig_reduced_long
+3053	0	2	brought	Ambiguous verb	ambig_reduced_long
+3054	0	3	the	RC contents	ambig_reduced_long
+3055	0	4	sandwich	RC contents	ambig_reduced_long
+3056	0	5	from	RC contents	ambig_reduced_long
+3057	0	6	the	RC contents	ambig_reduced_long
+3058	0	7	kitchen	RC contents	ambig_reduced_long
+3059	0	8	with	Intervener	ambig_reduced_long
+3060	0	9	a	Intervener	ambig_reduced_long
+3061	0	10	new	Intervener	ambig_reduced_long
+3062	0	11	oven	Intervener	ambig_reduced_long
+3063	0	12	tripped	Disambiguator	ambig_reduced_long
+3064	0	13	on	End	ambig_reduced_long
+3065	0	14	the	End	ambig_reduced_long
+3066	0	15	carpet	End	ambig_reduced_long
+3067	0	16	.	End	ambig_reduced_long
+3068	0	17	<eos>	End	ambig_reduced_long
+3069	1	0	The	Start	ambig_reduced_long
+3070	1	1	captive	Noun	ambig_reduced_long
+3071	1	2	walked	Ambiguous verb	ambig_reduced_long
+3072	1	3	into	RC contents	ambig_reduced_long
+3073	1	4	the	RC contents	ambig_reduced_long
+3074	1	5	dark	RC contents	ambig_reduced_long
+3075	1	6	cave	RC contents	ambig_reduced_long
+3076	1	7	lit	Intervener	ambig_reduced_long
+3077	1	8	by	Intervener	ambig_reduced_long
+3078	1	9	torches	Intervener	ambig_reduced_long
+3079	1	10	tried	Disambiguator	ambig_reduced_long
+3080	1	11	to	End	ambig_reduced_long
+3081	1	12	escape	End	ambig_reduced_long
+3082	1	13	but	End	ambig_reduced_long
+3083	1	14	failed	End	ambig_reduced_long
+3084	1	15	.	End	ambig_reduced_long
+3085	1	16	<eos>	End	ambig_reduced_long
+3086	2	0	The	Start	ambig_reduced_long
+3087	2	1	prisoners	Noun	ambig_reduced_long
+3088	2	2	pounded	Ambiguous verb	ambig_reduced_long
+3089	2	3	for	RC contents	ambig_reduced_long
+3090	2	4	hours	RC contents	ambig_reduced_long
+3091	2	5	and	RC contents	ambig_reduced_long
+3092	2	6	hours	RC contents	ambig_reduced_long
+3093	2	7	in	Intervener	ambig_reduced_long
+3094	2	8	the	Intervener	ambig_reduced_long
+3095	2	9	morning	Intervener	ambig_reduced_long
+3096	2	10	confessed	Disambiguator	ambig_reduced_long
+3097	2	11	to	End	ambig_reduced_long
+3098	2	12	crimes	End	ambig_reduced_long
+3099	2	13	they	End	ambig_reduced_long
+3100	2	14	never	End	ambig_reduced_long
+3101	2	15	committed	End	ambig_reduced_long
+3102	2	16	.	End	ambig_reduced_long
+3103	2	17	<eos>	End	ambig_reduced_long
+3104	3	0	The	Start	ambig_reduced_long
+3105	3	1	business	Noun	ambig_reduced_long
+3106	3	2	expanded	Ambiguous verb	ambig_reduced_long
+3107	3	3	into	RC contents	ambig_reduced_long
+3108	3	4	an	RC contents	ambig_reduced_long
+3109	3	5	empire	RC contents	ambig_reduced_long
+3110	3	6	spanning	Intervener	ambig_reduced_long
+3111	3	7	multiple	Intervener	ambig_reduced_long
+3112	3	8	countries	Intervener	ambig_reduced_long
+3113	3	9	was	Disambiguator	ambig_reduced_long
+3114	3	10	sold	End	ambig_reduced_long
+3115	3	11	for	End	ambig_reduced_long
+3116	3	12	billions	End	ambig_reduced_long
+3117	3	13	of	End	ambig_reduced_long
+3118	3	14	dollars	End	ambig_reduced_long
+3119	3	15	.	End	ambig_reduced_long
+3120	3	16	<eos>	End	ambig_reduced_long
+3121	4	0	The	Start	ambig_reduced_long
+3122	4	1	rats	Noun	ambig_reduced_long
+3123	4	2	consumed	Ambiguous verb	ambig_reduced_long
+3124	4	3	rapidly	RC contents	ambig_reduced_long
+3125	4	4	and	RC contents	ambig_reduced_long
+3126	4	5	entirely	RC contents	ambig_reduced_long
+3127	4	6	due	Intervener	ambig_reduced_long
+3128	4	7	to	Intervener	ambig_reduced_long
+3129	4	8	great	Intervener	ambig_reduced_long
+3130	4	9	hunger	Intervener	ambig_reduced_long
+3131	4	10	were	Disambiguator	ambig_reduced_long
+3132	4	11	digested	End	ambig_reduced_long
+3133	4	12	in	End	ambig_reduced_long
+3134	4	13	the	End	ambig_reduced_long
+3135	4	14	belly	End	ambig_reduced_long
+3136	4	15	of	End	ambig_reduced_long
+3137	4	16	the	End	ambig_reduced_long
+3138	4	17	cat	End	ambig_reduced_long
+3139	4	18	.	End	ambig_reduced_long
+3140	4	19	<eos>	End	ambig_reduced_long
+3141	5	0	The	Start	ambig_reduced_long
+3142	5	1	lawyer	Noun	ambig_reduced_long
+3143	5	2	pledged	Ambiguous verb	ambig_reduced_long
+3144	5	3	to	RC contents	ambig_reduced_long
+3145	5	4	complete	RC contents	ambig_reduced_long
+3146	5	5	secrecy	RC contents	ambig_reduced_long
+3147	5	6	due	Intervener	ambig_reduced_long
+3148	5	7	to	Intervener	ambig_reduced_long
+3149	5	8	security	Intervener	ambig_reduced_long
+3150	5	9	issues	Intervener	ambig_reduced_long
+3151	5	10	was	Disambiguator	ambig_reduced_long
+3152	5	11	discovered	End	ambig_reduced_long
+3153	5	12	to	End	ambig_reduced_long
+3154	5	13	have	End	ambig_reduced_long
+3155	5	14	broken	End	ambig_reduced_long
+3156	5	15	his	End	ambig_reduced_long
+3157	5	16	promise	End	ambig_reduced_long
+3158	5	17	.	End	ambig_reduced_long
+3159	5	18	<eos>	End	ambig_reduced_long
+3160	6	0	The	Start	ambig_reduced_long
+3161	6	1	child	Noun	ambig_reduced_long
+3162	6	2	neglected	Ambiguous verb	ambig_reduced_long
+3163	6	3	in	RC contents	ambig_reduced_long
+3164	6	4	the	RC contents	ambig_reduced_long
+3165	6	5	chaos	RC contents	ambig_reduced_long
+3166	6	6	of	Intervener	ambig_reduced_long
+3167	6	7	the	Intervener	ambig_reduced_long
+3168	6	8	war	Intervener	ambig_reduced_long
+3169	6	9	found	Disambiguator	ambig_reduced_long
+3170	6	10	her	End	ambig_reduced_long
+3171	6	11	way	End	ambig_reduced_long
+3172	6	12	back	End	ambig_reduced_long
+3173	6	13	home	End	ambig_reduced_long
+3174	6	14	.	End	ambig_reduced_long
+3175	6	15	<eos>	End	ambig_reduced_long
+3176	7	0	The	Start	ambig_reduced_long
+3177	7	1	horses	Noun	ambig_reduced_long
+3178	7	2	raced	Ambiguous verb	ambig_reduced_long
+3179	7	3	past	RC contents	ambig_reduced_long
+3180	7	4	the	RC contents	ambig_reduced_long
+3181	7	5	barn	RC contents	ambig_reduced_long
+3182	7	6	in	Intervener	ambig_reduced_long
+3183	7	7	the	Intervener	ambig_reduced_long
+3184	7	8	countryside	Intervener	ambig_reduced_long
+3185	7	9	fell	Disambiguator	ambig_reduced_long
+3186	7	10	into	End	ambig_reduced_long
+3187	7	11	a	End	ambig_reduced_long
+3188	7	12	ditch	End	ambig_reduced_long
+3189	7	13	.	End	ambig_reduced_long
+3190	7	14	<eos>	End	ambig_reduced_long
+3191	8	0	The	Start	ambig_reduced_long
+3192	8	1	artist	Noun	ambig_reduced_long
+3193	8	2	sketched	Ambiguous verb	ambig_reduced_long
+3194	8	3	a	RC contents	ambig_reduced_long
+3195	8	4	hasty	RC contents	ambig_reduced_long
+3196	8	5	portrait	RC contents	ambig_reduced_long
+3197	8	6	of	Intervener	ambig_reduced_long
+3198	8	7	the	Intervener	ambig_reduced_long
+3199	8	8	woman	Intervener	ambig_reduced_long
+3200	8	9	was	Disambiguator	ambig_reduced_long
+3201	8	10	impressed	End	ambig_reduced_long
+3202	8	11	with	End	ambig_reduced_long
+3203	8	12	the	End	ambig_reduced_long
+3204	8	13	work	End	ambig_reduced_long
+3205	8	14	.	End	ambig_reduced_long
+3206	8	15	<eos>	End	ambig_reduced_long
+3207	9	0	The	Start	ambig_reduced_long
+3208	9	1	car	Noun	ambig_reduced_long
+3209	9	2	steered	Ambiguous verb	ambig_reduced_long
+3210	9	3	into	RC contents	ambig_reduced_long
+3211	9	4	the	RC contents	ambig_reduced_long
+3212	9	5	garage	RC contents	ambig_reduced_long
+3213	9	6	filled	Intervener	ambig_reduced_long
+3214	9	7	with	Intervener	ambig_reduced_long
+3215	9	8	tools	Intervener	ambig_reduced_long
+3216	9	9	crashed	Disambiguator	ambig_reduced_long
+3217	9	10	into	End	ambig_reduced_long
+3218	9	11	a	End	ambig_reduced_long
+3219	9	12	concrete	End	ambig_reduced_long
+3220	9	13	pillar	End	ambig_reduced_long
+3221	9	14	.	End	ambig_reduced_long
+3222	9	15	<eos>	End	ambig_reduced_long
+3223	10	0	The	Start	ambig_reduced_long
+3224	10	1	campaign	Noun	ambig_reduced_long
+3225	10	2	intended	Ambiguous verb	ambig_reduced_long
+3226	10	3	to	RC contents	ambig_reduced_long
+3227	10	4	be	RC contents	ambig_reduced_long
+3228	10	5	very	RC contents	ambig_reduced_long
+3229	10	6	popular	RC contents	ambig_reduced_long
+3230	10	7	among	Intervener	ambig_reduced_long
+3231	10	8	the	Intervener	ambig_reduced_long
+3232	10	9	masses	Intervener	ambig_reduced_long
+3233	10	10	was	Disambiguator	ambig_reduced_long
+3234	10	11	still	End	ambig_reduced_long
+3235	10	12	unsuccessful	End	ambig_reduced_long
+3236	10	13	.	End	ambig_reduced_long
+3237	10	14	<eos>	End	ambig_reduced_long
+3238	11	0	The	Start	ambig_reduced_long
+3239	11	1	student	Noun	ambig_reduced_long
+3240	11	2	composed	Ambiguous verb	ambig_reduced_long
+3241	11	3	a	RC contents	ambig_reduced_long
+3242	11	4	carefully	RC contents	ambig_reduced_long
+3243	11	5	worded	RC contents	ambig_reduced_long
+3244	11	6	excuse	RC contents	ambig_reduced_long
+3245	11	7	filled	Intervener	ambig_reduced_long
+3246	11	8	with	Intervener	ambig_reduced_long
+3247	11	9	lies	Intervener	ambig_reduced_long
+3248	11	10	forgot	Disambiguator	ambig_reduced_long
+3249	11	11	to	End	ambig_reduced_long
+3250	11	12	give	End	ambig_reduced_long
+3251	11	13	it	End	ambig_reduced_long
+3252	11	14	to	End	ambig_reduced_long
+3253	11	15	the	End	ambig_reduced_long
+3254	11	16	teacher	End	ambig_reduced_long
+3255	11	17	.	End	ambig_reduced_long
+3256	11	18	<eos>	End	ambig_reduced_long
+3257	12	0	The	Start	ambig_reduced_long
+3258	12	1	television	Noun	ambig_reduced_long
+3259	12	2	show	Noun	ambig_reduced_long
+3260	12	3	started	Ambiguous verb	ambig_reduced_long
+3261	12	4	three	RC contents	ambig_reduced_long
+3262	12	5	weeks	RC contents	ambig_reduced_long
+3263	12	6	ago	RC contents	ambig_reduced_long
+3264	12	7	on	Intervener	ambig_reduced_long
+3265	12	8	a	Intervener	ambig_reduced_long
+3266	12	9	cable	Intervener	ambig_reduced_long
+3267	12	10	channel	Intervener	ambig_reduced_long
+3268	12	11	was	Disambiguator	ambig_reduced_long
+3269	12	12	cancelled	End	ambig_reduced_long
+3270	12	13	immediately	End	ambig_reduced_long
+3271	12	14	.	End	ambig_reduced_long
+3272	12	15	<eos>	End	ambig_reduced_long
+3273	13	0	The	Start	ambig_reduced_long
+3274	13	1	boys	Noun	ambig_reduced_long
+3275	13	2	performed	Ambiguous verb	ambig_reduced_long
+3276	13	3	an	RC contents	ambig_reduced_long
+3277	13	4	unsolicited	RC contents	ambig_reduced_long
+3278	13	5	favor	RC contents	ambig_reduced_long
+3279	13	6	for	Intervener	ambig_reduced_long
+3280	13	7	no	Intervener	ambig_reduced_long
+3281	13	8	good	Intervener	ambig_reduced_long
+3282	13	9	reason	Intervener	ambig_reduced_long
+3283	13	10	thanked	Disambiguator	ambig_reduced_long
+3284	13	11	the	End	ambig_reduced_long
+3285	13	12	person	End	ambig_reduced_long
+3286	13	13	who	End	ambig_reduced_long
+3287	13	14	helped	End	ambig_reduced_long
+3288	13	15	them	End	ambig_reduced_long
+3289	13	16	.	End	ambig_reduced_long
+3290	13	17	<eos>	End	ambig_reduced_long
+3291	14	0	The	Start	ambig_reduced_long
+3292	14	1	player	Noun	ambig_reduced_long
+3293	14	2	tossed	Ambiguous verb	ambig_reduced_long
+3294	14	3	the	RC contents	ambig_reduced_long
+3295	14	4	plastic	RC contents	ambig_reduced_long
+3296	14	5	frisbee	RC contents	ambig_reduced_long
+3297	14	6	during	Intervener	ambig_reduced_long
+3298	14	7	the	Intervener	ambig_reduced_long
+3299	14	8	game	Intervener	ambig_reduced_long
+3300	14	9	dropped	Disambiguator	ambig_reduced_long
+3301	14	10	it	End	ambig_reduced_long
+3302	14	11	on	End	ambig_reduced_long
+3303	14	12	the	End	ambig_reduced_long
+3304	14	13	ground	End	ambig_reduced_long
+3305	14	14	.	End	ambig_reduced_long
+3306	14	15	<eos>	End	ambig_reduced_long
+3307	15	0	The	Start	ambig_reduced_long
+3308	15	1	man	Noun	ambig_reduced_long
+3309	15	2	stabbed	Ambiguous verb	ambig_reduced_long
+3310	15	3	deeply	RC contents	ambig_reduced_long
+3311	15	4	and	RC contents	ambig_reduced_long
+3312	15	5	fatally	RC contents	ambig_reduced_long
+3313	15	6	in	Intervener	ambig_reduced_long
+3314	15	7	the	Intervener	ambig_reduced_long
+3315	15	8	afternoon	Intervener	ambig_reduced_long
+3316	15	9	died	Disambiguator	ambig_reduced_long
+3317	15	10	very	End	ambig_reduced_long
+3318	15	11	quickly	End	ambig_reduced_long
+3319	15	12	.	End	ambig_reduced_long
+3320	15	13	<eos>	End	ambig_reduced_long
+3321	16	0	The	Start	ambig_reduced_long
+3322	16	1	child	Noun	ambig_reduced_long
+3323	16	2	jumped	Ambiguous verb	ambig_reduced_long
+3324	16	3	completely	RC contents	ambig_reduced_long
+3325	16	4	past	RC contents	ambig_reduced_long
+3326	16	5	in	Intervener	ambig_reduced_long
+3327	16	6	the	Intervener	ambig_reduced_long
+3328	16	7	playground	Intervener	ambig_reduced_long
+3329	16	8	was	Disambiguator	ambig_reduced_long
+3330	16	9	upset	End	ambig_reduced_long
+3331	16	10	about	End	ambig_reduced_long
+3332	16	11	it	End	ambig_reduced_long
+3333	16	12	.	End	ambig_reduced_long
+3334	16	13	<eos>	End	ambig_reduced_long
+3335	17	0	The	Start	ambig_reduced_long
+3336	17	1	students	Noun	ambig_reduced_long
+3337	17	2	prepared	Ambiguous verb	ambig_reduced_long
+3338	17	3	a	RC contents	ambig_reduced_long
+3339	17	4	fancy	RC contents	ambig_reduced_long
+3340	17	5	dinner	RC contents	ambig_reduced_long
+3341	17	6	for	Intervener	ambig_reduced_long
+3342	17	7	the	Intervener	ambig_reduced_long
+3343	17	8	holiday	Intervener	ambig_reduced_long
+3344	17	9	ate	Disambiguator	ambig_reduced_long
+3345	17	10	the	End	ambig_reduced_long
+3346	17	11	meal	End	ambig_reduced_long
+3347	17	12	quickly	End	ambig_reduced_long
+3348	17	13	.	End	ambig_reduced_long
+3349	17	14	<eos>	End	ambig_reduced_long
+3350	18	0	The	Start	ambig_reduced_long
+3351	18	1	infant	Noun	ambig_reduced_long
+3352	18	2	fed	Ambiguous verb	ambig_reduced_long
+3353	18	3	during	RC contents	ambig_reduced_long
+3354	18	4	the	RC contents	ambig_reduced_long
+3355	18	5	night	RC contents	ambig_reduced_long
+3356	18	6	of	Intervener	ambig_reduced_long
+3357	18	7	the	Intervener	ambig_reduced_long
+3358	18	8	first	Intervener	ambig_reduced_long
+3359	18	9	full	Intervener	ambig_reduced_long
+3360	18	10	moon	Intervener	ambig_reduced_long
+3361	18	11	cried	Disambiguator	ambig_reduced_long
+3362	18	12	intensely	End	ambig_reduced_long
+3363	18	13	.	End	ambig_reduced_long
+3364	18	14	<eos>	End	ambig_reduced_long
+3365	19	0	The	Start	ambig_reduced_long
+3366	19	1	convict	Noun	ambig_reduced_long
+3367	19	2	stowed	Ambiguous verb	ambig_reduced_long
+3368	19	3	away	RC contents	ambig_reduced_long
+3369	19	4	in	RC contents	ambig_reduced_long
+3370	19	5	the	RC contents	ambig_reduced_long
+3371	19	6	basement	RC contents	ambig_reduced_long
+3372	19	7	filled	Intervener	ambig_reduced_long
+3373	19	8	with	Intervener	ambig_reduced_long
+3374	19	9	mold	Intervener	ambig_reduced_long
+3375	19	10	escaped	Disambiguator	ambig_reduced_long
+3376	19	11	during	End	ambig_reduced_long
+3377	19	12	the	End	ambig_reduced_long
+3378	19	13	night	End	ambig_reduced_long
+3379	19	14	.	End	ambig_reduced_long
+3380	19	15	<eos>	End	ambig_reduced_long
+3381	20	0	The	Start	ambig_reduced_long
+3382	20	1	dog	Noun	ambig_reduced_long
+3383	20	2	promenaded	Ambiguous verb	ambig_reduced_long
+3384	20	3	on	RC contents	ambig_reduced_long
+3385	20	4	the	RC contents	ambig_reduced_long
+3386	20	5	boardwalk	RC contents	ambig_reduced_long
+3387	20	6	of	Intervener	ambig_reduced_long
+3388	20	7	the	Intervener	ambig_reduced_long
+3389	20	8	marina	Intervener	ambig_reduced_long
+3390	20	9	barked	Disambiguator	ambig_reduced_long
+3391	20	10	at	End	ambig_reduced_long
+3392	20	11	the	End	ambig_reduced_long
+3393	20	12	onlookers	End	ambig_reduced_long
+3394	20	13	.	End	ambig_reduced_long
+3395	20	14	<eos>	End	ambig_reduced_long
+3396	21	0	The	Start	ambig_reduced_long
+3397	21	1	ship	Noun	ambig_reduced_long
+3398	21	2	navigated	Ambiguous verb	ambig_reduced_long
+3399	21	3	off	RC contents	ambig_reduced_long
+3400	21	4	course	RC contents	ambig_reduced_long
+3401	21	5	in	Intervener	ambig_reduced_long
+3402	21	6	the	Intervener	ambig_reduced_long
+3403	21	7	Pacific	Intervener	ambig_reduced_long
+3404	21	8	Ocean	Intervener	ambig_reduced_long
+3405	21	9	sank	Disambiguator	ambig_reduced_long
+3406	21	10	on	End	ambig_reduced_long
+3407	21	11	the	End	ambig_reduced_long
+3408	21	12	reef	End	ambig_reduced_long
+3409	21	13	.	End	ambig_reduced_long
+3410	21	14	<eos>	End	ambig_reduced_long
+3411	22	0	The	Start	ambig_reduced_long
+3412	22	1	balloon	Noun	ambig_reduced_long
+3413	22	2	deflated	Ambiguous verb	ambig_reduced_long
+3414	22	3	to	RC contents	ambig_reduced_long
+3415	22	4	a	RC contents	ambig_reduced_long
+3416	22	5	small	RC contents	ambig_reduced_long
+3417	22	6	size	RC contents	ambig_reduced_long
+3418	22	7	over	Intervener	ambig_reduced_long
+3419	22	8	several	Intervener	ambig_reduced_long
+3420	22	9	hours	Intervener	ambig_reduced_long
+3421	22	10	popped	Disambiguator	ambig_reduced_long
+3422	22	11	with	End	ambig_reduced_long
+3423	22	12	a	End	ambig_reduced_long
+3424	22	13	bang	End	ambig_reduced_long
+3425	22	14	.	End	ambig_reduced_long
+3426	22	15	<eos>	End	ambig_reduced_long
+3427	23	0	The	Start	ambig_reduced_long
+3428	23	1	boat	Noun	ambig_reduced_long
+3429	23	2	sailed	Ambiguous verb	ambig_reduced_long
+3430	23	3	in	RC contents	ambig_reduced_long
+3431	23	4	the	RC contents	ambig_reduced_long
+3432	23	5	lake	RC contents	ambig_reduced_long
+3433	23	6	filled	Intervener	ambig_reduced_long
+3434	23	7	with	Intervener	ambig_reduced_long
+3435	23	8	crocodiles	Intervener	ambig_reduced_long
+3436	23	9	disappeared	Disambiguator	ambig_reduced_long
+3437	23	10	in	End	ambig_reduced_long
+3438	23	11	the	End	ambig_reduced_long
+3439	23	12	storm	End	ambig_reduced_long
+3440	23	13	.	End	ambig_reduced_long
+3441	23	14	<eos>	End	ambig_reduced_long
+3442	24	0	The	Start	ambig_reduced_long
+3443	24	1	couple	Noun	ambig_reduced_long
+3444	24	2	bought	Ambiguous verb	ambig_reduced_long
+3445	24	3	the	RC contents	ambig_reduced_long
+3446	24	4	apartment	RC contents	ambig_reduced_long
+3447	24	5	with	Intervener	ambig_reduced_long
+3448	24	6	new	Intervener	ambig_reduced_long
+3449	24	7	wood	Intervener	ambig_reduced_long
+3450	24	8	floors	Intervener	ambig_reduced_long
+3451	24	9	moved	Disambiguator	ambig_reduced_long
+3452	24	10	to	End	ambig_reduced_long
+3453	24	11	a	End	ambig_reduced_long
+3454	24	12	different	End	ambig_reduced_long
+3455	24	13	city	End	ambig_reduced_long
+3456	24	14	.	End	ambig_reduced_long
+3457	24	15	<eos>	End	ambig_reduced_long
+3458	25	0	The	Start	ambig_reduced_long
+3459	25	1	girl	Noun	ambig_reduced_long
+3460	25	2	stitched	Ambiguous verb	ambig_reduced_long
+3461	25	3	a	RC contents	ambig_reduced_long
+3462	25	4	new	RC contents	ambig_reduced_long
+3463	25	5	shawl	RC contents	ambig_reduced_long
+3464	25	6	out	Intervener	ambig_reduced_long
+3465	25	7	of	Intervener	ambig_reduced_long
+3466	25	8	wool	Intervener	ambig_reduced_long
+3467	25	9	lost	Disambiguator	ambig_reduced_long
+3468	25	10	it	End	ambig_reduced_long
+3469	25	11	during	End	ambig_reduced_long
+3470	25	12	the	End	ambig_reduced_long
+3471	25	13	trip	End	ambig_reduced_long
+3472	25	14	.	End	ambig_reduced_long
+3473	25	15	<eos>	End	ambig_reduced_long
+3474	26	0	The	Start	ambig_reduced_long
+3475	26	1	airplane	Noun	ambig_reduced_long
+3476	26	2	landed	Ambiguous verb	ambig_reduced_long
+3477	26	3	in	RC contents	ambig_reduced_long
+3478	26	4	the	RC contents	ambig_reduced_long
+3479	26	5	arctic	RC contents	ambig_reduced_long
+3480	26	6	in	Intervener	ambig_reduced_long
+3481	26	7	the	Intervener	ambig_reduced_long
+3482	26	8	winter	Intervener	ambig_reduced_long
+3483	26	9	froze	Disambiguator	ambig_reduced_long
+3484	26	10	during	End	ambig_reduced_long
+3485	26	11	the	End	ambig_reduced_long
+3486	26	12	ice	End	ambig_reduced_long
+3487	26	13	storm	End	ambig_reduced_long
+3488	26	14	.	End	ambig_reduced_long
+3489	26	15	<eos>	End	ambig_reduced_long
+3490	27	0	The	Start	ambig_reduced_long
+3491	27	1	toddler	Noun	ambig_reduced_long
+3492	27	2	hurried	Ambiguous verb	ambig_reduced_long
+3493	27	3	down	RC contents	ambig_reduced_long
+3494	27	4	the	RC contents	ambig_reduced_long
+3495	27	5	hallway	RC contents	ambig_reduced_long
+3496	27	6	of	Intervener	ambig_reduced_long
+3497	27	7	the	Intervener	ambig_reduced_long
+3498	27	8	school	Intervener	ambig_reduced_long
+3499	27	9	sobbed	Disambiguator	ambig_reduced_long
+3500	27	10	at	End	ambig_reduced_long
+3501	27	11	the	End	ambig_reduced_long
+3502	27	12	top	End	ambig_reduced_long
+3503	27	13	of	End	ambig_reduced_long
+3504	27	14	his	End	ambig_reduced_long
+3505	27	15	lungs	End	ambig_reduced_long
+3506	27	16	.	End	ambig_reduced_long
+3507	27	17	<eos>	End	ambig_reduced_long

@@ -1,0 +1,29 @@
+The woman brought the sandwich from the kitchen tripped on the carpet . <eos>
+The captive walked into the dark cave tried to escape but failed . <eos>
+The girl selected the most beautiful dress won the competition . <eos>
+The prisoners pounded for hours and hours confessed to crimes they never committed . <eos>
+The business expanded into an empire was sold for billions of dollars . <eos>
+The rats consumed rapidly and entirely were digested in the belly of the cat . <eos>
+The lawyer pledged to complete secrecy was discovered to have broken his promise . <eos>
+The child neglected in the chaos found her way back home . <eos>
+The horses raced past the barn fell into a ditch . <eos>
+The artist sketched a hasty portrait was impressed with the work . <eos>
+The car steered into the garage crashed into a concrete pillar . <eos>
+The campaign intended to be very popular was still unsuccessful . <eos>
+The student composed a carefully worded excuse forgot to give it to the teacher . <eos>
+The television show started three weeks ago was cancelled immediately . <eos>
+The boys performed an unsolicited favor thanked the person who helped them . <eos>
+The player tossed the plastic frisbee dropped it on the ground . <eos>
+The man stabbed deeply and fatally died very quickly . <eos>
+The child jumped completely past was upset about it . <eos>
+The students prepared a fancy dinner ate the meal quickly . <eos>
+The infant fed during the night cried intensely . <eos>
+The convict stowed away in the basement escaped during the night . <eos>
+The dog promenaded on the boardwalk barked at the onlookers . <eos>
+The ship navigated off course sank on the reef . <eos>
+The balloon deflated to a small size popped with a bang . <eos>
+The boat sailed in the lake disappeared in the storm . <eos>
+The couple bought the apartment moved to a different city . <eos>
+The girl stitched a new shawl lost it during the trip . <eos>
+The airplane landed in the arctic froze during the ice storm . <eos>
+The toddler hurried down the hallway sobbed at the top of his lungs . <eos>

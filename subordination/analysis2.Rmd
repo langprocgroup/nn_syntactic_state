@@ -1,0 +1,324 @@
+---
+title: "rnnpsycholing Subordination"
+output:
+  pdf_document: default
+  html_notebook: default
+---
+
+Does the network maintain an expectation of an upcoming sentence introduced by the subordinator "as"? Is this expectation affected by intervening material of various kinds?
+
+
+```{r}
+rm(list = ls())
+library(tidyverse)
+library(lme4)
+library(lmerTest)
+library(plotrix)
+library(stringr)
+
+assert = stopifnot
+
+REGION_ORDER = c("Subordinator", "Subordinate clause 1", "SC1 Modifier", "Subordinate clause 2", "SC2 Modifier", "End")
+REGION_EXEMPLARS = c("Because", "the students", "(...)", "disliked the material", "(...)", "(, they complained to the principal) . <eos>")
+NUM_REGIONS = length(REGION_ORDER)
+
+add_numeric_predictors <- function(d) {
+  d %>%
+    mutate(matrix.numeric=if_else(matrix=="no-matrix",1,-1)) %>%
+    mutate(subordinator.numeric=if_else(subordinator=="sub",1,-1))
+}
+
+code_intervener_present = function(d) {
+  d %>%
+    mutate(sc1=if_else(sc1 == "subj_none", -1, 1),
+           sc2=if_else(sc2 == "obj_none", -1, 1))
+}
+
+rename_modifiers = function(s, pos) {
+  if_else(s == "sc0", paste(pos, "none", sep="_"),
+  if_else(s == "sc1", paste(pos, "pp", sep="_"),
+  if_else(s == "sc2", paste(pos, "src", sep="_"),
+  if_else(s == "sc3", paste(pos, "orc", sep="_"), s))))
+}
+
+rename_model = function(d) {
+  d %>% mutate(model=if_else(model == "gulordava", "GRNN", 
+                    if_else(model == "google", "JRNN",
+                    if_else(model == "rnng", "RNNG", model))))
+}
+
+d = read_csv("tests/combined_results_with_rnng_and_tinylstm.csv") %>%
+  #select(-X1) %>%
+  mutate(region=if_else(region %in% c("Subordinate clause SRC 1", "Subordinate clause PP 1", "Subordinate clause ORC 1"), "SC1 Modifier", region),
+         region=if_else(region %in% c("Subordinate clause SRC 2", "Subordinate clause PP 2", "Subordinate clause ORC 2"), "SC2 Modifier", region),
+         region=if_else(region %in% c("Main clause", "Conclusion"), "End", region),
+         region=factor(region, levels=REGION_ORDER)) %>%
+  separate(condition, sep="_", into=c("subordinator", "sc1", "sc2", "matrix")) %>%
+  mutate(sc1=substring(sc1, 2) %>% rename_modifiers("subj"), sc2=substring(sc2, 2) %>% rename_modifiers("obj")) %>%
+  mutate(unk=unk == "True") %>%
+  rename_model() %>%
+  mutate(surprisal=if_else(model %in% c("RNNG", "tinylstm"), surprisal/log(2), surprisal))
+  
+
+d_agg = d %>% 
+  group_by(model, sent_index, region, subordinator, sc1, sc2, matrix) %>% 
+    summarise(surprisal=sum(surprisal),
+              unk=any(unk)) %>%
+    ungroup() %>% 
+  group_by(model, sent_index) %>%
+    mutate(unk=any(unk)) %>%
+    ungroup() %>%
+  mutate(subordinator=factor(subordinator, levels=c("no-sub", "sub")), # Establish factor orders for dummy coding
+         sc1=factor(sc1, levels=c("subj_none", "subj_pp", "subj_src", "subj_orc")),
+         sc2=factor(sc2, levels=c("obj_none", "obj_pp", "obj_src", "obj_orc")),
+         matrix=factor(matrix, levels=c("no-matrix", "matrix")))
+
+```
+
+## Overall visualization
+
+```{r}
+
+d_by_region = d_agg %>% 
+  group_by(model, sent_index) %>%
+    mutate(item_mean=mean(surprisal)) %>%
+    ungroup() %>%
+  group_by(model, region, subordinator, matrix) %>%
+    summarise(m=mean(surprisal),
+              s=std.error(surprisal - item_mean),
+              upper=m + 1.96*s,
+              lower=m - 1.96*s) %>%
+    ungroup() 
+
+d_by_region %>%
+  mutate(region_numeric=as.numeric(region)) %>% 
+  ggplot(aes(x=region_numeric, y=m, ymax=upper, ymin=lower, linetype=subordinator, color=matrix)) +
+    geom_line() +
+    geom_errorbar(linetype="solid", width=.1) +
+    scale_x_continuous(breaks=seq(2, NUM_REGIONS), labels=REGION_EXEMPLARS[2:NUM_REGIONS]) +
+    theme(axis.text.x = element_text(angle=45, hjust=1)) +
+    xlab("Words") +
+    ylab("Sum surprisal in region") +
+    facet_grid(model~.)
+  
+```
+
+Looks like the basic interaction we are looking for is present: when there's a subordinator, the matrix clause is easier, and the lack of a matrix clause is harder.
+
+# Interaction of subordinator presence and matrix clause surprisal.
+
+```{r}
+d_by_region %>%
+  filter(region == "End") %>%
+  ggplot(aes(x=matrix, y=m, ymin=lower, ymax=upper, fill=subordinator)) +
+    geom_bar(stat="identity", position=position_dodge(width=.9)) +
+    geom_errorbar(width=.1, position=position_dodge(width=.9)) +
+    ylab("Sum surprisal in end region") +
+    xlab("Matrix clause presence") +
+    theme(legend.position=c(0.1,0.8)) +
+    facet_wrap(~model, scale="free_y")
+ggsave("basic-subordination-effect.pdf",height=3,width=4)
+```
+
+That's not a great visualization because of the huge main effect of matrix. Let's just plot the effect of subordinator: subordinator - no subordinator.
+
+```{r}
+d_agg %>%
+  filter(region == "End", sc1 == "subj_none", sc2 == "obj_none") %>%
+  spread(subordinator, surprisal) %>%
+  mutate(subordinator_effect = sub - `no-sub`) %>%
+  group_by(model, sent_index) %>%
+    mutate(item_mean=mean(subordinator_effect)) %>%
+    ungroup() %>%
+  group_by(model, matrix) %>%
+    summarise(m=mean(subordinator_effect),
+              s=std.error(subordinator_effect - item_mean),
+              upper=m+1.96*s,
+              lower=m-1.96*s) %>%
+    ungroup() %>%
+  ggplot(aes(x=matrix, y=m, ymin=lower, ymax=upper, fill=matrix)) +
+    geom_hline(aes(yintercept=0), color="blue") +
+    geom_bar(stat="identity", position=position_dodge(width=.9)) +
+    geom_errorbar(width=.1, position=position_dodge(width=.9)) +
+    xlab("Continuation") +
+    ylab("(Sub. present - sub. absent) surprisal difference") +
+    guides(fill=F) +
+    facet_wrap(~model)
+
+ggsave("basic-subordination-interaction.pdf",height=4,width=4)
+      
+```
+
+When there is no matrix continuation, a subordinator makes things harder. When there is a matrix continuation, a subordinator makes things easier.
+
+## Regression for the basic effect
+(This was preregistered in #11020.)
+
+```{r}
+d2 = d_agg %>% 
+  add_numeric_predictors() %>%
+  filter(region == "End")
+
+mj = lmer(surprisal ~ subordinator.numeric * matrix.numeric + (subordinator.numeric+matrix.numeric|sent_index), data=filter(d2, model == "JRNN"))
+summary(mj)
+
+mg = lmer(surprisal ~ subordinator.numeric * matrix.numeric + (subordinator.numeric+matrix.numeric|sent_index), data=filter(d2, model == "GRNN"))
+summary(mg)
+
+mr = lmer(surprisal ~ subordinator.numeric * matrix.numeric + (subordinator.numeric+matrix.numeric|sent_index), data=filter(d2, model == "RNNG"))
+summary(mr)
+
+mt = lmer(surprisal ~ subordinator.numeric * matrix.numeric + (subordinator.numeric+matrix.numeric|sent_index), data=filter(d2, model == "tinylstm"))
+summary(mt)
+
+m.aov = aov(surprisal ~ subordinator * matrix + Error(as.factor(sent_index)/subordinator*matrix), data=d2)
+summary(m.aov)
+
+```
+
+## Break it into the licensing effect vs. the no-matrix penalty
+
+## Licensing effect
+
+```{r}
+mj = lmer(surprisal ~ subordinator.numeric + (1|sent_index), data=filter(d2, model == "JRNN", matrix=="matrix", sc1=="subj_none", sc2=="obj_none"))
+summary(mj)
+
+mg = lmer(surprisal ~ subordinator.numeric + (1|sent_index), data=filter(d2, model == "GRNN", matrix=="matrix", sc1=="subj_none", sc2=="obj_none"))
+summary(mg)
+
+mr = lmer(surprisal ~ subordinator.numeric + (1|sent_index), data=filter(d2, model == "RNNG", matrix=="matrix", sc1=="subj_none", sc2=="obj_none"))
+summary(mr)
+
+mt = lmer(surprisal ~ subordinator.numeric + (1|sent_index), data=filter(d2, model == "tinylstm", matrix=="matrix", sc1=="subj_none", sc2=="obj_none"))
+summary(mt)
+
+```
+
+## No-matrix penalty
+
+```{r}
+mj = lmer(surprisal ~ subordinator.numeric + (1|sent_index), data=filter(d2, model == "JRNN", matrix=="no-matrix", sc1=="subj_none", sc2=="obj_none"))
+summary(mj)
+
+mg = lmer(surprisal ~ subordinator.numeric + (1|sent_index), data=filter(d2, model == "GRNN", matrix=="no-matrix", sc1=="subj_none", sc2=="obj_none"))
+summary(mg)
+
+mr = lmer(surprisal ~ subordinator.numeric + (1|sent_index), data=filter(d2, model == "RNNG", matrix=="no-matrix", sc1=="subj_none", sc2=="obj_none"))
+summary(mr)
+
+mt = lmer(surprisal ~ subordinator.numeric + (1|sent_index), data=filter(d2, model == "tinylstm", matrix=="no-matrix", sc1=="subj_none", sc2=="obj_none"))
+summary(mt)
+```
+
+
+Whoa, no no-matrix penalty for Google RNN and tinylstm!!
+
+Finally, let's analyze the basic subordinator*matrix interaction in each intervener condition.
+
+```{r}
+
+HEIGHT=3
+WIDTH=4
+
+d_interaction = d_agg %>%
+  filter(region == "End") %>%
+  spread(subordinator, surprisal) %>%
+  mutate(subordinator_effect = sub - `no-sub`) %>% 
+  select(-sub, -`no-sub`) %>%
+  spread(matrix, subordinator_effect) %>%
+  mutate(interaction=`no-matrix`-matrix) %>%
+  mutate(sc1=case_when(
+    sc1 == "subj_none" ~ "None",
+    sc1 == "subj_pp" ~ "PP",
+    sc1 == "subj_src" ~ "SRC",
+    sc1 == "subj_orc" ~ "ORC"
+  ),
+  sc1=factor(sc1, levels=c("None", "PP", "SRC", "ORC"))) %>%
+  mutate(sc2=case_when(
+    sc2 == "obj_none" ~ "None",
+    sc2 == "obj_pp" ~ "PP",
+    sc2 == "obj_src" ~ "SRC",
+    sc2 == "obj_orc" ~ "ORC"
+  ),
+  sc2=factor(sc2, levels=c("None", "PP", "SRC", "ORC")))
+  
+
+# If we do facet wrap then the heatmap parameters are tied, so instead do two figures
+d_interaction %>%
+  filter(model == "JRNN") %>%
+  group_by(sc1, sc2) %>%
+    summarise(m=mean(interaction)) %>%
+    ungroup() %>%
+  ggplot(aes(x=sc1, y=sc2, fill=m)) +
+    geom_tile() +
+    xlab("Subject interveners") +
+    ylab("Object interveners") +
+    ggtitle("JRNN") +
+    theme(legend.position="bottom") +
+    guides(fill=guide_legend(title="surprisal (bits)"))
+
+ggsave("JRNN-intervention-effects.pdf",height=HEIGHT,width=WIDTH)
+
+d_interaction %>%
+  filter(model == "GRNN") %>%
+  group_by(sc1, sc2) %>%
+    summarise(m=mean(interaction)) %>%
+    ungroup() %>%
+  ggplot(aes(x=sc1, y=sc2, fill=m)) +
+    geom_tile() +
+    xlab("Subject interveners") +
+    ylab("Object interveners") +
+    ggtitle("GRNN") +
+    theme(legend.position="bottom") +
+    guides(fill=guide_legend(title="surprisal (bits)"))
+
+ggsave("GRNN-intervention-effects.pdf",height=HEIGHT,width=WIDTH)
+
+d_interaction %>%
+  filter(model == "RNNG") %>%
+  group_by(sc1, sc2) %>%
+    summarise(m=mean(interaction)) %>%
+    ungroup() %>%
+  ggplot(aes(x=sc1, y=sc2, fill=m)) +
+    geom_tile() +
+    xlab("Subject interveners") +
+    ylab("Object interveners") +
+    ggtitle("RNNG") +
+    theme(legend.position="bottom") +
+    guides(fill=guide_legend(title="surprisal (bits)"))
+
+ggsave("RNNG-intervention-effects.pdf",height=HEIGHT,width=WIDTH)
+
+d_interaction %>%
+  filter(model == "tinylstm") %>%
+  group_by(sc1, sc2) %>%
+    summarise(m=mean(interaction)) %>%
+    ungroup() %>%
+  ggplot(aes(x=sc1, y=sc2, fill=m)) +
+    geom_tile() +
+    xlab("Subject interveners") +
+    ylab("Object interveners") +
+    ggtitle("tinylstm") +
+    theme(legend.position="bottom") +
+    guides(fill=guide_legend(title="surprisal (bits)"))
+
+ggsave("tinylstm-intervention-effects.pdf",height=HEIGHT,width=WIDTH)
+
+d_interaction_numeric = d_interaction %>%
+  mutate(sc1=as.numeric(sc1)-1, sc2=as.numeric(sc2)-1) 
+
+mg = lmer(interaction ~ sc1 + sc2 + (sc1+sc2|sent_index), data=filter(d_interaction_numeric, model == "GRNN"))
+summary(mg)
+
+mj = lmer(interaction ~ sc1 + sc2 + (sc1+sc2|sent_index), data=filter(d_interaction_numeric, model == "JRNN"))
+summary(mj)
+
+mr = lmer(interaction ~ sc1 + sc2 + (sc1+sc2|sent_index), data=filter(d_interaction_numeric, model == "RNNG"))
+summary(mr)
+
+mt = lmer(interaction ~ sc1 + sc2 + (sc1+sc2|sent_index), data=filter(d_interaction_numeric, model == "tinylstm"))
+summary(mt)
+
+
+```

@@ -1,0 +1,311 @@
+---
+title: "rnnpsycholing Garden Pathing Verb Ambiguity II"
+output:
+  pdf_document: default
+  html_notebook: default
+---
+
+We are looking for a 2x2 interaction of relative clause verb ambiguity and RC reduction:
+
+The woman (who was) brought/given a sandwich from the kitchen tripped on the carpet
+
+Why is this interesting?
+(1) An interaction of reduction and verb ambiguity at the region Disambiguator shows that the network chose the more likely syntactic parse. 
+(2) An interaction in the region End indicates that the disambiguating word was not sufficient to eliminate the representation of the earlier verb as a matrix verb, resulting in a context representation is less informative. 
+
+Does the NN behave more like it has a minimal commitment theory or a garden path theory?
+
+```{r}
+rm(list = ls())
+library(tidyverse)
+library(lme4)
+library(lmerTest)
+library(plotrix)
+
+REGION_ORDER = c("Start", "Noun", "Unreduced content", "RC Verb", "RC contents", "Disambiguator", "End")
+REGION_EXEMPLARS = c("The", "woman", "who was", "brought/given", "the sandwich from the kitchen", expression(bold(underline(tripped))), "on the carpet")
+NUM_REGIONS = length(REGION_ORDER)
+
+rename_LSTM = function(d) {
+  d %>% mutate(LSTM=if_else(LSTM == "gulordava", "GRNN", 
+                    if_else(LSTM == "google", "JRNN",
+                    if_else(LSTM == "rnng", "RNNG", LSTM))))
+}
+
+add_numeric_predictors <- function(d) {
+  d %>%
+    mutate(ambiguity.numeric=if_else(ambiguity=="unambig",-1,1)) %>%
+    mutate(reduced.numeric=if_else(reduced=="reduced",1,-1))
+}
+
+d = read_csv("tests/combined_results_with_rnng_and_tinylstm.csv") %>%
+  #select(-X1) %>%
+  separate(condition, sep="_", into=c("ambiguity", "reduced")) %>%
+  mutate(region=if_else(region == "Unambiguous verb" | region == "Ambiguous verb", "RC Verb", region),
+         region=factor(region, levels=REGION_ORDER)) %>%
+  rename(LSTM=model) %>%
+  mutate(unk=unk == "True") %>%
+  rename_LSTM() %>%
+  mutate(surprisal=if_else(LSTM %in% c("RNNG", "tinylstm"), surprisal/log(2), surprisal))
+
+
+d_agg = d %>% 
+  filter(region != "Start") %>%  # Aggregate surprisal by region
+  group_by(sent_index, region, ambiguity, reduced, LSTM) %>% 
+    summarise(surprisal=mean(surprisal),
+              unk=any(unk)) %>%
+    ungroup() %>% 
+  filter(!unk) %>%
+  mutate(reduced=factor(reduced, levels=c("unreduced", "reduced")), # Establish factor orders for dummy coding
+         ambiguity=factor(ambiguity, levels=c("unambig", "ambig")))
+
+n_items = d_agg %>% select(sent_index, LSTM) %>% distinct() %>% group_by(LSTM) %>% summarise(n=n()) %>% ungroup()
+
+```
+
+## Overall visualization
+
+```{r}
+
+d_by_region = d_agg %>% 
+  filter(region != "Start") %>%
+  group_by(LSTM, region, sent_index) %>%
+    mutate(item_mean=mean(surprisal)) %>%
+    ungroup() %>%
+  group_by(LSTM, region, ambiguity, reduced) %>%
+    summarise(m=mean(surprisal),
+              s=std.error(surprisal-item_mean),
+              upper=m + 1.96*s,
+              lower=m - 1.96*s) %>%
+    ungroup() 
+
+d_by_region %>%
+  mutate(region=as.numeric(region)) %>% 
+  filter(region>1) %>%
+  mutate(reduced=factor(reduced, levels=c("reduced", "unreduced")),
+         ambiguity=factor(ambiguity, levels=c("ambig", "unambig"))) %>%
+  ggplot(aes(x=region, y=m, ymax=upper, ymin=lower, linetype=reduced, color=ambiguity)) +
+    geom_line() +
+    geom_errorbar(linetype="solid", width=.1) +
+    scale_x_continuous(breaks=seq(1, NUM_REGIONS), labels=REGION_EXEMPLARS) +
+    theme_bw() +
+    theme(axis.text.x = element_text(angle=15, hjust=1)) +
+    theme(legend.box = "horizontal",
+          legend.direction = "horizontal",
+          legend.position="top") +
+    xlab("") +
+    ylab("Mean surprisal in region (bits)") +
+    labs(color="Verb form", linetype="RC") +
+    facet_grid(LSTM~., scale="free_y") 
+    
+
+ggsave("verb_gardenpath.pdf", width=5, height=5)
+  
+```
+
+The overall pattern we would infer from this plot of surprisal is: "tripped" is easy when the RC verb was preceded by "who was", making it unambiguous. It is harder when the RC is reduced, and even harder when the RC verb is ambiguous. The unambiguous RC verb appears to send a noisy signal that we are in an RC.
+
+## Garden path effect size plots
+
+```{r}
+d_effect = d_agg %>%
+  filter(region == "Disambiguator") %>%
+  spread(reduced, surprisal) %>%
+  mutate(effect=reduced-unreduced) %>%
+  group_by(sent_index, LSTM) %>%
+    mutate(item_mean=mean(effect)) %>%
+    ungroup() %>%
+  group_by(ambiguity, LSTM) %>%
+    summarise(m=mean(effect),
+              s=std.error(effect - item_mean),
+              upper=m+1.96*s,
+              lower=m-1.96*s) %>%
+    ungroup()
+
+d_effect %>%
+  mutate(ambiguity=factor(ambiguity, levels=c("ambig", "unambig"))) %>%
+  ggplot(aes(x=ambiguity, y=m, ymin=lower, ymax=upper, fill=ambiguity)) +
+    geom_bar(stat="identity", position="dodge") +
+    geom_errorbar(width=.5) +
+    facet_wrap(~LSTM, ncol=2) +
+    theme_bw() +
+    theme(legend.position="none") +
+    ylab("Garden path effect (bits)") +
+    xlab("")
+
+ggsave("verb_ambiguity_interaction.pdf", width=4, height=4)
+```
+
+# Preregistered regressions
+
+## Surprisal in the disambiguating region.
+
+```{r}
+d2 = d_agg %>% 
+  add_numeric_predictors %>%
+  filter(region == "Disambiguator")
+
+mj = lmer(surprisal ~ ambiguity.numeric * reduced.numeric + (ambiguity.numeric+reduced.numeric|sent_index), data=filter(d2, LSTM == "JRNN"))
+summary(mj)
+
+mg = lmer(surprisal ~ ambiguity.numeric * reduced.numeric + (ambiguity.numeric+reduced.numeric|sent_index), data=filter(d2, LSTM == "GRNN"))
+summary(mg)
+
+mr = lmer(surprisal ~ ambiguity.numeric * reduced.numeric + (ambiguity.numeric+reduced.numeric|sent_index), data=filter(d2, LSTM == "RNNG"))
+summary(mr)
+
+mt = lmer(surprisal ~ ambiguity.numeric * reduced.numeric + (ambiguity.numeric+reduced.numeric|sent_index), data=filter(d2, LSTM == "tinylstm"))
+summary(mt)
+
+# Basic reduction effect
+
+mtr = lmer(surprisal ~ reduced.numeric + (1|sent_index), data=filter(d2, LSTM == "tinylstm"))
+summary(mtr)
+
+mrr = lmer(surprisal ~ reduced.numeric + (1|sent_index), data=filter(d2, LSTM == "RNNG"))
+summary(mrr)
+
+mgr = lmer(surprisal ~ reduced.numeric + (1|sent_index), data=filter(d2, LSTM == "GRNN"))
+summary(mgr)
+
+mjr = lmer(surprisal ~ reduced.numeric + (1|sent_index), data=filter(d2, LSTM == "JRNN"))
+summary(mjr)
+
+# Comparing tinylstm vs. the rest
+
+mrr_vs_t = lmer(surprisal ~ reduced.numeric * LSTM + (reduced.numeric+LSTM|sent_index), data=filter(d2, LSTM == "RNNG" | LSTM == "tinylstm"))
+summary(mrr_vs_t)
+
+mgr_vs_t = lmer(surprisal ~ reduced.numeric * LSTM + (reduced.numeric+LSTM|sent_index), data=filter(d2, LSTM == "GRNN" | LSTM == "tinylstm"))
+summary(mgr_vs_t)
+
+mjr_vs_t = lmer(surprisal ~ reduced.numeric * LSTM + (reduced.numeric+LSTM|sent_index), data=filter(d2, LSTM == "JRNN" | LSTM == "tinylstm"))
+summary(mjr_vs_t)
+
+# Only in the reduced condition; post-hoc
+
+mtr_r = lmer(surprisal ~ reduced.numeric + (1|sent_index), data=filter(d2, LSTM == "tinylstm", ambiguity == "unambig"))
+summary(mtr_r)
+
+mrr_r = lmer(surprisal ~ reduced.numeric + (1|sent_index), data=filter(d2, LSTM == "RNNG", ambiguity == "unambig"))
+summary(mrr_r)
+
+mgr_r = lmer(surprisal ~ reduced.numeric + (1|sent_index), data=filter(d2, LSTM == "GRNN", ambiguity == "unambig"))
+summary(mgr_r)
+
+mjr_r = lmer(surprisal ~ reduced.numeric + (1|sent_index), data=filter(d2, LSTM == "JRNN", ambiguity == "unambig"))
+summary(mjr)
+
+```
+
+
+## Surprisal in the end region: main effect of reduction, no interaction with ambiguity
+```{r}
+d2 = d_agg %>% 
+ filter(region == "End")
+
+mj = lmer(surprisal ~ ambiguity + reduced + (1|sent_index), data=filter(d2, LSTM == "JRNN")) # maximal converging
+mg = lmer(surprisal ~ ambiguity + reduced + (1|sent_index), data=filter(d2, LSTM == "GRNN")) # maximal converging
+mr = lmer(surprisal ~ ambiguity + reduced + (1|sent_index), data=filter(d2, LSTM == "RNNG"))
+mt = lmer(surprisal ~ ambiguity + reduced + (1|sent_index), data=filter(d2, LSTM == "tinylstm"))
+
+mji = lmer(surprisal ~ ambiguity * reduced + (1|sent_index), data=filter(d2, LSTM == "JRNN")) # maximal converging
+mgi = lmer(surprisal ~ ambiguity * reduced + (1|sent_index), data=filter(d2, LSTM == "GRNN")) # maximal converging
+
+summary(mj)
+summary(mg)
+summary(mji)
+summary(mgi)
+
+```
+
+End region has main effect of reduction, but no interactions with ambiguity.
+
+# Effects of frequency
+
+The main effect of reducedness on verb surprisal suggests that even an unambiguous verb like "given" only serves as a weak or noisy cue that the following material is a relative clause. This raises the question: what factors influence the noisiness of the verb as a cue? Here we test the hypothesis that more frequent verbs are stronger cues for RC-hood in the neural representation. The reasoning is: the network has had more opportunities to see this verb introducing an RC, and its syntactic representations are strongest for lexical distributions that match its training distribution. If this is truly a property of neural representations, it is something that is not (strongly) shared with humans.
+
+``` {r}
+# Read in Google Web N-Gram frequency data
+
+freq = read_csv("../../data/vocab.csv") %>% select(-X1)
+df = left_join(d, freq)
+
+# Get the RC verb frequency for each item and condition.
+rc_verb_frequency = df %>% 
+  filter(region == "RC Verb") %>%
+  select(sent_index, ambiguity, reduced, frequency, word) %>%
+  rename(rc_verb_frequency=frequency) %>%
+  mutate(log_rc_verb_frequency=log(rc_verb_frequency))
+
+df_agg = d_agg %>%
+  rename_LSTM() %>%
+  inner_join(rc_verb_frequency)
+```
+
+### Unambiguous verbs
+
+First, let's just look at the case of an unambiguous verb, and see if the surprisal at the disambiguator is a function of the frequency of the reduced relative clause.
+
+```{r}
+df_agg %>%
+  filter(region == "Disambiguator",
+         ambiguity == "unambig") %>%
+  ggplot(aes(x=log_rc_verb_frequency, y=surprisal, color=reduced, label=word)) +
+    geom_text() +
+    xlab("RC verb log frequency") +
+    ylab("Disambiguating verb surprisal") +
+    facet_wrap(~LSTM)
+```
+
+One way to read this is that as RC verb gets more frequent, there is less and less of a difference between the reduced and unreduced cases. Let's plot that explicitly.
+
+```{r}
+df_agg %>%
+  distinct() %>%
+  filter(region == "Disambiguator",
+         ambiguity == "unambig") %>%
+  spread(reduced, surprisal) %>%
+  mutate(surprisal_diff=reduced - unreduced) %>%
+  ggplot(aes(x=log_rc_verb_frequency, y=surprisal_diff, label=word)) +
+    geom_text() +
+    xlab("RC verb log frequency") +
+    ylab("(reduced - unreduced) matrix verb surprisal") +
+    stat_smooth(method='lm') +
+    facet_wrap(~LSTM)
+```
+
+This shows that for unambiguous verbs, as the verb frequency increases, the effect of reduction decreases. That is, more frequent unambiguous verbs are treated more and more like reduced RCs! At least in JRNN. GRNN doesn't show this effect.
+
+Let's generate the JRNN figure:
+
+```{r}
+df_agg %>%
+  distinct() %>%
+  filter(region == "Disambiguator",
+         ambiguity == "unambig",
+         LSTM == "JRNN") %>%
+  spread(reduced, surprisal) %>%
+  mutate(surprisal_diff=reduced - unreduced) %>%
+  ggplot(aes(x=log_rc_verb_frequency, y=surprisal_diff, label=word)) +
+    geom_text() +
+    xlab("RC verb log frequency") +
+    ylab("(reduced - unreduced) matrix verb surprisal") +
+    stat_smooth(method='lm')
+
+ggsave("frequency-garden-path.pdf", width=5, height=5)
+```
+
+What's the correlation in that figure?
+
+```{r}
+df_agg %>%
+  distinct() %>%
+  filter(region == "Disambiguator",
+         ambiguity == "unambig",
+         LSTM == "JRNN") %>%
+  spread(reduced, surprisal) %>%
+  mutate(surprisal_diff=reduced - unreduced) %>%
+  with(cor.test(surprisal_diff, log_rc_verb_frequency))
+
+```

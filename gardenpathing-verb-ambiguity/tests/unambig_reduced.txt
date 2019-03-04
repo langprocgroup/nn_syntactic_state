@@ -1,0 +1,29 @@
+The woman given the sandwich from the kitchen tripped on the carpet . <eos>
+The captive taken into the dark cave tried to escape but failed . <eos>
+The girl chosen the most beautiful dress won the competition . <eos>
+The prisoners beaten for hours and hours confessed to crimes they never committed . <eos>
+The business grown into an empire was sold for billions of dollars . <eos>
+The rats eaten rapidly and entirely were digested in the belly of the cat . <eos>
+The lawyer sworn to complete secrecy was discovered to have broken his promise . <eos>
+The child forgotten in the chaos found her way back home . <eos>
+The horses ridden past the barn fell into a ditch . <eos>
+The artist drawn a hasty portrait was impressed with the work . <eos>
+The car driven into the garage crashed into a concrete pillar . <eos>
+The campaign known to be very popular was still unsuccessful . <eos>
+The student written a carefully worded excuse forgot to give it to the teacher . <eos>
+The television show begun three weeks ago was cancelled immediately . <eos>
+The boys done an unsolicited favor thanked the person who helped them . <eos>
+The player thrown the plastic frisbee dropped it on the ground . <eos>
+The man bitten deeply and fatally died very quickly . <eos>
+The child leapt completely past was upset about it . <eos>
+The students gotten a fancy dinner ate the meal quickly . <eos>
+The infant woken during the night cried intensely . <eos>
+The convict hidden away in the basement escaped during the night . <eos>
+The dog seen on the boardwalk barked at the onlookers . <eos>
+The ship blown off course sank on the reef . <eos>
+The balloon shrunk to a small size popped with a bang . <eos>
+The boat sunk in the lake disappeared in the storm . <eos>
+The couple shown the apartment moved to a different city . <eos>
+The girl woven a new shawl lost it during the trip . <eos>
+The airplane flown in the arctic froze during the ice storm . <eos>
+The toddler borne down the hallway sobbed at the top of his lungs . <eos>

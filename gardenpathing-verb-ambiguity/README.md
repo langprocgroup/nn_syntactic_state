@@ -1,6 +1,6 @@
 # garden-pathing
 
-## reduction and matrix subject animacy
+## reduction and morphological verb form
 
 This is pretty classic: it's a 2x2 interaction of relative-clause verb ambiguity and RC reduction:
 
